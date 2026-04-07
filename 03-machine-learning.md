@@ -44,6 +44,26 @@
 
 ![Transformers](assets/transformers.svg)
 
+## Cechy (Features) i etykiety (Labels)
+- **Cechy (Features)** – zmienne wejściowe, na podstawie których model uczy się przewidywać wynik. Każda cecha opisuje jedną właściwość rekordu (np. metraż, liczba pokoi, lokalizacja).
+- **Etykieta (Label)** – zmienna docelowa, którą model ma przewidzieć (np. cena mieszkania, klasa spam/nie-spam). W uczeniu nadzorowanym etykieta jest znana w danych treningowych.
+- Przykład:
+
+	| Metraż (feature) | Pokoje (feature) | Piętro (feature) | Cena (label) |
+	|---|---|---|---|
+	| 52 m² | 2 | 3 | 420 000 zł |
+	| 75 m² | 3 | 1 | 610 000 zł |
+
+- W **uczeniu nienadzorowanym** nie ma etykiet – model sam szuka wzorców w danych.
+
+## Podział danych: zbiór treningowy, walidacyjny i testowy
+- Dane dzielimy na trzy rozłączne zbiory, aby rzetelnie ocenić jakość modelu:
+	- **Zbiór treningowy (Training set)** ~70–80% – model uczy się na tych danych, dostraja wagi i parametry.
+	- **Zbiór walidacyjny (Validation set)** ~10–15% – służy do oceny modelu **w trakcie treningu**: porównywania wariantów, tuningu hiperparametrów i wykrywania overfittingu.
+	- **Zbiór testowy (Test set)** ~10–15% – używany **tylko raz** na końcu, aby uzyskać obiektywną ocenę końcową modelu na danych, których nigdy nie widział.
+- **Dlaczego dzielimy?** – gdyby model był oceniany na tych samych danych, na których się uczył, wyniki byłyby zawyżone (overfitting). Podział gwarantuje, że mierzymy rzeczywistą zdolność generalizacji.
+- **Cross-validation (walidacja krzyżowa)** – technika wielokrotnego podziału danych, w której każdy fragment jest raz zbiorem walidacyjnym – daje bardziej stabilną ocenę.
+
 ## Kluczowe zadania ML
 - **Regresja (Regression)** – przewidywanie wartości liczbowych (np. prognoza cen mieszkań, przewidywanie temperatury).
 - **Klasyfikacja (Classification)** – przypisywanie do kategorii (np. wykrywanie spamu, rozpoznawanie gatunków zwierząt na zdjęciach).

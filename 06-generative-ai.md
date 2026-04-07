@@ -15,12 +15,23 @@
 - **Podsumowywanie dokumentów** – automatyczne streszczanie długich tekstów.
 - **Tłumaczenia maszynowe** – generowanie tłumaczeń na podstawie kontekstu.
 
-## Modele
-- **GPT (OpenAI)** – generowanie tekstu, chatboty, podsumowania.
+## Cechy modeli generatywnych
+- **Modele bazowe (Foundation Models)** – duże modele pre-trenowane na ogromnych zbiorach danych, które można dostosować do wielu zadań (GPT-4, Llama, Phi). Nazywane też **LLM (Large Language Models)** w przypadku modeli językowych.
+- **Parametry modelu** – wagi wewnątrz sieci neuronowej (np. GPT-4 ma setki miliardów parametrów). Większa liczba parametrów = większa zdolność do rozumienia złożonych wzorców, ale też większy koszt i wolniejsze działanie.
+- **Token** – podstawowa jednostka tekstu przetwarzana przez model (ok. ¾ słowa po angielsku). Rozliczanie za tokeny (input + output).
+- **Context Window (okno kontekstowe)** – maksymalna liczba tokenów, które model przetwarza jednorazowo (pytanie + historia + odpowiedź). Przekroczenie limitu = utrata wcześniejszego kontekstu.
+- **Temperature** – parametr losowości: `0` = deterministyczny (fakty, kod); `1+` = kreatywny, zróżnicowany.
+- **Top-p (nucleus sampling)** – alternatywna kontrola losowości, ogranicza zbiór branych pod uwagę tokenów do najbardziej prawdopodobnych.
+- **Embeddings** – reprezentacja tekstu/obrazów w postaci wektorów liczbowych, wykorzystywana do wyszukiwania semantycznego i porównywania treści.
+- **Fine-tuning** – dodatkowe trenowanie modelu bazowego na własnych danych, by dostosować go do konkretnego zadania lub branży.
+
+## Popularne modele
+- **GPT-4 / GPT-4o (OpenAI)** – generowanie tekstu, chatboty, podsumowania, analiza obrazów (multimodal).
 - **DALL-E** – generowanie obrazów na podstawie opisu tekstowego.
 - **Stable Diffusion** – generowanie obrazów, grafiki artystycznej.
-- **Transformers** – architektura wykorzystywana w nowoczesnych modelach generatywnych.
-- **Embeddings** – reprezentacja tekstu/obrazów w postaci wektorów liczbowych, wykorzystywana do wyszukiwania semantycznego i porównywania treści.
+- **Llama (Meta)** – open-source LLM do generowania tekstu.
+- **Phi (Microsoft)** – małe, wydajne modele językowe (SLM – Small Language Models).
+- **Whisper (OpenAI)** – rozpoznawanie mowy i transkrypcja.
 
 ## Prompt engineering
 - **Prompt engineering** – sztuka tworzenia skutecznych poleceń (promptów) dla modeli generatywnych, aby uzyskać pożądane wyniki. Odpowiednio sformułowany prompt pozwala uzyskać bardziej precyzyjne, kreatywne lub zgodne z oczekiwaniami odpowiedzi. Przykład: "Napisz podsumowanie tego artykułu w 3 zdaniach".
@@ -40,11 +51,6 @@
 - **Grounding (zakotwiczenie)** – powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi danymi lub dokumentami. Zwiększa dokładność i wiarygodność wyników.
 - **System Message (komunikat systemowy)** – instrukcja przekazywana modelowi na początku sesji, definiująca jego rolę, ton i ograniczenia (np. „Jesteś pomocnym asystentem obsługi klienta firmy X. Nie omawiasz tematów niezwiązanych z produktem").
 - **Roles w API (role)** – wiadomości w API mają trzy typy: **system** (instrukcja), **user** (pytanie użytkownika), **assistant** (poprzednia odpowiedź modelu). Pozwala to budować wieloturowe rozmowy.
-- **Temperature (temperatura)** – parametr losowości odpowiedzi: `0` = deterministyczny, powtarzalny; `1+` = kreatywny, zróżnicowany. Niska temperatura – fakty i kod; wysoka – kreatywne treści.
-- **Top-p (nucleus sampling)** – alternatywna metoda kontroli losowości, ogranicza zbiór branych pod uwagę tokenów do najbardziej prawdopodobnych.
-- **Token** – podstawowa jednostka tekstu dla modeli LLM (ok. ¾ słowa po angielsku). Cena za korzystanie z API jest rozliczana za tokeny (input + output).
-- **Context Window (okno kontekstowe)** – maksymalna liczba tokenów przetwarzana jednorazowo przez model (historia rozmowy + pytanie + odpowiedź). Przekroczenie limitu = ucięcie kontekstu.
-- **Fine-tuning** – dodatkowe trenowanie pre-trenowanego modelu na własnym zbiorze danych, by dostosować go do konkretnego zadania lub stylu.
 - **Content Filters (filtry treści)** – mechanizmy Azure OpenAI automatycznie blokujące lub flagujące treści szkodliwe: mowę nienawiści, przemoc, treści seksualne, autodestrukcyjne. Konfigurowane na poziomie deployment.
 - **Responsible AI w generatywnej AI** – stosowanie content filters, grounding, monitorowanie, transparentność źródeł, ochrona prywatności i danych użytkowników.
 
