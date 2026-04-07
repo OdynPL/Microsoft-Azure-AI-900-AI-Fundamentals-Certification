@@ -44,6 +44,7 @@
 - **Precision (precyzja)** – odsetek trafień wśród przewidzianych pozytywnych.
 - **Recall (czułość)** – odsetek wykrytych pozytywnych spośród wszystkich rzeczywistych.
 - **F1-score** – średnia harmoniczna precision i recall.
+- **Mean Square Error (MSE)** – średnia arytmetyczna kwadratów różnic między wartościami rzeczywistymi a przewidywanymi przez model. Im niższa wartość MSE, tym lepsze dopasowanie modelu regresyjnego.
 - **Confusion Matrix (macierz pomyłek)** – tabela pokazująca liczbę poprawnych i błędnych klasyfikacji.
 - **ROC Curve, AUC** – krzywa ROC i pole pod krzywą, metryki oceny skuteczności klasyfikatorów.
 
