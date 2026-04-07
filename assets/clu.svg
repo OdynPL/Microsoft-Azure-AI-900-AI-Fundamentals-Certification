@@ -1,0 +1,71 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#152035"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#80cbc4"/>
+    </marker>
+  </defs>
+  <rect width="900" height="460" fill="url(#bg)" rx="16"/>
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">CLU – Conversational Language Understanding</text>
+  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#80cbc4">Rozumienie intencji i encji w chatbotach | Azure AI Language (następca LUIS)</text>
+
+  <!-- User utterance -->
+  <rect x="20" y="90" width="160" height="80" rx="10" fill="#1565c0" stroke="#42a5f5" stroke-width="2"/>
+  <text x="100" y="118" text-anchor="middle" font-size="12" font-weight="bold" fill="white">💬 Wypowiedź</text>
+  <text x="100" y="138" text-anchor="middle" font-size="11" fill="#90caf9">"Zamów pizzę</text>
+  <text x="100" y="155" text-anchor="middle" font-size="11" fill="#90caf9">margherita na jutro"</text>
+
+  <line x1="182" y1="130" x2="215" y2="130" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- CLU Engine -->
+  <rect x="215" y="80" width="200" height="100" rx="10" fill="#004d40" stroke="#4db6ac" stroke-width="2"/>
+  <text x="315" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#80cbc4">🧠 CLU Model</text>
+  <text x="315" y="128" text-anchor="middle" font-size="11" fill="#b2dfdb">Intent Classification</text>
+  <text x="315" y="146" text-anchor="middle" font-size="11" fill="#b2dfdb">Entity Extraction</text>
+  <text x="315" y="163" text-anchor="middle" font-size="10" fill="#80cbc4">Multi-language support</text>
+
+  <!-- Intent result -->
+  <line x1="415" y1="105" x2="455" y2="105" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="455" y="80" width="180" height="60" rx="10" fill="#1b5e20" stroke="#66bb6a" stroke-width="2"/>
+  <text x="545" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#a5d6a7">🎯 Intencja</text>
+  <text x="545" y="124" text-anchor="middle" font-size="12" fill="#c8e6c9">OrderPizza (96%)</text>
+
+  <!-- Entity result -->
+  <line x1="415" y1="155" x2="455" y2="155" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="455" y="138" width="180" height="68" rx="10" fill="#4a148c" stroke="#ce93d8" stroke-width="2"/>
+  <text x="545" y="160" text-anchor="middle" font-size="12" font-weight="bold" fill="#e1bee7">🏷 Encje</text>
+  <text x="545" y="178" text-anchor="middle" font-size="10" fill="#ce93d8">PizzaType: margherita</text>
+  <text x="545" y="193" text-anchor="middle" font-size="10" fill="#ce93d8">DeliveryTime: jutro</text>
+
+  <!-- Action -->
+  <line x1="637" y1="130" x2="670" y2="130" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="670" y="95" width="190" height="70" rx="10" fill="#0d2137" stroke="#42a5f5" stroke-width="2"/>
+  <text x="765" y="120" text-anchor="middle" font-size="12" font-weight="bold" fill="#42a5f5">⚙️ Akcja</text>
+  <text x="765" y="140" text-anchor="middle" font-size="11" fill="#90caf9">Bot wywołuje API</text>
+  <text x="765" y="157" text-anchor="middle" font-size="11" fill="#90caf9">zamówienia pizzy</text>
+
+  <!-- Training section -->
+  <rect x="20" y="230" width="410" height="190" rx="12" fill="#0d2137" stroke="#4db6ac" stroke-width="2"/>
+  <text x="225" y="255" text-anchor="middle" font-size="13" font-weight="bold" fill="#4db6ac">🏋 Budowanie modelu CLU</text>
+  <text x="35" y="278" font-size="11" fill="#90caf9">1. Definiuj <tspan font-weight="bold" fill="#4db6ac">Intencje</tspan> (np. OrderFood, CheckWeather, Cancel)</text>
+  <text x="35" y="298" font-size="11" fill="#90caf9">2. Dodaj <tspan font-weight="bold" fill="#4db6ac">Wypowiedzi</tspan> (utterances) per intencja</text>
+  <text x="35" y="318" font-size="11" fill="#90caf9">3. Oznacz <tspan font-weight="bold" fill="#4db6ac">Encje</tspan> w wypowiedziach (entity labels)</text>
+  <text x="35" y="338" font-size="11" fill="#90caf9">4. <tspan font-weight="bold" fill="#4db6ac">Trenuj</tspan> model w Language Studio (no-code)</text>
+  <text x="35" y="358" font-size="11" fill="#90caf9">5. <tspan font-weight="bold" fill="#4db6ac">Testuj</tspan> i poprawiaj na nowych przykładach</text>
+  <text x="35" y="378" font-size="11" fill="#90caf9">6. <tspan font-weight="bold" fill="#4db6ac">Wdróż</tspan> jako endpoint – integracja z Bot Service</text>
+  <text x="35" y="400" font-size="10" fill="#ffcc80">⚠ Im więcej i bardziej zróżnicowanych utterances, tym lepszy model</text>
+
+  <!-- QA section -->
+  <rect x="450" y="230" width="420" height="190" rx="12" fill="#0d2137" stroke="#ce93d8" stroke-width="2"/>
+  <text x="660" y="255" text-anchor="middle" font-size="13" font-weight="bold" fill="#ce93d8">❓ Question Answering (QnA)</text>
+  <text x="465" y="278" font-size="11" fill="#90caf9">► Budowanie baz wiedzy <tspan font-weight="bold" fill="#ce93d8">Q→A</tspan> z dokumentów</text>
+  <text x="465" y="298" font-size="11" fill="#90caf9">► Źródła: FAQ strony, PDF, Word, URL, Excel</text>
+  <text x="465" y="318" font-size="11" fill="#90caf9">► Chitchat: gotowe odpowiedzi na small-talk</text>
+  <text x="465" y="338" font-size="11" fill="#90caf9">► Ranking odpowiedzi (confidence score)</text>
+  <text x="465" y="358" font-size="11" fill="#90caf9">► Integracja z Azure Bot Service / Copilot Studio</text>
+  <text x="465" y="378" font-size="11" fill="#90caf9">► CLU + QA = kompletny bot rozumiejący NLP</text>
+  <text x="465" y="400" font-size="10" fill="#ffcc80">⚠ CLU: własne intencje | QA: gotowe pytania-odpowiedzi</text>
+</svg>

@@ -34,6 +34,9 @@
 	- **Wyszukiwanie semantyczne (Semantic Search)** – wyszukiwanie oparte na znaczeniu, nie słowach kluczowych
 
 - **Conversational Language Understanding (CLU)** – następca LUIS. Służy do rozumienia języka naturalnego w chatbotach:
+
+![CLU – Conversational Language Understanding](assets/clu.svg)
+
 	- **Intent Recognition** – rozpoznawanie zamiaru użytkownika (np. „zamów pizza”, „sprawdź pogodę”)
 	- **Entity Extraction** – wyodrębnianie encji z wypowiedzi (np. rodzaj pizzy, miasto)
 	- Integracja z Azure Bot Service / Copilot Studio

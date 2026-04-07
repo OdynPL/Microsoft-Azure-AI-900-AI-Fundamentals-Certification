@@ -40,6 +40,9 @@
 - **Underfitting (niedouczenie)** – model zbyt prosty, nie uczy się zależności w danych, osiąga niską skuteczność zarówno na danych treningowych, jak i testowych.
 
 ## Metryki oceny modeli
+
+![Confusion Matrix – macierz pomyłek i metryki](assets/confusion-matrix.svg)
+
 - **Accuracy (dokładność)** – odsetek poprawnych przewidywań.
 - **Precision (precyzja)** – odsetek trafień wśród przewidzianych pozytywnych.
 - **Recall (czułość)** – odsetek wykrytych pozytywnych spośród wszystkich rzeczywistych.

@@ -6,6 +6,8 @@
 ## Opis usługi
 Azure OpenAI to usługa umożliwiająca dostęp do zaawansowanych modeli generatywnych, takich jak GPT (Generative Pre-trained Transformer), DALL-E (generowanie obrazów), Codex (generowanie kodu) oraz innych dużych modeli językowych. Usługa pozwala na integrację generatywnej AI z aplikacjami biznesowymi, automatyzację procesów, analizę tekstu, generowanie treści i wiele więcej.
 
+![Azure OpenAI – Architektura](assets/azure-openai.svg)
+
 ## Kluczowe funkcje
 - **Generowanie tekstu (Chat Completions)** – tworzenie odpowiedzi, podsumowań, artykułów, e-maili, kodu.
 - **Generowanie obrazów (DALL-E)** – tworzenie grafik na podstawie opisu tekstowego (text-to-image).

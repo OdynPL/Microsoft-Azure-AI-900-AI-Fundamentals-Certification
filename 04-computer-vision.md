@@ -32,12 +32,18 @@
 	- Wykrywanie marek (Brand Detection) i znanych osób (Celebrity Detection)
 
 - **Azure AI Custom Vision** – trenowanie własnych modeli klasyfikacji i detekcji obiektów bez pisania kodu:
+
+![Custom Vision – pipeline](assets/custom-vision.svg)
+
 	- Wgrywanie i etykietowanie własnych zdjęć (data labeling)
 	- Trenowanie modelu jednym kliknięciem
 	- Eksport gotowego modelu do Edge/ONNX/CoreML/TensorFlow
 	- Dwa tryby: **Image Classification** (co jest na zdjęciu?) i **Object Detection** (gdzie jest obiekt?)
 
 - **Azure AI Document Intelligence** (dawniej Form Recognizer) – automatyczna ekstrakcja danych ze strukturyzowanych dokumentów:
+
+![Azure AI Document Intelligence](assets/document-intelligence.svg)
+
 	- Odczytywanie par klucz-wartość, tabel i pól formularzy
 	- Gotowe modele: **Invoice** (faktury), **Receipt** (paragony), **ID Document** (dowody), **Business Card**
 	- Możliwość trenowania własnych modeli na niestandardowych typach dokumentów

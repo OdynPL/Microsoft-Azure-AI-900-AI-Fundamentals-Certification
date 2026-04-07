@@ -35,6 +35,8 @@
 
 ## Kluczowe pojęcia – egzamin AI-900
 
+![RAG – Retrieval Augmented Generation](assets/rag.svg)
+
 - **RAG (Retrieval Augmented Generation)** – technika łącząca model LLM z zewnętrznymi źródłami wiedzy (bazy danych, dokumenty, wyszukiwarki). Model pobiera aktualny kontekst i na jego podstawie generuje odpowiedź. Redukuje halucynacje i pozwala odpowiadać na pytania o aktualne dane.
 - **Grounding (zakotwiczenie)** – powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi danymi lub dokumentami. Zwiększa dokładność i wiarygodność wyników.
 - **System Message (komunikat systemowy)** – instrukcja przekazywana modelowi na początku sesji, definiująca jego rolę, ton i ograniczenia (np. „Jesteś pomocnym asystentem obsługi klienta firmy X. Nie omawiasz tematów niezwiązanych z produktem").

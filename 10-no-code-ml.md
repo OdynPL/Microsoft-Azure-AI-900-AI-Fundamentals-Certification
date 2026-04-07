@@ -6,6 +6,8 @@
 - **No-code ML** to podejście, w którym budowanie, trenowanie i wdrażanie modeli uczenia maszynowego odbywa się bez pisania kodu programistycznego. Użytkownik korzysta z graficznego interfejsu (GUI), przeciąga i upuszcza komponenty (drag & drop), konfiguruje parametry i uruchamia procesy ML wizualnie.
 - **Low-code ML** pozwala na minimalne użycie kodu, głównie do zaawansowanych konfiguracji lub automatyzacji.
 
+![No-code ML na Azure](assets/nocode-ml.svg)
+
 ## Zalety no-code/low-code ML
 - Dostępność dla osób nietechnicznych i biznesowych
 - Szybkie prototypowanie i testowanie pomysłów

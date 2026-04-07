@@ -6,7 +6,8 @@
 - **Responsible AI** to zbiór zasad, praktyk i narzędzi, które mają zapewnić, że systemy sztucznej inteligencji są tworzone i wdrażane w sposób etyczny, bezpieczny, przejrzysty i sprawiedliwy. Odpowiedzialna AI minimalizuje ryzyko błędów, uprzedzeń i negatywnego wpływu na użytkowników oraz społeczeństwo.
 
 ## Kluczowe zasady Responsible AI
-![Zasady Responsible AI](assets/responsible-ai.svg)
+![Zasady Responsible AI – sześć filarów](assets/responsible-ai-principles.svg)
+
 - **Fairness (sprawiedliwość)** – równe traktowanie wszystkich użytkowników, eliminacja dyskryminacji i biasu.
 - **Reliability & Safety (niezawodność, bezpieczeństwo)** – systemy AI muszą działać zgodnie z założeniami i być odporne na błędy oraz ataki.
 - **Privacy & Security (prywatność, ochrona danych)** – ochrona danych osobowych i zapewnienie bezpieczeństwa informacji.
@@ -26,6 +27,8 @@
 - **Fairlearn** – open-source’owe narzędzie do oceny i poprawy sprawiedliwości modeli ML.
 - **InterpretML** – narzędzie do wyjaśniania decyzji modeli (SHAP, LIME) – explainability.
 - **Azure AI Content Safety** – wykrywanie i blokowanie szkodliwych treści generowanych lub podawanych przez AI: mowa nienawiści, przemoc, treści seksualne, samookaleczenie. Dostępna jako osobna usługa API.
+
+![Azure AI Content Safety](assets/content-safety.svg)
 - **Monitorowanie modeli** – automatyczne śledzenie skuteczności, driftu danych i potencjalnych problemów etycznych.
 - **Compliance Manager** – wsparcie dla zgodności z regulacjami prawnymi (ISO, GDPR, HIPAA, SOC).
 - **Data Privacy Toolkit** – narzędzia do anonimizacji i ochrony danych.
