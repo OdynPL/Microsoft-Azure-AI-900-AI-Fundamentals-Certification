@@ -11,10 +11,24 @@
 
 ## Typy uczenia
 - **Supervised Learning (uczenie nadzorowane)** – model uczy się na danych z etykietami (np. zdjęcia podpisane jako „kot” lub „pies”). Przykład: klasyfikacja maili jako spam/nie-spam.
+
+![Supervised Learning](assets/supervised-learning.svg)
+
 - **Unsupervised Learning (uczenie nienadzorowane)** – model sam szuka wzorców w nieoznaczonych danych (np. segmentacja klientów, klasteryzacja dokumentów).
+
+![Unsupervised Learning](assets/unsupervised-learning.svg)
+
 - **Reinforcement Learning (uczenie ze wzmocnieniem)** – model uczy się przez nagrody i kary, np. grając w gry komputerowe lub sterując robotem.
+
+![Reinforcement Learning](assets/reinforcement-learning.svg)
+
 - **Deep Learning** – uczenie maszynowe z wykorzystaniem wielowarstwowych sieci neuronowych, szczególnie skuteczne w analizie obrazów i języka.
+
+![Deep Learning](assets/deep-learning.svg)
+
 - **Transformers** – nowoczesna architektura sieci neuronowych, wykorzystywana m.in. w modelach językowych (np. **GPT**, **BERT**).
+
+![Transformers](assets/transformers.svg)
 
 ## Kluczowe zadania ML
 - **Regresja (Regression)** – przewidywanie wartości liczbowych (np. prognoza cen mieszkań, przewidywanie temperatury).
