@@ -22,11 +22,25 @@
 
 ![Reinforcement Learning](assets/reinforcement-learning.svg)
 
+## Sieci neuronowe (Neural Networks)
+- **Sieć neuronowa** to model obliczeniowy inspirowany budową ludzkiego mózgu – składa się z warstw połączonych **neuronów** (węzłów), które przetwarzają dane wejściowe i uczą się rozpoznawać wzorce.
+- Każdy neuron otrzymuje dane, mnoży je przez **wagi (weights)**, sumuje i przepuszcza przez **funkcję aktywacji** – wynik przekazuje dalej.
+- Struktura sieci neuronowej:
+	- **Warstwa wejściowa (Input Layer)** – przyjmuje dane (np. piksele obrazu, cechy liczbowe)
+	- **Warstwy ukryte (Hidden Layers)** – przetwarzają dane, uczą się wzorców i zależności
+	- **Warstwa wyjściowa (Output Layer)** – zwraca wynik (np. klasę, wartość liczbową)
+- **Trening** sieci polega na podawaniu danych, porównywaniu wyników z oczekiwanymi i korygowaniu wag metodą **propagacji wstecznej (backpropagation)**.
+- Im więcej warstw ukrytych, tym sieć potrafi uczyć się bardziej złożonych zależności – stąd termin **Deep Learning**.
+
+![Sieć neuronowa – warstwy i połączenia](assets/neural-network.svg)
+
+## Deep Learning
 - **Deep Learning** – uczenie maszynowe z wykorzystaniem wielowarstwowych sieci neuronowych, szczególnie skuteczne w analizie obrazów i języka.
 
 ![Deep Learning](assets/deep-learning.svg)
 
-- **Transformers** – nowoczesna architektura sieci neuronowych, wykorzystywana m.in. w modelach językowych (np. **GPT**, **BERT**).
+## Transformers
+- **Transformers** – nowoczesna architektura sieci neuronowych oparta na mechanizmie **uwagi (attention)**, który pozwala modelowi skupiać się na najważniejszych fragmentach danych wejściowych. Wykorzystywana m.in. w modelach językowych (np. **GPT**, **BERT**).
 
 ![Transformers](assets/transformers.svg)
 

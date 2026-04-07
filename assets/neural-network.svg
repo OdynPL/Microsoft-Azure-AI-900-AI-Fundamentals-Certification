@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <text x="200" y="10" text-anchor="middle" font-size="9" font-weight="600" fill="#0078d4">Siec neuronowa</text>
+  <!-- Input layer -->
+  <text x="40" y="24" text-anchor="middle" font-size="7" fill="#505050">Input</text>
+  <circle cx="40" cy="42" r="8" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <circle cx="40" cy="64" r="8" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <circle cx="40" cy="86" r="8" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <!-- Hidden layer 1 -->
+  <text x="150" y="24" text-anchor="middle" font-size="7" fill="#505050">Hidden 1</text>
+  <circle cx="150" cy="36" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <circle cx="150" cy="58" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <circle cx="150" cy="80" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <circle cx="150" cy="102" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <!-- Hidden layer 2 -->
+  <text x="250" y="24" text-anchor="middle" font-size="7" fill="#505050">Hidden 2</text>
+  <circle cx="250" cy="36" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <circle cx="250" cy="58" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <circle cx="250" cy="80" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <circle cx="250" cy="102" r="8" fill="#f3f3f3" stroke="#e8e8e8" stroke-width="0.75"/>
+  <!-- Output layer -->
+  <text x="360" y="24" text-anchor="middle" font-size="7" fill="#505050">Output</text>
+  <circle cx="360" cy="53" r="8" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <circle cx="360" cy="75" r="8" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <!-- Connections input -> hidden1 -->
+  <line x1="48" y1="42" x2="142" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="48" y1="42" x2="142" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="48" y1="42" x2="142" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="48" y1="42" x2="142" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="48" y1="64" x2="142" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="48" y1="64" x2="142" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="48" y1="64" x2="142" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="48" y1="64" x2="142" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="48" y1="86" x2="142" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="48" y1="86" x2="142" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="48" y1="86" x2="142" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="48" y1="86" x2="142" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <!-- Connections hidden1 -> hidden2 -->
+  <line x1="158" y1="36" x2="242" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="36" x2="242" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="36" x2="242" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="36" x2="242" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="58" x2="242" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="58" x2="242" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="58" x2="242" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="58" x2="242" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="80" x2="242" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="80" x2="242" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="80" x2="242" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="80" x2="242" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="102" x2="242" y2="36" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="102" x2="242" y2="58" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="158" y1="102" x2="242" y2="80" stroke="#b3b3b3" stroke-width="0.3"/><line x1="158" y1="102" x2="242" y2="102" stroke="#b3b3b3" stroke-width="0.3"/>
+  <!-- Connections hidden2 -> output -->
+  <line x1="258" y1="36" x2="352" y2="53" stroke="#b3b3b3" stroke-width="0.3"/><line x1="258" y1="36" x2="352" y2="75" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="258" y1="58" x2="352" y2="53" stroke="#b3b3b3" stroke-width="0.3"/><line x1="258" y1="58" x2="352" y2="75" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="258" y1="80" x2="352" y2="53" stroke="#b3b3b3" stroke-width="0.3"/><line x1="258" y1="80" x2="352" y2="75" stroke="#b3b3b3" stroke-width="0.3"/>
+  <line x1="258" y1="102" x2="352" y2="53" stroke="#b3b3b3" stroke-width="0.3"/><line x1="258" y1="102" x2="352" y2="75" stroke="#b3b3b3" stroke-width="0.3"/>
+  <text x="200" y="118" text-anchor="middle" font-size="7" fill="#8a8a8a">Weights · Activation Function · Backpropagation</text>
+</svg>
