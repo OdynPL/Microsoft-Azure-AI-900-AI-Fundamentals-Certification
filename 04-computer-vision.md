@@ -9,6 +9,10 @@
 - **Computer Vision** to dziedzina AI zajmująca się analizą i interpretacją obrazów oraz wideo przez komputer. Pozwala na automatyczne rozpoznawanie, klasyfikowanie i interpretowanie zawartości wizualnej, co znajduje zastosowanie w wielu branżach.
 
 ## Typowe zadania
+- **Przykładowy przepływ Computer Vision:**
+
+![Computer Vision - przepływ](assets/computer-vision.svg)
+
 - **Klasyfikacja obrazów (Image Classification)** – przypisywanie etykiet do całych obrazów (np. rozpoznawanie gatunku zwierzęcia na zdjęciu).
 - **Detekcja obiektów (Object Detection)** – lokalizowanie i klasyfikowanie wielu obiektów na jednym obrazie (np. wykrywanie samochodów na drodze).
 - **OCR (Optical Character Recognition)** – rozpoznawanie tekstu na obrazach, digitalizacja dokumentów papierowych (np. faktury, paragony, umowy).
@@ -17,12 +21,17 @@
 
 ## Usługi **Azure**
 - **Azure AI Vision** – kompleksowa usługa do analizy obrazów i wideo. Umożliwia:
+![Azure AI Vision](assets/ai-workloads.svg)
+
+- **Azure AI Vision** – kompleksowa usługa do analizy obrazów i wideo. Umożliwia:
+- **Azure AI Vision** – kompleksowa usługa do analizy obrazów i wideo. Umożliwia:
 	- Klasyfikację obrazów (Image Classification)
 	- Detekcję obiektów (Object Detection)
 	- OCR (rozpoznawanie tekstu na obrazach)
 	- Analizę cech wizualnych (np. kolory, kształty, tagi)
 	- Moderację treści (wykrywanie treści nieodpowiednich)
 - **Azure AI Face** – specjalistyczna usługa do rozpoznawania i analizy twarzy. Pozwala na:
+![Azure AI Face](assets/face.svg)
 	- Detekcję i identyfikację twarzy na zdjęciach i wideo
 	- Analizę emocji, wieku, płci
 	- Weryfikację tożsamości (np. logowanie biometryczne)

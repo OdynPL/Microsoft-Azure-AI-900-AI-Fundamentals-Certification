@@ -9,6 +9,7 @@
 - **Generatywna AI (Generative AI)** to dziedzina sztucznej inteligencji, która koncentruje się na tworzeniu nowych treści przez modele AI. Modele te potrafią generować tekst, obrazy, kod, muzykę, a nawet wideo na podstawie dostarczonych poleceń (promptów) lub danych wejściowych. Generatywna AI znajduje zastosowanie w automatyzacji, kreatywnych projektach, wsparciu programistów i wielu innych obszarach.
 
 ## Typowe zadania
+![Generative AI - przepływ](assets/generative-ai.svg)
 - **Generowanie tekstu (Text Generation)** – tworzenie podsumowań, odpowiedzi w chatbotach, generowanie artykułów, e-maili, opisów produktów.
 - **Tworzenie obrazów, kodu, muzyki (Image, Code, Music Generation)** – generowanie grafik na podstawie opisu, automatyczne pisanie kodu, komponowanie muzyki.
 - **Wyszukiwanie semantyczne (Semantic Search)** – inteligentne wyszukiwanie informacji na podstawie znaczenia, a nie tylko słów kluczowych.
@@ -32,6 +33,10 @@
 - **Brak świadomości** – model nie rozumie świata, tylko przewiduje kolejne słowa/elementy na podstawie danych.
 
 ## Usługi **Azure**
+- **Azure OpenAI** – dostęp do zaawansowanych modeli generatywnych (GPT, DALL-E, embeddings) przez API. Umożliwia generowanie tekstu, obrazów, kodu, podsumowań, tłumaczeń i wiele innych zastosowań.
+![Azure OpenAI](assets/azure-ai-overview.svg)
+
+- **Azure OpenAI** – dostęp do zaawansowanych modeli generatywnych (GPT, DALL-E, embeddings) przez API. Umożliwia generowanie tekstu, obrazów, kodu, podsumowań, tłumaczeń i wiele innych zastosowań.
 - **Azure OpenAI** – dostęp do zaawansowanych modeli generatywnych (GPT, DALL-E, embeddings) przez API. Umożliwia generowanie tekstu, obrazów, kodu, podsumowań, tłumaczeń i wiele innych zastosowań.
 - **Azure AI Foundry** – katalog modeli AI, zarządzanie i wdrażanie modeli, integracja z innymi usługami Azure.
 - **Azure Machine Learning** – możliwość trenowania i wdrażania własnych modeli generatywnych.

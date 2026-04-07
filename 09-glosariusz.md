@@ -1,3 +1,5 @@
+# Glosariusz AI-900
+![Glosariusz](assets/glosariusz.svg)
 
 
 [⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md)

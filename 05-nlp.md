@@ -8,6 +8,7 @@
 - **Natural Language Processing (NLP)** to dziedzina AI zajmująca się przetwarzaniem, analizą i rozumieniem języka naturalnego przez komputery. Obejmuje zarówno tekst pisany, jak i mowę. NLP pozwala maszynom rozumieć, generować, tłumaczyć i analizować język ludzki.
 
 ## Typowe zadania
+![NLP - przepływ](assets/nlp.svg)
 - **Ekstrakcja fraz kluczowych (Key Phrase Extraction)** – wyodrębnianie najważniejszych słów i zwrotów z tekstu.
 - **Rozpoznawanie encji (Entity Recognition)** – identyfikacja nazw własnych, takich jak osoby, miejsca, organizacje.
 - **Analiza sentymentu (Sentiment Analysis)** – określanie emocji w tekście (np. pozytywny/negatywny komentarz).
@@ -21,6 +22,10 @@
 
 ## Usługi **Azure**
 - **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
+![Azure AI Language](assets/ai-workloads.svg)
+
+- **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
+- **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
 	- Analizę sentymentu
 	- Ekstrakcję fraz kluczowych
 	- Rozpoznawanie encji
@@ -28,6 +33,7 @@
 	- Klasyfikację tekstu
 	- Wyszukiwanie semantyczne
 - **Azure AI Speech** – usługa do rozpoznawania i syntezy mowy. Pozwala na:
+![Azure AI Speech](assets/ai-workloads.svg)
 	- Zamianę mowy na tekst (Speech-to-Text)
 	- Zamianę tekstu na mowę (Text-to-Speech)
 	- Rozpoznawanie mówców (Speaker Recognition)

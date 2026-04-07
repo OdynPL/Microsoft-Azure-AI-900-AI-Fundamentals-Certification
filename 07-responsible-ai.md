@@ -6,6 +6,7 @@
 - **Responsible AI** to zbiór zasad, praktyk i narzędzi, które mają zapewnić, że systemy sztucznej inteligencji są tworzone i wdrażane w sposób etyczny, bezpieczny, przejrzysty i sprawiedliwy. Odpowiedzialna AI minimalizuje ryzyko błędów, uprzedzeń i negatywnego wpływu na użytkowników oraz społeczeństwo.
 
 ## Kluczowe zasady Responsible AI
+![Zasady Responsible AI](assets/responsible-ai.svg)
 - **Fairness (sprawiedliwość)** – równe traktowanie wszystkich użytkowników, eliminacja dyskryminacji i biasu.
 - **Reliability & Safety (niezawodność, bezpieczeństwo)** – systemy AI muszą działać zgodnie z założeniami i być odporne na błędy oraz ataki.
 - **Privacy & Security (prywatność, ochrona danych)** – ochrona danych osobowych i zapewnienie bezpieczeństwa informacji.
