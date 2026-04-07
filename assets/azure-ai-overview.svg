@@ -1,55 +1,14 @@
-<svg viewBox="0 0 780 310" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
-  <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
-  </defs>
-  <rect width="780" height="310" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
-  <rect width="780" height="48" fill="#1e40af" rx="12"/><rect y="36" width="780" height="12" fill="#1e40af"/>
-  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Przegląd usług Azure AI</text>
-  <!-- Row 1: 4 core services -->
-  <rect x="16" y="66" width="178" height="68" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
-  <text x="105" y="92" text-anchor="middle" font-size="14">👁️</text>
-  <text x="105" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Vision</text>
-  <text x="105" y="128" text-anchor="middle" font-size="9" fill="#64748b">Obraz, OCR, Face</text>
-
-  <rect x="206" y="66" width="178" height="68" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
-  <text x="295" y="92" text-anchor="middle" font-size="14">💬</text>
-  <text x="295" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Language</text>
-  <text x="295" y="128" text-anchor="middle" font-size="9" fill="#64748b">NLP, CLU, QnA</text>
-
-  <rect x="396" y="66" width="178" height="68" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
-  <text x="485" y="92" text-anchor="middle" font-size="14">🔊</text>
-  <text x="485" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Speech</text>
-  <text x="485" y="128" text-anchor="middle" font-size="9" fill="#64748b">STT, TTS, Tłumaczenie</text>
-
-  <rect x="586" y="66" width="178" height="68" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
-  <text x="675" y="92" text-anchor="middle" font-size="14">😊</text>
-  <text x="675" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#6d28d9">Face</text>
-  <text x="675" y="128" text-anchor="middle" font-size="9" fill="#64748b">Detekcja, weryfikacja</text>
-
-  <!-- Row 2: 3 platform services -->
-  <rect x="16" y="164" width="240" height="68" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="136" y="190" text-anchor="middle" font-size="14">🧠</text>
-  <text x="136" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Azure OpenAI</text>
-  <text x="136" y="224" text-anchor="middle" font-size="9" fill="#64748b">GPT-4, DALL-E, Embeddings</text>
-
-  <rect x="270" y="164" width="240" height="68" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
-  <text x="390" y="190" text-anchor="middle" font-size="14">🏭</text>
-  <text x="390" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Azure AI Foundry</text>
-  <text x="390" y="224" text-anchor="middle" font-size="9" fill="#64748b">Hub, Prompt Flow, Ewaluacja</text>
-
-  <rect x="524" y="164" width="240" height="68" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="644" y="190" text-anchor="middle" font-size="14">⚙️</text>
-  <text x="644" y="210" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">Azure Machine Learning</text>
-  <text x="644" y="224" text-anchor="middle" font-size="9" fill="#64748b">AutoML, Designer, MLOps</text>
-
-  <!-- Arrows from row 1 to row 2 -->
-  <line x1="105" y1="134" x2="105" y2="162" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="295" y1="134" x2="295" y2="162" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="485" y1="134" x2="485" y2="162" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="675" y1="134" x2="644" y2="162" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Footer -->
-  <rect x="16" y="252" width="748" height="42" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="390" y="272" text-anchor="middle" font-size="10" fill="#374151">🔑 Wspólne: Azure Portal → Utwórz zasób → Klucz API + Endpoint → REST / SDK (C#, Python, JS)</text>
-  <text x="390" y="286" text-anchor="middle" font-size="9" fill="#64748b">Regiony: Nie wszystkie modele dostępne we wszystkich regionach. Sprawdź availability przed wdrożeniem.</text>
+<svg viewBox="0 0 520 100" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs><marker id="a" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5" fill="none" stroke="#b3b3b3" stroke-width="1"/></marker></defs>
+  <text x="260" y="10" text-anchor="middle" font-size="9" font-weight="600" fill="#0078d4">Azure AI Services</text>
+  <rect x="0" y="18" width="122" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="61" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#0078d4">Vision</text>
+  <rect x="132" y="18" width="122" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="193" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#0078d4">Language</text>
+  <rect x="264" y="18" width="122" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="325" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#0078d4">Speech</text>
+  <rect x="396" y="18" width="122" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="457" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#0078d4">Face</text>
+  <line x1="61" y1="44" x2="61" y2="54" stroke="#b3b3b3" stroke-width="0.5"/><line x1="193" y1="44" x2="193" y2="54" stroke="#b3b3b3" stroke-width="0.5"/>
+  <line x1="325" y1="44" x2="325" y2="54" stroke="#b3b3b3" stroke-width="0.5"/><line x1="457" y1="44" x2="457" y2="54" stroke="#b3b3b3" stroke-width="0.5"/>
+  <rect x="0" y="56" width="168" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="84" y="72" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">Azure OpenAI</text>
+  <rect x="176" y="56" width="168" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="260" y="72" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">AI Foundry</text>
+  <rect x="352" y="56" width="168" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="436" y="72" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">Machine Learning</text>
+  <text x="260" y="94" text-anchor="middle" font-size="7" fill="#8a8a8a">Portal → Zasób → Klucz API + Endpoint → REST / SDK (C#, Python)</text>
 </svg>

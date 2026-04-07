@@ -1,45 +1,18 @@
-<svg viewBox="0 0 780 340" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
-  <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
-  </defs>
-  <rect width="780" height="340" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
-  <rect width="780" height="48" fill="#1e40af" rx="12"/><rect y="36" width="780" height="12" fill="#1e40af"/>
-  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Azure Custom Vision – Pipeline</text>
-  <!-- 5 Steps -->
-  <rect x="16" y="66" width="130" height="66" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
-  <text x="81" y="93" text-anchor="middle" font-size="20">📤</text>
-  <text x="81" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">1. Upload</text>
-  <line x1="146" y1="99" x2="166" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="172" y="66" width="130" height="66" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
-  <text x="237" y="93" text-anchor="middle" font-size="20">🏷️</text>
-  <text x="237" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#6d28d9">2. Label / Tag</text>
-  <line x1="302" y1="99" x2="322" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="328" y="66" width="130" height="66" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
-  <text x="393" y="93" text-anchor="middle" font-size="20">🧠</text>
-  <text x="393" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">3. Train</text>
-  <line x1="458" y1="99" x2="478" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="484" y="66" width="130" height="66" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
-  <text x="549" y="93" text-anchor="middle" font-size="20">📊</text>
-  <text x="549" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">4. Evaluate</text>
-  <line x1="614" y1="99" x2="634" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="640" y="66" width="124" height="66" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
-  <text x="702" y="93" text-anchor="middle" font-size="20">🚀</text>
-  <text x="702" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">5. Publish</text>
-  <!-- Comparison -->
-  <rect x="16" y="152" width="370" height="172" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="201" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">🖼️ Image Classification</text>
-  <text x="201" y="196" text-anchor="middle" font-size="10" fill="#374151">Przypisuje etykietę (tag) do całego obrazu</text>
-  <text x="201" y="216" text-anchor="middle" font-size="10" fill="#374151">• Multiclass – jedna klasa na obraz</text>
-  <text x="201" y="234" text-anchor="middle" font-size="10" fill="#374151">• Multilabel – wiele klas na obraz</text>
-  <text x="201" y="260" text-anchor="middle" font-size="10" fill="#64748b">Przykład: To jest 🐱 kot (95%)</text>
-  <text x="201" y="280" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Min. 5 obrazów / tag</text>
-  <text x="201" y="300" text-anchor="middle" font-size="10" fill="#64748b">Domeny: General, Food, Retail, Landmarks…</text>
-  <rect x="398" y="152" width="366" height="172" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
-  <text x="581" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">📦 Object Detection</text>
-  <text x="581" y="196" text-anchor="middle" font-size="10" fill="#374151">Lokalizuje obiekty w regionach (Bounding Box)</text>
-  <text x="581" y="216" text-anchor="middle" font-size="10" fill="#374151">• Zwraca: tag, prawdopodobieństwo, współrzędne</text>
-  <text x="581" y="234" text-anchor="middle" font-size="10" fill="#374151">• Wymaga tagowania regionów (nie całych zdjęć)</text>
-  <text x="581" y="260" text-anchor="middle" font-size="10" fill="#64748b">Przykład: 🐱(92%) [x:10,y:20,w:80,h:60]</text>
-  <text x="581" y="280" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Min. 15 obrazów / tag</text>
-  <text x="581" y="300" text-anchor="middle" font-size="10" fill="#64748b">Domeny: General, Logo, Products…</text>
+<svg viewBox="0 0 440 52" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs><marker id="a" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5" fill="none" stroke="#b3b3b3" stroke-width="1"/></marker></defs>
+  <rect x="0" y="6" width="80" height="28" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="40" y="24" text-anchor="middle" font-size="8" font-weight="600" fill="#505050">Wlasne zdjecia</text>
+  <line x1="82" y1="20" x2="94" y2="20" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <rect x="98" y="6" width="74" height="28" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="135" y="24" text-anchor="middle" font-size="8" font-weight="600" fill="#505050">Etykietowanie</text>
+  <line x1="174" y1="20" x2="186" y2="20" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <rect x="190" y="6" width="74" height="28" rx="3" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <text x="227" y="24" text-anchor="middle" font-size="8" font-weight="600" fill="#0078d4">Trening</text>
+  <line x1="266" y1="20" x2="278" y2="20" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <rect x="282" y="6" width="66" height="28" rx="3" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <text x="315" y="24" text-anchor="middle" font-size="8" font-weight="600" fill="#0078d4">Model</text>
+  <line x1="350" y1="20" x2="362" y2="20" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <rect x="366" y="6" width="68" height="28" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="400" y="24" text-anchor="middle" font-size="8" font-weight="600" fill="#505050">Eksport</text>
+  <text x="220" y="50" text-anchor="middle" font-size="7" fill="#8a8a8a">Image Classification · Object Detection · Eksport: Edge / ONNX / CoreML</text>
 </svg>

@@ -2,7 +2,7 @@
 
 # Azure AI Speech
 
-![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+![Azure AI Speech](assets/azure-ai-speech-service.svg)
 
 ## Opis usługi
 Azure AI Speech to usługa umożliwiająca rozpoznawanie mowy, syntezę mowy, tłumaczenie mowy oraz analizę dźwięku. Pozwala na zamianę mowy na tekst (Speech-to-Text), tekstu na mowę (Text-to-Speech), tłumaczenie rozmów w czasie rzeczywistym oraz rozpoznawanie mówców. Usługa dostępna jest przez API, SDK oraz narzędzia w portalu Azure.

@@ -3,7 +3,7 @@
 # Azure AI Language
 
 
-![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+![Azure AI Language](assets/azure-ai-language-service.svg)
 
 ## Opis usługi
 Azure AI Language to zaawansowana usługa do przetwarzania i analizy języka naturalnego (NLP). Pozwala na analizę tekstu, ekstrakcję kluczowych fraz, rozpoznawanie encji, analizę sentymentu, tłumaczenia oraz budowanie własnych modeli językowych. Usługa dostępna jest przez API, SDK oraz narzędzia w portalu Azure.

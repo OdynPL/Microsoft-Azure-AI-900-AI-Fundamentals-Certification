@@ -1,59 +1,9 @@
-<svg viewBox="0 0 780 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
-  <rect width="780" height="420" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
-  <rect width="780" height="48" fill="#059669" rx="12"/><rect y="36" width="780" height="12" fill="#059669"/>
-  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Responsible AI – 6 Zasad Microsoft</text>
-  <text x="390" y="74" text-anchor="middle" font-size="11" fill="#64748b">Fundament etycznego i bezpiecznego wdrażania sztucznej inteligencji</text>
-  <!-- Row 1: 3 principles -->
-  <rect x="16" y="92" width="242" height="130" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
-  <text x="137" y="116" text-anchor="middle" font-size="24">⚖️</text>
-  <text x="137" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Fairness</text>
-  <text x="137" y="158" text-anchor="middle" font-size="10" fill="#374151">Równe traktowanie</text>
-  <text x="137" y="174" text-anchor="middle" font-size="10" fill="#374151">bez dyskryminacji</text>
-  <text x="137" y="194" text-anchor="middle" font-size="9" fill="#1e40af">Narzędzie: Fairlearn</text>
-  <text x="137" y="210" text-anchor="middle" font-size="9" fill="#64748b">Brak bias w danych i modelu</text>
-
-  <rect x="270" y="92" width="242" height="130" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
-  <text x="391" y="116" text-anchor="middle" font-size="24">🛡️</text>
-  <text x="391" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">Reliability &amp; Safety</text>
-  <text x="391" y="158" text-anchor="middle" font-size="10" fill="#374151">Stabilne, bezpieczne</text>
-  <text x="391" y="174" text-anchor="middle" font-size="10" fill="#374151">działanie systemu AI</text>
-  <text x="391" y="194" text-anchor="middle" font-size="9" fill="#065f46">Testowanie, walidacja</text>
-  <text x="391" y="210" text-anchor="middle" font-size="9" fill="#64748b">Fallback, obsługa błędów</text>
-
-  <rect x="524" y="92" width="240" height="130" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
-  <text x="644" y="116" text-anchor="middle" font-size="24">🔒</text>
-  <text x="644" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9">Privacy &amp; Security</text>
-  <text x="644" y="158" text-anchor="middle" font-size="10" fill="#374151">Ochrona danych</text>
-  <text x="644" y="174" text-anchor="middle" font-size="10" fill="#374151">osobowych (RODO)</text>
-  <text x="644" y="194" text-anchor="middle" font-size="9" fill="#6d28d9">Bezpieczeństwo infrastruktury</text>
-  <text x="644" y="210" text-anchor="middle" font-size="9" fill="#64748b">Szyfrowanie, kontrola dostępu</text>
-
-  <!-- Row 2: 3 principles -->
-  <rect x="16" y="238" width="242" height="130" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
-  <text x="137" y="262" text-anchor="middle" font-size="24">🌍</text>
-  <text x="137" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Inclusiveness</text>
-  <text x="137" y="304" text-anchor="middle" font-size="10" fill="#374151">Dostępność dla</text>
-  <text x="137" y="320" text-anchor="middle" font-size="10" fill="#374151">wszystkich grup</text>
-  <text x="137" y="340" text-anchor="middle" font-size="9" fill="#92400e">Accessibility</text>
-  <text x="137" y="356" text-anchor="middle" font-size="9" fill="#64748b">Wielojęzyczność, czytniki</text>
-
-  <rect x="270" y="238" width="242" height="130" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
-  <text x="391" y="262" text-anchor="middle" font-size="24">🔍</text>
-  <text x="391" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">Transparency</text>
-  <text x="391" y="304" text-anchor="middle" font-size="10" fill="#374151">Wyjaśnialność decyzji</text>
-  <text x="391" y="320" text-anchor="middle" font-size="10" fill="#374151">Model interpretability</text>
-  <text x="391" y="340" text-anchor="middle" font-size="9" fill="#dc2626">SHAP, LIME, dashboardy</text>
-  <text x="391" y="356" text-anchor="middle" font-size="9" fill="#64748b">Użytkownik wie, że rozmawia z AI</text>
-
-  <rect x="524" y="238" width="240" height="130" rx="10" fill="#f8fafc" stroke="#374151" stroke-width="2"/>
-  <text x="644" y="262" text-anchor="middle" font-size="24">📋</text>
-  <text x="644" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">Accountability</text>
-  <text x="644" y="304" text-anchor="middle" font-size="10" fill="#374151">Odpowiedzialność</text>
-  <text x="644" y="320" text-anchor="middle" font-size="10" fill="#374151">za decyzje AI</text>
-  <text x="644" y="340" text-anchor="middle" font-size="9" fill="#374151">Governance, audyty</text>
-  <text x="644" y="356" text-anchor="middle" font-size="9" fill="#64748b">Nadzór ludzki, Impact Assessment</text>
-
-  <!-- Footer -->
-  <rect x="16" y="384" width="748" height="24" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
-  <text x="390" y="400" text-anchor="middle" font-size="9" fill="#065f46">Wszystkie 6 zasad dotyczy pełnego cyklu życia AI: projektowanie → rozwój → wdrożenie → monitoring</text>
+<svg viewBox="0 0 480 76" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <text x="240" y="10" text-anchor="middle" font-size="9" font-weight="600" fill="#0078d4">Responsible AI – 6 zasad Microsoft</text>
+  <rect x="0" y="18" width="152" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="76" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#0078d4">Fairness</text>
+  <rect x="164" y="18" width="152" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="240" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">Reliability &amp; Safety</text>
+  <rect x="328" y="18" width="152" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="404" y="34" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">Privacy &amp; Security</text>
+  <rect x="0" y="46" width="152" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="76" y="62" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">Inclusiveness</text>
+  <rect x="164" y="46" width="152" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="240" y="62" text-anchor="middle" font-size="7.5" font-weight="600" fill="#505050">Transparency</text>
+  <rect x="328" y="46" width="152" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="404" y="62" text-anchor="middle" font-size="7.5" font-weight="600" fill="#0078d4">Accountability</text>
 </svg>

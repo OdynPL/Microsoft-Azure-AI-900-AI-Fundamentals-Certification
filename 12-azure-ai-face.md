@@ -2,7 +2,7 @@
 
 # Azure AI Face
 
-![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+![Azure AI Face](assets/azure-ai-face.svg)
 
 ## Opis usługi
 Azure AI Face to specjalistyczna usługa do wykrywania, analizy i rozpoznawania twarzy na obrazach i wideo. Umożliwia identyfikację osób, analizę emocji, określanie wieku, płci oraz porównywanie twarzy. Usługa jest szeroko wykorzystywana w systemach bezpieczeństwa, kontroli dostępu i personalizacji usług.

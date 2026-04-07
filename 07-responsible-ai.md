@@ -2,6 +2,8 @@
 
 # 7. **Responsible AI (Odpowiedzialna AI)** – zasady i etyka
 
+![Responsible AI](assets/responsible-ai.svg)
+
 ## Czym jest **Responsible AI**?
 - **Responsible AI** to zbiór zasad, praktyk i narzędzi, które mają zapewnić, że systemy sztucznej inteligencji są tworzone i wdrażane w sposób etyczny, bezpieczny, przejrzysty i sprawiedliwy. Odpowiedzialna AI minimalizuje ryzyko błędów, uprzedzeń i negatywnego wpływu na użytkowników oraz społeczeństwo.
 

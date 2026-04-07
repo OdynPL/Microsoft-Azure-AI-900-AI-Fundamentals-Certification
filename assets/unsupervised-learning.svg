@@ -1,14 +1,12 @@
-<svg viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
-  <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
-  </defs>
-  <rect width="300" height="110" fill="white" rx="10" stroke="#e2e8f0" stroke-width="1"/>
-  <rect width="300" height="36" fill="#059669" rx="10"/><rect y="24" width="300" height="12" fill="#059669"/>
-  <text x="150" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="white">Unsupervised Learning</text>
-  <rect x="12" y="48" width="110" height="40" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
-  <text x="67" y="73" text-anchor="middle" font-size="10" font-weight="600" fill="#065f46">📊 Dane (bez etykiet)</text>
-  <line x1="122" y1="68" x2="150" y2="68" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="156" y="48" width="132" height="40" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
-  <text x="222" y="73" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">🧠 Model (wzorce)</text>
-  <text x="150" y="104" text-anchor="middle" font-size="8" fill="#64748b">Clustering · Anomaly Detection · Redukcja wymiarów</text>
+<svg viewBox="0 0 400 52" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs><marker id="a" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5" fill="none" stroke="#b3b3b3" stroke-width="1"/></marker></defs>
+  <rect x="0" y="6" width="100" height="32" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="50" y="26" text-anchor="middle" font-size="9" font-weight="600" fill="#505050">Dane (bez etykiet)</text>
+  <line x1="102" y1="22" x2="128" y2="22" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <rect x="132" y="6" width="76" height="32" rx="3" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/>
+  <text x="170" y="26" text-anchor="middle" font-size="9" font-weight="600" fill="#0078d4">Algorytm</text>
+  <line x1="210" y1="22" x2="236" y2="22" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <rect x="240" y="6" width="152" height="32" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="316" y="26" text-anchor="middle" font-size="9" font-weight="600" fill="#505050">Klastry / Wzorce</text>
+  <text x="200" y="50" text-anchor="middle" font-size="7.5" fill="#8a8a8a">Klasteryzacja · Redukcja wymiarów · Brak etykiet</text>
 </svg>

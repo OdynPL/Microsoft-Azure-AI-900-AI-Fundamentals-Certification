@@ -1,17 +1,14 @@
-<svg viewBox="0 0 480 120" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
-  <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
-  </defs>
-  <rect width="480" height="120" fill="white" rx="10" stroke="#e2e8f0" stroke-width="1"/>
-  <rect width="480" height="36" fill="#1e40af" rx="10"/><rect y="24" width="480" height="12" fill="#1e40af"/>
-  <text x="240" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="white">Azure AI Language</text>
-  <rect x="12" y="50" width="100" height="44" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="62" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="#1e40af">📝 Tekst</text>
-  <line x1="112" y1="72" x2="140" y2="72" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="146" y="50" width="170" height="44" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
-  <text x="231" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="#6d28d9">🧠 Analiza języka</text>
-  <line x1="316" y1="72" x2="344" y2="72" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="350" y="50" width="118" height="44" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
-  <text x="409" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="#065f46">✅ Wynik</text>
-  <text x="240" y="112" text-anchor="middle" font-size="8" fill="#64748b">Sentiment · NER · PII · CLU · Key Phrases · Linked Entities · Summarization</text>
+<svg viewBox="0 0 480 80" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs><marker id="a" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5" fill="none" stroke="#b3b3b3" stroke-width="1"/></marker></defs>
+  <text x="240" y="10" text-anchor="middle" font-size="9" font-weight="600" fill="#0078d4">Azure AI Language</text>
+  <rect x="0" y="18" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="46" y="34" text-anchor="middle" font-size="7" fill="#505050">Sentyment</text>
+  <rect x="96" y="18" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="142" y="34" text-anchor="middle" font-size="7" fill="#505050">Key Phrases</text>
+  <rect x="192" y="18" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="238" y="34" text-anchor="middle" font-size="7" fill="#505050">NER / PII</text>
+  <rect x="288" y="18" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="334" y="34" text-anchor="middle" font-size="7" fill="#505050">Summarization</text>
+  <rect x="384" y="18" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="430" y="34" text-anchor="middle" font-size="7" fill="#505050">Translation</text>
+  <rect x="0" y="46" width="92" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="46" y="62" text-anchor="middle" font-size="7" font-weight="600" fill="#0078d4">CLU</text>
+  <rect x="96" y="46" width="92" height="24" rx="2" fill="#e8f4fd" stroke="#0078d4" stroke-width="0.75"/><text x="142" y="62" text-anchor="middle" font-size="7" font-weight="600" fill="#0078d4">Q&amp;A</text>
+  <rect x="192" y="46" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="238" y="62" text-anchor="middle" font-size="7" fill="#505050">Custom NER</text>
+  <rect x="288" y="46" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="334" y="62" text-anchor="middle" font-size="7" fill="#505050">Custom Classif.</text>
+  <rect x="384" y="46" width="92" height="24" rx="2" fill="#f3f3f3" stroke="#e8e8e8"/><text x="430" y="62" text-anchor="middle" font-size="7" fill="#505050">Lang Detection</text>
 </svg>

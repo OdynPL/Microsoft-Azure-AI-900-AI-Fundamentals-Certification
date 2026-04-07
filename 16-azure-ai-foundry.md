@@ -3,7 +3,7 @@
 # Azure AI Foundry
 
 
-![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
+![Azure AI Foundry](assets/azure-ai-foundry.svg)
 
 ## Opis usługi
 Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli AI w środowisku Azure. Umożliwia organizacjom centralne przechowywanie modeli, zarządzanie ich wersjami, udostępnianie modeli zespołom oraz monitorowanie ich wykorzystania i wydajności. Foundry wspiera zarówno modele własne, jak i modele open source oraz komercyjne.
