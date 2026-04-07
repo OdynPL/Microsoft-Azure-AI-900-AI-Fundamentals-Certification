@@ -69,23 +69,13 @@
 	- **Data Privacy Toolkit** – narzędzia do anonimizacji i ochrony danych
 
 ## Usługi **Azure AI**
-- **Azure AI Vision** – analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy
-- **Azure AI Face** – rozpoznawanie i analiza twarzy (identyfikacja, emocje)
-- **Azure AI Language** – analiza tekstu, ekstrakcja kluczowych fraz, rozpoznawanie encji, analiza sentymentu, tłumaczenia
-- **Azure AI Speech** – rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie
-- **Azure OpenAI** – generowanie tekstu, obrazów, kodu (modele GPT, DALL-E)
-- **Azure AI Foundry** – katalog modeli AI, zarządzanie i wdrażanie modeli
-- **Azure Machine Learning** – trenowanie, wdrażanie i zarządzanie własnymi modelami ML, automatyzacja procesów ML (AutoML), rejestr modeli, endpointy
-
-**Dodatkowe wyjaśnienia usług Azure AI:**
-- **Azure AI Vision** – obsługuje klasyfikację obrazów, detekcję obiektów, OCR, analizę cech wizualnych, moderację treści
-- **Azure AI Face** – detekcja, identyfikacja, analiza emocji, weryfikacja tożsamości, grupowanie twarzy
-- **Azure AI Language** – analiza sentymentu, ekstrakcja fraz, rozpoznawanie encji, tłumaczenia, klasyfikacja tekstu, wyszukiwanie semantyczne
-- **Azure AI Speech** – rozpoznawanie mowy, synteza mowy, rozpoznawanie mówców, tłumaczenia mowy w czasie rzeczywistym
-- **Azure OpenAI** – generowanie tekstu, obrazów, kodu, podsumowań, tłumaczeń, wsparcie dla prompt engineering
-- **Azure AI Foundry** – katalog modeli, zarządzanie cyklem życia modeli, integracja z innymi usługami
-- **Azure Machine Learning** – eksperymenty ML, pipeline’y, AutoML, rejestr modeli, endpointy, monitoring, audyt
-
+- **Azure AI Vision** – analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, analiza cech wizualnych, moderacja treści
+- **Azure AI Face** – detekcja, identyfikacja i weryfikacja tożsamości, analiza emocji, grupowanie twarzy
+- **Azure AI Language** – analiza sentymentu, ekstrakcja kluczowych fraz, rozpoznawanie encji, tłumaczenia, klasyfikacja tekstu, wyszukiwanie semantyczne
+- **Azure AI Speech** – rozpoznawanie mowy (STT), synteza mowy (TTS), rozpoznawanie mówców, tłumaczenia mowy w czasie rzeczywistym
+- **Azure OpenAI** – generowanie tekstu, obrazów, kodu, podsumowań i tłumaczeń (modele GPT-4, DALL-E), wsparcie dla prompt engineering
+- **Azure AI Foundry** – katalog modeli AI, zarządzanie cyklem życia modeli, integracja z innymi usługami
+- **Azure Machine Learning** – trenowanie, wdrażanie i zarządzanie modelami ML, AutoML, pipeline'y, rejestr modeli, endpointy, monitoring, audyt
 
 ![Przegląd usług Azure AI](assets/azure-ai-overview.svg)
 

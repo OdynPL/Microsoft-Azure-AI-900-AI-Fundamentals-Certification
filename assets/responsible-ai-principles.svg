@@ -1,69 +1,59 @@
-<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f1b0d"/>
-      <stop offset="100%" style="stop-color:#1a2c18"/>
-    </linearGradient>
-  </defs>
-  <rect width="900" height="460" fill="url(#bg)" rx="16"/>
-  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">Responsible AI – 6 Zasad Microsoft</text>
-  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#a5d6a7">Fundament etycznego i bezpiecznego wdrażania sztucznej inteligencji</text>
+<svg viewBox="0 0 780 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
+  <rect width="780" height="420" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="780" height="48" fill="#059669" rx="12"/><rect y="36" width="780" height="12" fill="#059669"/>
+  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Responsible AI – 6 Zasad Microsoft</text>
+  <text x="390" y="74" text-anchor="middle" font-size="11" fill="#64748b">Fundament etycznego i bezpiecznego wdrażania sztucznej inteligencji</text>
+  <!-- Row 1: 3 principles -->
+  <rect x="16" y="92" width="242" height="130" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="137" y="116" text-anchor="middle" font-size="24">⚖️</text>
+  <text x="137" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Fairness</text>
+  <text x="137" y="158" text-anchor="middle" font-size="10" fill="#374151">Równe traktowanie</text>
+  <text x="137" y="174" text-anchor="middle" font-size="10" fill="#374151">bez dyskryminacji</text>
+  <text x="137" y="194" text-anchor="middle" font-size="9" fill="#1e40af">Narzędzie: Fairlearn</text>
+  <text x="137" y="210" text-anchor="middle" font-size="9" fill="#64748b">Brak bias w danych i modelu</text>
 
-  <!-- Center circle -->
-  <circle cx="450" cy="240" r="60" fill="#1b2e1b" stroke="#388e3c" stroke-width="3"/>
-  <text x="450" y="233" text-anchor="middle" font-size="13" font-weight="bold" fill="#a5d6a7">Responsible</text>
-  <text x="450" y="252" text-anchor="middle" font-size="13" font-weight="bold" fill="#a5d6a7">AI</text>
+  <rect x="270" y="92" width="242" height="130" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="391" y="116" text-anchor="middle" font-size="24">🛡️</text>
+  <text x="391" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">Reliability &amp; Safety</text>
+  <text x="391" y="158" text-anchor="middle" font-size="10" fill="#374151">Stabilne, bezpieczne</text>
+  <text x="391" y="174" text-anchor="middle" font-size="10" fill="#374151">działanie systemu AI</text>
+  <text x="391" y="194" text-anchor="middle" font-size="9" fill="#065f46">Testowanie, walidacja</text>
+  <text x="391" y="210" text-anchor="middle" font-size="9" fill="#64748b">Fallback, obsługa błędów</text>
 
-  <!-- Fairness -->
-  <rect x="30" y="80" width="175" height="120" rx="12" fill="#0d47a1" stroke="#42a5f5" stroke-width="2"/>
-  <text x="117" y="107" text-anchor="middle" font-size="28">⚖️</text>
-  <text x="117" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#64b5f6">Fairness</text>
-  <text x="117" y="150" text-anchor="middle" font-size="10" fill="#90caf9">Równe traktowanie</text>
-  <text x="117" y="165" text-anchor="middle" font-size="10" fill="#90caf9">bez dyskryminacji</text>
-  <text x="117" y="182" text-anchor="middle" font-size="10" fill="#64b5f6">Narzędzie: Fairlearn</text>
-  <line x1="207" y1="165" x2="392" y2="210" stroke="#1e88e5" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="524" y="92" width="240" height="130" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="644" y="116" text-anchor="middle" font-size="24">🔒</text>
+  <text x="644" y="140" text-anchor="middle" font-size="14" font-weight="700" fill="#6d28d9">Privacy &amp; Security</text>
+  <text x="644" y="158" text-anchor="middle" font-size="10" fill="#374151">Ochrona danych</text>
+  <text x="644" y="174" text-anchor="middle" font-size="10" fill="#374151">osobowych (RODO)</text>
+  <text x="644" y="194" text-anchor="middle" font-size="9" fill="#6d28d9">Bezpieczeństwo infrastruktury</text>
+  <text x="644" y="210" text-anchor="middle" font-size="9" fill="#64748b">Szyfrowanie, kontrola dostępu</text>
 
-  <!-- Reliability & Safety -->
-  <rect x="350" y="60" width="195" height="120" rx="12" fill="#004d40" stroke="#4db6ac" stroke-width="2"/>
-  <text x="447" y="87" text-anchor="middle" font-size="28">🛡️</text>
-  <text x="447" y="110" text-anchor="middle" font-size="13" font-weight="bold" fill="#4db6ac">Reliability</text>
-  <text x="447" y="128" text-anchor="middle" font-size="13" font-weight="bold" fill="#4db6ac">&amp; Safety</text>
-  <text x="447" y="148" text-anchor="middle" font-size="10" fill="#b2dfdb">Stabilne, bezpieczne</text>
-  <text x="447" y="165" text-anchor="middle" font-size="10" fill="#b2dfdb">działanie systemu AI</text>
-  <line x1="447" y1="182" x2="450" y2="178" stroke="#4db6ac" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- Row 2: 3 principles -->
+  <rect x="16" y="238" width="242" height="130" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="137" y="262" text-anchor="middle" font-size="24">🌍</text>
+  <text x="137" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Inclusiveness</text>
+  <text x="137" y="304" text-anchor="middle" font-size="10" fill="#374151">Dostępność dla</text>
+  <text x="137" y="320" text-anchor="middle" font-size="10" fill="#374151">wszystkich grup</text>
+  <text x="137" y="340" text-anchor="middle" font-size="9" fill="#92400e">Accessibility</text>
+  <text x="137" y="356" text-anchor="middle" font-size="9" fill="#64748b">Wielojęzyczność, czytniki</text>
 
-  <!-- Privacy & Security -->
-  <rect x="690" y="80" width="175" height="120" rx="12" fill="#4a148c" stroke="#ce93d8" stroke-width="2"/>
-  <text x="777" y="107" text-anchor="middle" font-size="28">🔒</text>
-  <text x="777" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#ce93d8">Privacy</text>
-  <text x="777" y="148" text-anchor="middle" font-size="10" fill="#e1bee7">Ochrona danych</text>
-  <text x="777" y="163" text-anchor="middle" font-size="10" fill="#e1bee7">osobowych (RODO)</text>
-  <text x="777" y="180" text-anchor="middle" font-size="10" fill="#ce93d8">Bezpieczeństwo</text>
-  <line x1="688" y1="165" x2="508" y2="210" stroke="#9c27b0" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="270" y="238" width="242" height="130" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="391" y="262" text-anchor="middle" font-size="24">🔍</text>
+  <text x="391" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">Transparency</text>
+  <text x="391" y="304" text-anchor="middle" font-size="10" fill="#374151">Wyjaśnialność decyzji</text>
+  <text x="391" y="320" text-anchor="middle" font-size="10" fill="#374151">Model interpretability</text>
+  <text x="391" y="340" text-anchor="middle" font-size="9" fill="#dc2626">SHAP, LIME, dashboardy</text>
+  <text x="391" y="356" text-anchor="middle" font-size="9" fill="#64748b">Użytkownik wie, że rozmawia z AI</text>
 
-  <!-- Inclusiveness -->
-  <rect x="30" y="300" width="175" height="120" rx="12" fill="#1b3a1b" stroke="#66bb6a" stroke-width="2"/>
-  <text x="117" y="326" text-anchor="middle" font-size="28">🌍</text>
-  <text x="117" y="350" text-anchor="middle" font-size="14" font-weight="bold" fill="#66bb6a">Inclusiveness</text>
-  <text x="117" y="370" text-anchor="middle" font-size="10" fill="#a5d6a7">Dostępność dla</text>
-  <text x="117" y="385" text-anchor="middle" font-size="10" fill="#a5d6a7">wszystkich grup</text>
-  <text x="117" y="400" text-anchor="middle" font-size="10" fill="#66bb6a">Accessibility</text>
-  <line x1="207" y1="330" x2="392" y2="278" stroke="#43a047" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="524" y="238" width="240" height="130" rx="10" fill="#f8fafc" stroke="#374151" stroke-width="2"/>
+  <text x="644" y="262" text-anchor="middle" font-size="24">📋</text>
+  <text x="644" y="286" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">Accountability</text>
+  <text x="644" y="304" text-anchor="middle" font-size="10" fill="#374151">Odpowiedzialność</text>
+  <text x="644" y="320" text-anchor="middle" font-size="10" fill="#374151">za decyzje AI</text>
+  <text x="644" y="340" text-anchor="middle" font-size="9" fill="#374151">Governance, audyty</text>
+  <text x="644" y="356" text-anchor="middle" font-size="9" fill="#64748b">Nadzór ludzki, Impact Assessment</text>
 
-  <!-- Transparency -->
-  <rect x="350" y="340" width="195" height="110" rx="12" fill="#e65100" stroke="#ffb74d" stroke-width="2"/>
-  <text x="447" y="366" text-anchor="middle" font-size="28">🔍</text>
-  <text x="447" y="390" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffb74d">Transparency</text>
-  <text x="447" y="410" text-anchor="middle" font-size="10" fill="#ffe0b2">Wyjaśnialność decyzji</text>
-  <text x="447" y="427" text-anchor="middle" font-size="10" fill="#ffe0b2">SHAP, LIME, dashboardy</text>
-  <line x1="447" y1="340" x2="450" y2="302" stroke="#f57c00" stroke-width="1.5" stroke-dasharray="5,4"/>
-
-  <!-- Accountability -->
-  <rect x="690" y="300" width="175" height="120" rx="12" fill="#b71c1c" stroke="#ef9a9a" stroke-width="2"/>
-  <text x="777" y="326" text-anchor="middle" font-size="28">📋</text>
-  <text x="777" y="350" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef9a9a">Accountability</text>
-  <text x="777" y="370" text-anchor="middle" font-size="10" fill="#ffcdd2">Odpowiedzialność</text>
-  <text x="777" y="385" text-anchor="middle" font-size="10" fill="#ffcdd2">za decyzje AI</text>
-  <text x="777" y="400" text-anchor="middle" font-size="10" fill="#ef9a9a">Governance</text>
-  <line x1="688" y1="330" x2="508" y2="278" stroke="#e53935" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- Footer -->
+  <rect x="16" y="384" width="748" height="24" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
+  <text x="390" y="400" text-anchor="middle" font-size="9" fill="#065f46">Wszystkie 6 zasad dotyczy pełnego cyklu życia AI: projektowanie → rozwój → wdrożenie → monitoring</text>
 </svg>

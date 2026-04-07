@@ -1,119 +1,97 @@
-<svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+<svg viewBox="0 0 780 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a1628"/>
-      <stop offset="100%" style="stop-color:#162035"/>
-    </linearGradient>
-    <linearGradient id="nocode" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#004d40"/>
-      <stop offset="100%" style="stop-color:#003328"/>
-    </linearGradient>
-    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#80cbc4"/>
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
   </defs>
-  <rect width="900" height="440" fill="url(#bg)" rx="16"/>
-  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">No-code / Low-code ML na Azure</text>
-  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#80cbc4">Od danych do wdrożonego modelu – bez pisania kodu</text>
-
+  <rect width="780" height="420" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="780" height="48" fill="#1e40af" rx="12"/><rect y="36" width="780" height="12" fill="#1e40af"/>
+  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">No-code / Low-code ML na Azure</text>
   <!-- Spectrum bar -->
-  <rect x="30" y="82" width="835" height="30" rx="15" fill="#1e2e3e" stroke="#42a5f5" stroke-width="1"/>
-  <rect x="30" y="82" width="280" height="30" rx="15" fill="#004d40" opacity="0.9"/>
-  <rect x="310" y="82" width="280" height="30" rx="0" fill="#1a237e" opacity="0.9"/>
-  <rect x="590" y="82" width="275" height="30" rx="15" fill="#3e0000" opacity="0.9"/>
-  <text x="168" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#80cbc4">NO-CODE</text>
-  <text x="450" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#9fa8da">LOW-CODE</text>
-  <text x="728" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#ef9a9a">FULL-CODE</text>
-
-  <!-- Tool 1: Azure ML Designer -->
-  <rect x="20" y="130" width="200" height="150" rx="12" fill="url(#nocode)" stroke="#4db6ac" stroke-width="2"/>
-  <text x="120" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="#4db6ac">🎨 ML Designer</text>
-  <text x="120" y="177" text-anchor="middle" font-size="11" fill="#b2dfdb">Drag &amp; Drop pipeline</text>
-  <text x="120" y="196" text-anchor="middle" font-size="10" fill="#b2dfdb">Azure Machine Learning</text>
-  <text x="35" y="216" font-size="10" fill="#80cbc4">✔ Moduły gotowe</text>
-  <text x="35" y="232" font-size="10" fill="#80cbc4">✔ Wizualny przepływ</text>
-  <text x="35" y="248" font-size="10" fill="#80cbc4">✔ Export do kodu Python</text>
-  <text x="35" y="268" font-size="9" fill="#64b5f6">→ Dla data scientistów</text>
-
+  <rect x="16" y="62" width="248" height="28" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="140" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">NO-CODE</text>
+  <rect x="270" y="62" width="240" height="28" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="390" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">LOW-CODE</text>
+  <rect x="516" y="62" width="248" height="28" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="640" y="81" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">FULL-CODE</text>
+  <!-- Tool 1: ML Designer -->
+  <rect x="16" y="106" width="180" height="140" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="106" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">🎨 ML Designer</text>
+  <text x="106" y="148" text-anchor="middle" font-size="10" fill="#374151">Drag &amp; Drop pipeline</text>
+  <text x="106" y="164" text-anchor="middle" font-size="10" fill="#374151">Azure Machine Learning</text>
+  <text x="106" y="186" text-anchor="middle" font-size="9" fill="#64748b">✔ Moduły gotowe</text>
+  <text x="106" y="200" text-anchor="middle" font-size="9" fill="#64748b">✔ Wizualny przepływ</text>
+  <text x="106" y="214" text-anchor="middle" font-size="9" fill="#64748b">✔ Export do kodu Python</text>
+  <text x="106" y="232" text-anchor="middle" font-size="9" fill="#059669">→ Dla data scientistów</text>
   <!-- Tool 2: AutoML -->
-  <rect x="230" y="130" width="200" height="150" rx="12" fill="#0d2137" stroke="#42a5f5" stroke-width="2"/>
-  <text x="330" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="#42a5f5">🤖 AutoML</text>
-  <text x="330" y="177" text-anchor="middle" font-size="11" fill="#90caf9">Automatyczne ML</text>
-  <text x="330" y="196" text-anchor="middle" font-size="10" fill="#90caf9">Azure Machine Learning</text>
-  <text x="245" y="216" font-size="10" fill="#64b5f6">✔ Klasyfikacja, regresja</text>
-  <text x="245" y="232" font-size="10" fill="#64b5f6">✔ Szeregi czasowe</text>
-  <text x="245" y="248" font-size="10" fill="#64b5f6">✔ Computer Vision NLP</text>
-  <text x="245" y="268" font-size="9" fill="#42a5f5">→ Wskaż dane, reszta auto</text>
-
+  <rect x="208" y="106" width="180" height="140" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="298" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">🤖 AutoML</text>
+  <text x="298" y="148" text-anchor="middle" font-size="10" fill="#374151">Automatyczne ML</text>
+  <text x="298" y="164" text-anchor="middle" font-size="10" fill="#374151">Azure Machine Learning</text>
+  <text x="298" y="186" text-anchor="middle" font-size="9" fill="#64748b">✔ Klasyfikacja, regresja</text>
+  <text x="298" y="200" text-anchor="middle" font-size="9" fill="#64748b">✔ Szeregi czasowe</text>
+  <text x="298" y="214" text-anchor="middle" font-size="9" fill="#64748b">✔ Computer Vision, NLP</text>
+  <text x="298" y="232" text-anchor="middle" font-size="9" fill="#1e40af">→ Wskaż dane, reszta auto</text>
   <!-- Tool 3: AI Builder -->
-  <rect x="440" y="130" width="200" height="150" rx="12" fill="#1a237e" stroke="#7986cb" stroke-width="2"/>
-  <text x="540" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="#9fa8da">⚡ AI Builder</text>
-  <text x="540" y="177" text-anchor="middle" font-size="11" fill="#c5cae9">Power Platform</text>
-  <text x="540" y="196" text-anchor="middle" font-size="10" fill="#c5cae9">Power Apps / Automate</text>
-  <text x="455" y="216" font-size="10" fill="#9fa8da">✔ Analiza dokumentów</text>
-  <text x="455" y="232" font-size="10" fill="#9fa8da">✔ Klasyfikacja tekstu</text>
-  <text x="455" y="248" font-size="10" fill="#9fa8da">✔ Predykcja biznesowa</text>
-  <text x="455" y="268" font-size="9" fill="#7986cb">→ Dla użytkowników biz.</text>
-
+  <rect x="400" y="106" width="180" height="140" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="490" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">⚡ AI Builder</text>
+  <text x="490" y="148" text-anchor="middle" font-size="10" fill="#374151">Power Platform</text>
+  <text x="490" y="164" text-anchor="middle" font-size="10" fill="#374151">Power Apps / Automate</text>
+  <text x="490" y="186" text-anchor="middle" font-size="9" fill="#64748b">✔ Analiza dokumentów</text>
+  <text x="490" y="200" text-anchor="middle" font-size="9" fill="#64748b">✔ Klasyfikacja tekstu</text>
+  <text x="490" y="214" text-anchor="middle" font-size="9" fill="#64748b">✔ Predykcja biznesowa</text>
+  <text x="490" y="232" text-anchor="middle" font-size="9" fill="#6d28d9">→ Dla użytkowników biz.</text>
   <!-- Tool 4: Copilot Studio -->
-  <rect x="650" y="130" width="220" height="150" rx="12" fill="#4a0072" stroke="#ce93d8" stroke-width="2"/>
-  <text x="760" y="157" text-anchor="middle" font-size="13" font-weight="bold" fill="#ce93d8">🤖 Copilot Studio</text>
-  <text x="760" y="177" text-anchor="middle" font-size="11" fill="#e1bee7">Chatboty &amp; Agenty AI</text>
-  <text x="760" y="196" text-anchor="middle" font-size="10" fill="#e1bee7">dawniej Power Virtual Agents</text>
-  <text x="663" y="216" font-size="10" fill="#ce93d8">✔ Gen AI (GPT) wbudowane</text>
-  <text x="663" y="232" font-size="10" fill="#ce93d8">✔ Custom Knowledge Base</text>
-  <text x="663" y="248" font-size="10" fill="#ce93d8">✔ Teams, web, apps</text>
-  <text x="663" y="268" font-size="9" fill="#b39ddb">→ Dla biz. i deweloperów</text>
+  <rect x="592" y="106" width="172" height="140" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="678" y="130" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">🤖 Copilot Studio</text>
+  <text x="678" y="148" text-anchor="middle" font-size="10" fill="#374151">Chatboty &amp; Agenty AI</text>
+  <text x="678" y="164" text-anchor="middle" font-size="10" fill="#374151">dawniej Power VA</text>
+  <text x="678" y="186" text-anchor="middle" font-size="9" fill="#64748b">✔ Gen AI (GPT) wbudowane</text>
+  <text x="678" y="200" text-anchor="middle" font-size="9" fill="#64748b">✔ Custom Knowledge Base</text>
+  <text x="678" y="214" text-anchor="middle" font-size="9" fill="#64748b">✔ Teams, web, apps</text>
+  <text x="678" y="232" text-anchor="middle" font-size="9" fill="#92400e">→ Dla biz. i deweloperów</text>
+  <!-- AutoML Flow -->
+  <rect x="16" y="262" width="748" height="140" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="390" y="284" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Przepływ AutoML – typowy egzaminacyjny scenariusz</text>
+  <!-- 7 steps -->
+  <rect x="28" y="298" width="86" height="56" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="71" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#1e40af">1. Dane</text>
+  <text x="71" y="334" text-anchor="middle" font-size="8" fill="#64748b">CSV/Azure</text>
+  <text x="71" y="346" text-anchor="middle" font-size="8" fill="#64748b">Blob/SQL</text>
+  <line x1="114" y1="326" x2="128" y2="326" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <!-- Bottom process flow -->
-  <rect x="20" y="306" width="855" height="110" rx="12" fill="#0d1b0d" stroke="#388e3c" stroke-width="2"/>
-  <text x="450" y="328" text-anchor="middle" font-size="13" font-weight="bold" fill="#a5d6a7">Przepływ AutoML – typowy egzaminacyjny scenariusz</text>
+  <rect x="134" y="298" width="86" height="56" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="177" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#065f46">2. Zadanie</text>
+  <text x="177" y="334" text-anchor="middle" font-size="8" fill="#64748b">Klasyfikacja</text>
+  <text x="177" y="346" text-anchor="middle" font-size="8" fill="#64748b">Regresja...</text>
+  <line x1="220" y1="326" x2="234" y2="326" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <!-- Steps -->
-  <rect x="35" y="338" width="100" height="64" rx="8" fill="#1b3a1b" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="85" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#a5d6a7">1. Dane</text>
-  <text x="85" y="376" text-anchor="middle" font-size="10" fill="#81c784">CSV/Azure</text>
-  <text x="85" y="391" text-anchor="middle" font-size="10" fill="#81c784">Blob/SQL</text>
+  <rect x="240" y="298" width="86" height="56" rx="8" fill="#fefce8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="283" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#92400e">3. Config</text>
+  <text x="283" y="334" text-anchor="middle" font-size="8" fill="#64748b">Max czas</text>
+  <text x="283" y="346" text-anchor="middle" font-size="8" fill="#64748b">metryka</text>
+  <line x1="326" y1="326" x2="340" y2="326" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <line x1="137" y1="370" x2="160" y2="370" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="346" y="298" width="86" height="56" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="389" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#6d28d9">4. Trening</text>
+  <text x="389" y="334" text-anchor="middle" font-size="8" fill="#64748b">Wiele algorytmów</text>
+  <text x="389" y="346" text-anchor="middle" font-size="8" fill="#64748b">auto-tuning</text>
+  <line x1="432" y1="326" x2="446" y2="326" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="162" y="338" width="100" height="64" rx="8" fill="#1b3a1b" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="212" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#a5d6a7">2. Zadanie</text>
-  <text x="212" y="376" text-anchor="middle" font-size="10" fill="#81c784">Klasyfikacja</text>
-  <text x="212" y="391" text-anchor="middle" font-size="10" fill="#81c784">Regresja...</text>
+  <rect x="452" y="298" width="86" height="56" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="495" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#065f46">5. Najlepszy</text>
+  <text x="495" y="334" text-anchor="middle" font-size="8" fill="#64748b">model wybrany</text>
+  <text x="495" y="346" text-anchor="middle" font-size="8" fill="#64748b">automatycznie</text>
+  <line x1="538" y1="326" x2="552" y2="326" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <line x1="264" y1="370" x2="287" y2="370" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="558" y="298" width="86" height="56" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="601" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#1e40af">6. Deploy</text>
+  <text x="601" y="334" text-anchor="middle" font-size="8" fill="#64748b">REST API</text>
+  <text x="601" y="346" text-anchor="middle" font-size="8" fill="#64748b">Endpoint</text>
+  <line x1="644" y1="326" x2="658" y2="326" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="289" y="338" width="100" height="64" rx="8" fill="#1b3a1b" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="339" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#a5d6a7">3. Konfiguracja</text>
-  <text x="339" y="376" text-anchor="middle" font-size="10" fill="#81c784">Max czas</text>
-  <text x="339" y="391" text-anchor="middle" font-size="10" fill="#81c784">metryka</text>
+  <rect x="664" y="298" width="86" height="56" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="707" y="318" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626">7. Monitor</text>
+  <text x="707" y="334" text-anchor="middle" font-size="8" fill="#64748b">drift, metrics</text>
+  <text x="707" y="346" text-anchor="middle" font-size="8" fill="#64748b">retraining</text>
 
-  <line x1="391" y1="370" x2="414" y2="370" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
-
-  <rect x="416" y="338" width="100" height="64" rx="8" fill="#1b3a1b" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="466" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#a5d6a7">4. Trening</text>
-  <text x="466" y="376" text-anchor="middle" font-size="10" fill="#81c784">Wiele algo.</text>
-  <text x="466" y="391" text-anchor="middle" font-size="10" fill="#81c784">auto-tuning</text>
-
-  <line x1="518" y1="370" x2="541" y2="370" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
-
-  <rect x="543" y="338" width="100" height="64" rx="8" fill="#1b3a1b" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="593" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#a5d6a7">5. Najlepszy</text>
-  <text x="593" y="376" text-anchor="middle" font-size="10" fill="#81c784">model</text>
-  <text x="593" y="391" text-anchor="middle" font-size="10" fill="#81c784">wybrany auto</text>
-
-  <line x1="645" y1="370" x2="668" y2="370" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
-
-  <rect x="670" y="338" width="100" height="64" rx="8" fill="#1b3a1b" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="720" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#a5d6a7">6. Deploy</text>
-  <text x="720" y="376" text-anchor="middle" font-size="10" fill="#81c784">REST API</text>
-  <text x="720" y="391" text-anchor="middle" font-size="10" fill="#81c784">Endpoint</text>
-
-  <line x1="772" y1="370" x2="795" y2="370" stroke="#80cbc4" stroke-width="2" marker-end="url(#arr)"/>
-
-  <rect x="797" y="338" width="68" height="64" rx="8" fill="#0d47a1" stroke="#42a5f5" stroke-width="1.5"/>
-  <text x="831" y="360" text-anchor="middle" font-size="10" font-weight="bold" fill="#42a5f5">7. Monitor</text>
-  <text x="831" y="376" text-anchor="middle" font-size="9" fill="#90caf9">drift,</text>
-  <text x="831" y="391" text-anchor="middle" font-size="9" fill="#90caf9">metrics</text>
+  <text x="390" y="378" text-anchor="middle" font-size="9" fill="#64748b">AutoML automatycznie testuje wiele algorytmów i wybiera najlepszy model na podstawie wybranej metryki</text>
 </svg>

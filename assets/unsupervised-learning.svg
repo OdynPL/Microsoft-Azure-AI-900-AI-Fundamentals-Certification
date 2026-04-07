@@ -1,31 +1,14 @@
-<svg width="260" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
   <defs>
-    <linearGradient id="unsup1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#b3f7d1"/>
-      <stop offset="100%" stop-color="#4ecb8c"/>
-    </linearGradient>
-    <linearGradient id="model1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#e3b3f7"/>
-      <stop offset="100%" stop-color="#b97fdc"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#b0c4de"/>
-    </filter>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#888" />
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
   </defs>
-  <rect width="260" height="120" rx="18" fill="#fafdff"/>
-  <g font-family="Segoe UI, Arial">
-    <text x="130" y="28" text-anchor="middle" font-size="20" fill="#1a355e" font-weight="bold">Unsupervised Learning</text>
-    <g font-size="13">
-      <g filter="url(#shadow)">
-        <rect x="30" y="55" width="80" height="40" rx="10" fill="url(#unsup1)"/>
-        <text x="70" y="80" text-anchor="middle" fill="#1a3e2b" font-weight="bold">Dane</text>
-        <rect x="130" y="55" width="100" height="40" rx="10" fill="url(#model1)"/>
-        <text x="180" y="80" text-anchor="middle" fill="#4e1a7a" font-weight="bold">Model</text>
-      </g>
-      <polyline points="110,75 130,75" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
-    </g>
-  </g>
+  <rect width="300" height="110" fill="white" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="300" height="36" fill="#059669" rx="10"/><rect y="24" width="300" height="12" fill="#059669"/>
+  <text x="150" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="white">Unsupervised Learning</text>
+  <rect x="12" y="48" width="110" height="40" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="67" y="73" text-anchor="middle" font-size="10" font-weight="600" fill="#065f46">📊 Dane (bez etykiet)</text>
+  <line x1="122" y1="68" x2="150" y2="68" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="156" y="48" width="132" height="40" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="222" y="73" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">🧠 Model (wzorce)</text>
+  <text x="150" y="104" text-anchor="middle" font-size="8" fill="#64748b">Clustering · Anomaly Detection · Redukcja wymiarów</text>
 </svg>

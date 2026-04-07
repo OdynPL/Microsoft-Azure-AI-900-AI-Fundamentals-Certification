@@ -1,103 +1,84 @@
-<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+<svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a0a2e"/>
-      <stop offset="100%" style="stop-color:#2d1b4e"/>
-    </linearGradient>
-    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#ce93d8"/>
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
   </defs>
-  <rect width="900" height="460" fill="url(#bg)" rx="16"/>
-  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">Azure OpenAI – Architektura i kluczowe koncepcje</text>
-  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#ce93d8">GPT-4, DALL-E, Embeddings, Fine-tuning, Content Filters</text>
-
-  <!-- User/App -->
-  <rect x="20" y="100" width="130" height="80" rx="10" fill="#1565c0" stroke="#42a5f5" stroke-width="2"/>
-  <text x="85" y="128" text-anchor="middle" font-size="13" font-weight="bold" fill="white">💻 Aplikacja</text>
-  <text x="85" y="148" text-anchor="middle" font-size="11" fill="#90caf9">REST API call</text>
-  <text x="85" y="165" text-anchor="middle" font-size="10" fill="#64b5f6">api-key / AAD token</text>
-
-  <line x1="153" y1="140" x2="185" y2="140" stroke="#ce93d8" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- System message + User message -->
-  <rect x="185" y="90" width="165" height="100" rx="10" fill="#4a148c" stroke="#ce93d8" stroke-width="2"/>
-  <text x="267" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#e1bee7">📝 Prompt</text>
-  <text x="267" y="133" text-anchor="middle" font-size="10" fill="#ce93d8">System message</text>
-  <text x="267" y="149" text-anchor="middle" font-size="10" fill="#ce93d8">(rola / instrukcja)</text>
-  <text x="267" y="165" text-anchor="middle" font-size="10" fill="#b39ddb">+ User message</text>
-  <text x="267" y="180" text-anchor="middle" font-size="10" fill="#b39ddb">(pytanie / zadanie)</text>
-
-  <line x1="352" y1="140" x2="384" y2="140" stroke="#ce93d8" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Content Filter IN -->
-  <rect x="384" y="100" width="130" height="80" rx="10" fill="#b71c1c" stroke="#ef9a9a" stroke-width="2"/>
-  <text x="449" y="124" text-anchor="middle" font-size="12" font-weight="bold" fill="white">🛡 Filter</text>
-  <text x="449" y="142" text-anchor="middle" font-size="10" fill="#ffcdd2">Input filtering</text>
-  <text x="449" y="158" text-anchor="middle" font-size="10" fill="#ffcdd2">Hate / Violence</text>
-  <text x="449" y="172" text-anchor="middle" font-size="10" fill="#ffcdd2">Sexual / Self-harm</text>
-
-  <line x1="516" y1="140" x2="548" y2="140" stroke="#ce93d8" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- LLM Engine -->
-  <rect x="548" y="85" width="160" height="110" rx="10" fill="#1a237e" stroke="#7986cb" stroke-width="2"/>
-  <text x="628" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#e8eaf6">🧠 GPT-4</text>
-  <text x="628" y="132" text-anchor="middle" font-size="11" fill="#9fa8da">Large Language Model</text>
-  <text x="628" y="150" text-anchor="middle" font-size="10" fill="#7986cb">Temperature: 0.0–1.0</text>
-  <text x="628" y="167" text-anchor="middle" font-size="10" fill="#7986cb">Context Window: ~128k tokens</text>
-  <text x="628" y="183" text-anchor="middle" font-size="10" fill="#7986cb">Max Output Tokens limit</text>
-
-  <line x1="710" y1="140" x2="742" y2="140" stroke="#ce93d8" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Content Filter OUT -->
-  <rect x="742" y="100" width="130" height="80" rx="10" fill="#b71c1c" stroke="#ef9a9a" stroke-width="2"/>
-  <text x="807" y="124" text-anchor="middle" font-size="12" font-weight="bold" fill="white">🛡 Filter</text>
-  <text x="807" y="142" text-anchor="middle" font-size="10" fill="#ffcdd2">Output filtering</text>
-  <text x="807" y="158" text-anchor="middle" font-size="10" fill="#ffcdd2">Blokuje/flaguje</text>
-  <text x="807" y="172" text-anchor="middle" font-size="10" fill="#ffcdd2">szkodliwe treści</text>
-
-  <!-- Response back to app (arrow down-left) -->
-  <line x1="807" y1="182" x2="807" y2="220" stroke="#ce93d8" stroke-width="2"/>
-  <line x1="807" y1="220" x2="85" y2="220" stroke="#ce93d8" stroke-width="2"/>
-  <line x1="85" y1="220" x2="85" y2="182" stroke="#ce93d8" stroke-width="2" marker-end="url(#arr)"/>
-  <text x="450" y="215" text-anchor="middle" font-size="11" fill="#ce93d8">← Odpowiedź (completion)</text>
-
-  <!-- Models row -->
-  <text x="450" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#ce93d8">Dostępne modele w Azure OpenAI</text>
-
-  <rect x="20" y="272" width="155" height="80" rx="10" fill="#0d2137" stroke="#42a5f5" stroke-width="1.5"/>
-  <text x="97" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#42a5f5">GPT-4 / GPT-4o</text>
-  <text x="97" y="313" text-anchor="middle" font-size="10" fill="#90caf9">Chat, analiza, kod</text>
-  <text x="97" y="330" text-anchor="middle" font-size="10" fill="#90caf9">Multimodal (obraz+text)</text>
-  <text x="97" y="347" text-anchor="middle" font-size="10" fill="#64b5f6">✔ Najbardziej zaawansowany</text>
-
-  <rect x="185" y="272" width="155" height="80" rx="10" fill="#0d2137" stroke="#42a5f5" stroke-width="1.5"/>
-  <text x="262" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#42a5f5">GPT-3.5 Turbo</text>
-  <text x="262" y="313" text-anchor="middle" font-size="10" fill="#90caf9">Chat, podsumowania</text>
-  <text x="262" y="330" text-anchor="middle" font-size="10" fill="#90caf9">Szybszy i tańszy</text>
-  <text x="262" y="347" text-anchor="middle" font-size="10" fill="#64b5f6">✔ Dobry do chatbotów</text>
-
-  <rect x="350" y="272" width="155" height="80" rx="10" fill="#0d2137" stroke="#e91e63" stroke-width="1.5"/>
-  <text x="427" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#f48fb1">DALL-E 3</text>
-  <text x="427" y="313" text-anchor="middle" font-size="10" fill="#f8bbd0">Generowanie obrazów</text>
-  <text x="427" y="330" text-anchor="middle" font-size="10" fill="#f8bbd0">z opisu tekstowego</text>
-  <text x="427" y="347" text-anchor="middle" font-size="10" fill="#f48fb1">✔ Text-to-Image</text>
-
-  <rect x="515" y="272" width="175" height="80" rx="10" fill="#0d2137" stroke="#66bb6a" stroke-width="1.5"/>
-  <text x="602" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#a5d6a7">text-embedding-ada</text>
-  <text x="602" y="313" text-anchor="middle" font-size="10" fill="#c8e6c9">Zamiana tekstu w wektory</text>
-  <text x="602" y="330" text-anchor="middle" font-size="10" fill="#c8e6c9">Wyszukiwanie semantyczne</text>
-  <text x="602" y="347" text-anchor="middle" font-size="10" fill="#a5d6a7">✔ Używane w RAG</text>
-
-  <rect x="700" y="272" width="175" height="80" rx="10" fill="#0d2137" stroke="#ffb74d" stroke-width="1.5"/>
-  <text x="787" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffb74d">Fine-tuned models</text>
-  <text x="787" y="313" text-anchor="middle" font-size="10" fill="#ffe0b2">Własny styl, ton i format</text>
-  <text x="787" y="330" text-anchor="middle" font-size="10" fill="#ffe0b2">Trenowanie na wł. danych</text>
-  <text x="787" y="347" text-anchor="middle" font-size="10" fill="#ffb74d">✔ GPT-3.5, GPT-4</text>
-
-  <!-- Footer -->
-  <rect x="20" y="370" width="855" height="68" rx="10" fill="#0d1b0d" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="450" y="393" text-anchor="middle" font-size="12" font-weight="bold" fill="#a5d6a7">Kluczowe pojęcia egzaminacyjne (AI-900)</text>
-  <text x="450" y="412" text-anchor="middle" font-size="11" fill="#81c784">Token: ~¾ słowa | Temperature: 0=deterministyczny, 1+=kreatywny | Limited Access: wymagana zgoda Microsoft</text>
-  <text x="450" y="430" text-anchor="middle" font-size="11" fill="#81c784">Prompt Injection: atak wstrzyknięcia instrukcji | RAG: model + baza wiedzy | Fine-tuning: zmiana wag modelu</text>
+  <rect width="780" height="400" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="780" height="48" fill="#1e40af" rx="12"/><rect y="36" width="780" height="12" fill="#1e40af"/>
+  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Azure OpenAI Service – Architektura</text>
+  <!-- Flow: App → Prompt → Content Filter → LLM → Filter → Response -->
+  <rect x="16" y="66" width="88" height="56" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="60" y="90" text-anchor="middle" font-size="16">💻</text>
+  <text x="60" y="108" text-anchor="middle" font-size="10" font-weight="600" fill="#374151">Aplikacja</text>
+  <line x1="104" y1="94" x2="122" y2="94" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="128" y="66" width="88" height="56" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="172" y="90" text-anchor="middle" font-size="16">📝</text>
+  <text x="172" y="108" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Prompt</text>
+  <line x1="216" y1="94" x2="234" y2="94" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="240" y="66" width="110" height="56" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="295" y="86" text-anchor="middle" font-size="14">🛡️</text>
+  <text x="295" y="102" text-anchor="middle" font-size="9" font-weight="600" fill="#dc2626">Content Filter</text>
+  <text x="295" y="114" text-anchor="middle" font-size="8" fill="#64748b">Input</text>
+  <line x1="350" y1="94" x2="368" y2="94" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="374" y="60" width="120" height="68" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="434" y="84" text-anchor="middle" font-size="16">🧠</text>
+  <text x="434" y="102" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">LLM Model</text>
+  <text x="434" y="118" text-anchor="middle" font-size="8" fill="#64748b">GPT-4 / GPT-4o</text>
+  <line x1="494" y1="94" x2="512" y2="94" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="518" y="66" width="110" height="56" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="573" y="86" text-anchor="middle" font-size="14">🛡️</text>
+  <text x="573" y="102" text-anchor="middle" font-size="9" font-weight="600" fill="#dc2626">Content Filter</text>
+  <text x="573" y="114" text-anchor="middle" font-size="8" fill="#64748b">Output</text>
+  <line x1="628" y1="94" x2="646" y2="94" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="652" y="66" width="112" height="56" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="708" y="90" text-anchor="middle" font-size="16">✅</text>
+  <text x="708" y="108" text-anchor="middle" font-size="10" font-weight="600" fill="#92400e">Odpowiedź</text>
+  <!-- Models -->
+  <text x="390" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">Dostępne modele</text>
+  <rect x="16" y="162" width="180" height="94" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="106" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">GPT-4 / GPT-4o</text>
+  <text x="106" y="204" text-anchor="middle" font-size="10" fill="#374151">Generowanie tekstu</text>
+  <text x="106" y="220" text-anchor="middle" font-size="10" fill="#374151">Chat, kod, analiza</text>
+  <text x="106" y="240" text-anchor="middle" font-size="9" fill="#64748b">Najnowocześniejszy LLM</text>
+  <rect x="208" y="162" width="180" height="94" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="298" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#6d28d9">DALL-E 3</text>
+  <text x="298" y="204" text-anchor="middle" font-size="10" fill="#374151">Generowanie obrazów</text>
+  <text x="298" y="220" text-anchor="middle" font-size="10" fill="#374151">z opisu tekstowego</text>
+  <text x="298" y="240" text-anchor="middle" font-size="9" fill="#64748b">Text-to-Image</text>
+  <rect x="400" y="162" width="180" height="94" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="490" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Embeddings</text>
+  <text x="490" y="204" text-anchor="middle" font-size="10" fill="#374151">Wektory semantyczne</text>
+  <text x="490" y="220" text-anchor="middle" font-size="10" fill="#374151">Wyszukiwanie, RAG</text>
+  <text x="490" y="240" text-anchor="middle" font-size="9" fill="#64748b">text-embedding-ada-002</text>
+  <rect x="592" y="162" width="172" height="94" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="678" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Whisper</text>
+  <text x="678" y="204" text-anchor="middle" font-size="10" fill="#374151">Transkrypcja mowy</text>
+  <text x="678" y="220" text-anchor="middle" font-size="10" fill="#374151">Speech-to-Text</text>
+  <text x="678" y="240" text-anchor="middle" font-size="9" fill="#64748b">Wielojęzyczny</text>
+  <!-- Key Concepts -->
+  <text x="390" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">Kluczowe pojęcia</text>
+  <rect x="16" y="294" width="148" height="90" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="90" y="316" text-anchor="middle" font-size="10" font-weight="700" fill="#374151">System Message</text>
+  <text x="90" y="332" text-anchor="middle" font-size="9" fill="#64748b">Instrukcja systemowa</text>
+  <text x="90" y="348" text-anchor="middle" font-size="9" fill="#64748b">definiuje zachowanie</text>
+  <text x="90" y="364" text-anchor="middle" font-size="9" fill="#64748b">modelu</text>
+  <rect x="174" y="294" width="148" height="90" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="248" y="316" text-anchor="middle" font-size="10" font-weight="700" fill="#374151">Temperature</text>
+  <text x="248" y="332" text-anchor="middle" font-size="9" fill="#64748b">0 = deterministyczny</text>
+  <text x="248" y="348" text-anchor="middle" font-size="9" fill="#64748b">1 = kreatywny</text>
+  <text x="248" y="364" text-anchor="middle" font-size="9" fill="#64748b">Kontrola losowości</text>
+  <rect x="332" y="294" width="148" height="90" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="406" y="316" text-anchor="middle" font-size="10" font-weight="700" fill="#374151">Grounding</text>
+  <text x="406" y="332" text-anchor="middle" font-size="9" fill="#64748b">Zakotwiczenie w</text>
+  <text x="406" y="348" text-anchor="middle" font-size="9" fill="#64748b">rzeczywistych danych</text>
+  <text x="406" y="364" text-anchor="middle" font-size="9" fill="#64748b">Redukcja halucynacji</text>
+  <rect x="490" y="294" width="148" height="90" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="564" y="316" text-anchor="middle" font-size="10" font-weight="700" fill="#374151">Token</text>
+  <text x="564" y="332" text-anchor="middle" font-size="9" fill="#64748b">Jednostka tekstu</text>
+  <text x="564" y="348" text-anchor="middle" font-size="9" fill="#64748b">~4 znaki = 1 token</text>
+  <text x="564" y="364" text-anchor="middle" font-size="9" fill="#64748b">Mierzy koszt / limit</text>
+  <rect x="648" y="294" width="116" height="90" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="706" y="316" text-anchor="middle" font-size="10" font-weight="700" fill="#374151">Fine-tuning</text>
+  <text x="706" y="332" text-anchor="middle" font-size="9" fill="#64748b">Dostrajanie</text>
+  <text x="706" y="348" text-anchor="middle" font-size="9" fill="#64748b">modelu na</text>
+  <text x="706" y="364" text-anchor="middle" font-size="9" fill="#64748b">własnych danych</text>
 </svg>

@@ -1,87 +1,57 @@
-<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+<svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a0a0a"/>
-      <stop offset="100%" style="stop-color:#2e1515"/>
-    </linearGradient>
-    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#ef9a9a"/>
-    </marker>
-    <marker id="arrg" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a5d6a7"/>
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
   </defs>
-  <rect width="900" height="420" fill="url(#bg)" rx="16"/>
-  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">Azure AI Content Safety</text>
-  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#ef9a9a">Wykrywanie i blokowanie szkodliwych treści w systemach AI</text>
-
+  <rect width="780" height="400" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="780" height="48" fill="#dc2626" rx="12"/><rect y="36" width="780" height="12" fill="#dc2626"/>
+  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Azure AI Content Safety</text>
   <!-- Input -->
-  <rect x="20" y="100" width="130" height="70" rx="10" fill="#1565c0" stroke="#42a5f5" stroke-width="2"/>
-  <text x="85" y="128" text-anchor="middle" font-size="12" font-weight="bold" fill="white">📥 Treść</text>
-  <text x="85" y="148" text-anchor="middle" font-size="10" fill="#90caf9">Tekst / Obraz</text>
-  <text x="85" y="163" text-anchor="middle" font-size="10" fill="#90caf9">wygenerowana/wejście</text>
-  <line x1="152" y1="135" x2="185" y2="135" stroke="#ef9a9a" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Analysis Engine -->
-  <rect x="185" y="85" width="200" height="100" rx="10" fill="#3e0000" stroke="#ef9a9a" stroke-width="2"/>
-  <text x="285" y="112" text-anchor="middle" font-size="13" font-weight="bold" fill="#ef9a9a">🔬 Analiza treści</text>
-  <text x="285" y="133" text-anchor="middle" font-size="11" fill="#ffcdd2">Klasyfikacja według</text>
-  <text x="285" y="151" text-anchor="middle" font-size="11" fill="#ffcdd2">4 kategorii zagrożeń</text>
-  <text x="285" y="169" text-anchor="middle" font-size="10" fill="#ef9a9a">z poziomem severity 0-7</text>
-
+  <rect x="16" y="66" width="120" height="60" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="76" y="90" text-anchor="middle" font-size="14">📥</text>
+  <text x="76" y="110" text-anchor="middle" font-size="10" font-weight="600" fill="#374151">Treść wejściowa</text>
+  <line x1="136" y1="96" x2="166" y2="96" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Analysis -->
+  <rect x="172" y="62" width="160" height="68" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="252" y="86" text-anchor="middle" font-size="14">🔬</text>
+  <text x="252" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">Analiza treści</text>
+  <text x="252" y="118" text-anchor="middle" font-size="9" fill="#64748b">Severity 0–7</text>
+  <line x1="332" y1="96" x2="362" y2="96" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
   <!-- 4 categories -->
-  <rect x="430" y="80" width="165" height="55" rx="8" fill="#b71c1c" stroke="#ef9a9a" stroke-width="1.5"/>
-  <text x="512" y="103" text-anchor="middle" font-size="12" font-weight="bold" fill="white">💢 Hate Speech</text>
-  <text x="512" y="123" text-anchor="middle" font-size="10" fill="#ffcdd2">Mowa nienawiści, dyskryminacja</text>
-
-  <rect x="430" y="145" width="165" height="55" rx="8" fill="#b71c1c" stroke="#ef9a9a" stroke-width="1.5"/>
-  <text x="512" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="white">⚔️ Violence</text>
-  <text x="512" y="188" text-anchor="middle" font-size="10" fill="#ffcdd2">Treści gloryfikujące przemoc</text>
-
-  <rect x="615" y="80" width="165" height="55" rx="8" fill="#880e4f" stroke="#f48fb1" stroke-width="1.5"/>
-  <text x="697" y="103" text-anchor="middle" font-size="11" font-weight="bold" fill="white">🔞 Sexual Content</text>
-  <text x="697" y="123" text-anchor="middle" font-size="10" fill="#f8bbd0">Nieodpowiednie treści</text>
-
-  <rect x="615" y="145" width="165" height="55" rx="8" fill="#3e0000" stroke="#ef9a9a" stroke-width="1.5"/>
-  <text x="697" y="168" text-anchor="middle" font-size="11" font-weight="bold" fill="white">💊 Self-Harm</text>
-  <text x="697" y="188" text-anchor="middle" font-size="10" fill="#ffcdd2">Treści dot. samookaleczenia</text>
-
-  <!-- Lines from engine to categories -->
-  <line x1="387" y1="110" x2="428" y2="107" stroke="#ef9a9a" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="387" y1="148" x2="428" y2="172" stroke="#ef9a9a" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="430" y1="107" x2="613" y2="107" stroke="#ef9a9a" stroke-width="1"/>
-  <line x1="430" y1="172" x2="613" y2="172" stroke="#ef9a9a" stroke-width="1"/>
-
+  <rect x="368" y="62" width="196" height="68" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="466" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626">4 kategorie zagrożeń</text>
+  <text x="466" y="98" text-anchor="middle" font-size="9" fill="#374151">💢 Hate · ⚔️ Violence</text>
+  <text x="466" y="114" text-anchor="middle" font-size="9" fill="#374151">🔞 Sexual · 💊 Self-Harm</text>
+  <line x1="564" y1="96" x2="594" y2="96" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
   <!-- Decision -->
-  <rect x="185" y="260" width="200" height="80" rx="10" fill="#0d2137" stroke="#42a5f5" stroke-width="2"/>
-  <text x="285" y="285" text-anchor="middle" font-size="12" font-weight="bold" fill="#42a5f5">⚙️ Decyzja</text>
-  <text x="285" y="305" text-anchor="middle" font-size="11" fill="#90caf9">Na podstawie severity</text>
-  <text x="285" y="323" text-anchor="middle" font-size="11" fill="#90caf9">i konfiguracji progów</text>
-  <line x1="285" y1="188" x2="285" y2="258" stroke="#ef9a9a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Block -->
-  <rect x="30" y="275" width="130" height="60" rx="10" fill="#b71c1c" stroke="#ef9a9a" stroke-width="2"/>
-  <text x="95" y="299" text-anchor="middle" font-size="13" font-weight="bold" fill="white">🚫 BLOCK</text>
-  <text x="95" y="320" text-anchor="middle" font-size="10" fill="#ffcdd2">Treść zablokowana</text>
-  <line x1="185" y1="300" x2="162" y2="300" stroke="#ef9a9a" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Allow -->
-  <rect x="415" y="275" width="130" height="60" rx="10" fill="#1b5e20" stroke="#66bb6a" stroke-width="2"/>
-  <text x="480" y="299" text-anchor="middle" font-size="13" font-weight="bold" fill="white">✅ ALLOW</text>
-  <text x="480" y="320" text-anchor="middle" font-size="10" fill="#a5d6a7">Treść dozwolona</text>
-  <line x1="387" y1="300" x2="413" y2="300" stroke="#a5d6a7" stroke-width="2" marker-end="url(#arrg)"/>
-
+  <rect x="600" y="62" width="164" height="68" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="682" y="86" text-anchor="middle" font-size="14">⚙️</text>
+  <text x="682" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">Decyzja</text>
+  <text x="682" y="118" text-anchor="middle" font-size="9" fill="#64748b">Na podst. progów</text>
+  <!-- Block / Allow -->
+  <rect x="600" y="148" width="78" height="42" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="639" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">🚫 BLOCK</text>
+  <rect x="686" y="148" width="78" height="42" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="725" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">✅ ALLOW</text>
+  <line x1="652" y1="130" x2="639" y2="146" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="712" y1="130" x2="725" y2="146" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Severity levels -->
+  <rect x="16" y="148" width="568" height="50" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="300" y="168" text-anchor="middle" font-size="11" font-weight="700" fill="#374151">Poziomy Severity</text>
+  <text x="100" y="186" text-anchor="middle" font-size="10" fill="#065f46">✅ 0 – Bezpieczne</text>
+  <text x="250" y="186" text-anchor="middle" font-size="10" fill="#92400e">⚠️ 2 – Niskie ryzyko</text>
+  <text x="400" y="186" text-anchor="middle" font-size="10" fill="#dc2626">🔶 4 – Średnie ryzyko</text>
+  <text x="530" y="186" text-anchor="middle" font-size="10" fill="#dc2626">🚫 6–7 – Wysokie</text>
   <!-- Use cases -->
-  <rect x="580" y="245" width="300" height="145" rx="12" fill="#0d2137" stroke="#42a5f5" stroke-width="1.5"/>
-  <text x="730" y="268" text-anchor="middle" font-size="12" font-weight="bold" fill="#42a5f5">Zastosowania</text>
-  <text x="595" y="290" font-size="11" fill="#90caf9">► Chatboty i asystenci AI</text>
-  <text x="595" y="310" font-size="11" fill="#90caf9">► Platformy user-generated content</text>
-  <text x="595" y="330" font-size="11" fill="#90caf9">► Media społecznościowe</text>
-  <text x="595" y="350" font-size="11" fill="#90caf9">► Systemy edukacyjne dla dzieci</text>
-  <text x="595" y="370" font-size="10" fill="#ffcc80">⚡ Severity 0-2: bezpieczne | 4-7: wysokie ryzyko</text>
-
-  <!-- Footer note -->
-  <rect x="20" y="360" width="550" height="44" rx="8" fill="#0a1628" stroke="#1565c0" stroke-width="1"/>
-  <text x="295" y="380" text-anchor="middle" font-size="11" fill="#90caf9">Content Safety API: dostępna osobno lub wbudowana w Azure OpenAI</text>
-  <text x="295" y="397" text-anchor="middle" font-size="10" fill="#64b5f6">Konfiguracja: 4 poziomy blokowania (Low / Medium / High / off) per kategoria</text>
+  <rect x="16" y="216" width="748" height="76" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="390" y="238" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">Zastosowania</text>
+  <text x="130" y="258" text-anchor="middle" font-size="10" fill="#374151">🤖 Chatboty i asystenci AI</text>
+  <text x="340" y="258" text-anchor="middle" font-size="10" fill="#374151">📱 Platformy user-generated content</text>
+  <text x="560" y="258" text-anchor="middle" font-size="10" fill="#374151">🏫 Systemy edukacyjne</text>
+  <text x="130" y="278" text-anchor="middle" font-size="10" fill="#374151">📢 Media społecznościowe</text>
+  <text x="390" y="278" text-anchor="middle" font-size="10" fill="#374151">🎮 Gry online z komunikacją</text>
+  <!-- Config -->
+  <rect x="16" y="308" width="748" height="76" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="390" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Konfiguracja Content Safety</text>
+  <text x="390" y="350" text-anchor="middle" font-size="10" fill="#374151">4 poziomy blokowania per kategoria: Low / Medium / High / Off</text>
+  <text x="390" y="368" text-anchor="middle" font-size="10" fill="#374151">Content Safety API dostępna osobno lub wbudowana w Azure OpenAI (Content Filters)</text>
 </svg>

@@ -1,84 +1,45 @@
-<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+<svg viewBox="0 0 780 340" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1b2a"/>
-      <stop offset="100%" style="stop-color:#1a2940"/>
-    </linearGradient>
-    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#64b5f6"/>
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
   </defs>
-  <rect width="900" height="460" fill="url(#bg)" rx="16"/>
-  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">Custom Vision – Trening własnego modelu CV</text>
-  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#90caf9">Azure AI Custom Vision – klasyfiakcja i detekcja obiektów bez kodowania</text>
-
-  <!-- Step 1 -->
-  <rect x="30" y="100" width="130" height="110" rx="12" fill="#0d47a1" stroke="#42a5f5" stroke-width="2"/>
-  <text x="95" y="128" text-anchor="middle" font-size="28">📸</text>
-  <text x="95" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="white">1. Upload</text>
-  <text x="95" y="170" text-anchor="middle" font-size="10" fill="#90caf9">Wgraj własne</text>
-  <text x="95" y="185" text-anchor="middle" font-size="10" fill="#90caf9">zdjęcia</text>
-  <text x="95" y="200" text-anchor="middle" font-size="9" fill="#64b5f6">(min. 15-30 / klasę)</text>
-
-  <line x1="162" y1="155" x2="195" y2="155" stroke="#64b5f6" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Step 2 -->
-  <rect x="195" y="100" width="130" height="110" rx="12" fill="#1a237e" stroke="#7986cb" stroke-width="2"/>
-  <text x="260" y="128" text-anchor="middle" font-size="28">🏷️</text>
-  <text x="260" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="white">2. Label</text>
-  <text x="260" y="170" text-anchor="middle" font-size="10" fill="#c5cae9">Przypisz etykiety</text>
-  <text x="260" y="185" text-anchor="middle" font-size="10" fill="#c5cae9">do każdego</text>
-  <text x="260" y="200" text-anchor="middle" font-size="10" fill="#c5cae9">zdjęcia / obszaru</text>
-
-  <line x1="327" y1="155" x2="360" y2="155" stroke="#64b5f6" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Step 3 -->
-  <rect x="360" y="100" width="130" height="110" rx="12" fill="#004d40" stroke="#4db6ac" stroke-width="2"/>
-  <text x="425" y="128" text-anchor="middle" font-size="28">🚀</text>
-  <text x="425" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="white">3. Trenuj</text>
-  <text x="425" y="170" text-anchor="middle" font-size="10" fill="#b2dfdb">Jedno kliknięcie</text>
-  <text x="425" y="185" text-anchor="middle" font-size="10" fill="#b2dfdb">– Azure trenuje</text>
-  <text x="425" y="200" text-anchor="middle" font-size="10" fill="#b2dfdb">model automatycznie</text>
-
-  <line x1="492" y1="155" x2="525" y2="155" stroke="#64b5f6" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Step 4 -->
-  <rect x="525" y="100" width="130" height="110" rx="12" fill="#4a148c" stroke="#ce93d8" stroke-width="2"/>
-  <text x="590" y="128" text-anchor="middle" font-size="28">📊</text>
-  <text x="590" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="white">4. Oceniaj</text>
-  <text x="590" y="170" text-anchor="middle" font-size="10" fill="#e1bee7">Precision, Recall</text>
-  <text x="590" y="185" text-anchor="middle" font-size="10" fill="#e1bee7">AP, mAP dla</text>
-  <text x="590" y="200" text-anchor="middle" font-size="10" fill="#e1bee7">detekcji obiektów</text>
-
-  <line x1="657" y1="155" x2="690" y2="155" stroke="#64b5f6" stroke-width="2" marker-end="url(#arr)"/>
-
-  <!-- Step 5 -->
-  <rect x="690" y="100" width="140" height="110" rx="12" fill="#b71c1c" stroke="#ef9a9a" stroke-width="2"/>
-  <text x="760" y="128" text-anchor="middle" font-size="28">📦</text>
-  <text x="760" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="white">5. Eksportuj</text>
-  <text x="760" y="168" text-anchor="middle" font-size="10" fill="#ffcdd2">ONNX, TF Lite</text>
-  <text x="760" y="183" text-anchor="middle" font-size="10" fill="#ffcdd2">CoreML, Docker</text>
-  <text x="760" y="198" text-anchor="middle" font-size="10" fill="#ffcdd2">Edge / API endpoint</text>
-
-  <!-- Two task types -->
-  <rect x="30" y="240" width="390" height="130" rx="12" fill="#0d2137" stroke="#0288d1" stroke-width="2"/>
-  <text x="225" y="265" text-anchor="middle" font-size="14" font-weight="bold" fill="#29b6f6">🖼 Image Classification</text>
-  <text x="50" y="290" font-size="11" fill="#90caf9">► Jedna etykieta przypisywana do całego obrazu</text>
-  <text x="50" y="308" font-size="11" fill="#90caf9">► Pytanie: "Co jest na tym zdjęciu?"</text>
-  <text x="50" y="326" font-size="11" fill="#90caf9">► Przykład: cat / dog / car / airplane</text>
-  <text x="50" y="344" font-size="11" fill="#90caf9">► Multi-label: obraz może mieć wiele etykiet naraz</text>
-  <text x="50" y="362" font-size="10" fill="#4fc3f7">💡 Metryki: Precision, Recall per klasa</text>
-
-  <rect x="440" y="240" width="420" height="130" rx="12" fill="#0d2137" stroke="#8bc34a" stroke-width="2"/>
-  <text x="650" y="265" text-anchor="middle" font-size="14" font-weight="bold" fill="#aed581">📦 Object Detection</text>
-  <text x="458" y="290" font-size="11" fill="#90caf9">► Wiele obiektów na jednym obrazie + lokalizacja (bbox)</text>
-  <text x="458" y="308" font-size="11" fill="#90caf9">► Pytanie: "Gdzie są obiekty i co to jest?"</text>
-  <text x="458" y="326" font-size="11" fill="#90caf9">► Bounding Box: prostokąt okalający obiekt</text>
-  <text x="458" y="344" font-size="11" fill="#90caf9">► Zastosowanie: kontrola jakości, monitoring, handel</text>
-  <text x="458" y="362" font-size="10" fill="#8bc34a">💡 Metryki: mAP (mean Average Precision)</text>
-
-  <!-- Footer note -->
-  <rect x="30" y="388" width="830" height="48" rx="8" fill="#1a2a1a" stroke="#388e3c" stroke-width="1"/>
-  <text x="450" y="408" text-anchor="middle" font-size="11" fill="#a5d6a7">✔ Custom Vision vs Azure AI Vision: Custom Vision = własne klasy / dane; Azure AI Vision = gotowe modele ogólne</text>
-  <text x="450" y="428" text-anchor="middle" font-size="11" fill="#a5d6a7">✔ Minimum ~15-30 zdjęć na klasę; im więcej i bardziej zróżnicowanych – tym lepszy model</text>
+  <rect width="780" height="340" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="780" height="48" fill="#1e40af" rx="12"/><rect y="36" width="780" height="12" fill="#1e40af"/>
+  <text x="390" y="30" text-anchor="middle" font-size="17" font-weight="700" fill="white">Azure Custom Vision – Pipeline</text>
+  <!-- 5 Steps -->
+  <rect x="16" y="66" width="130" height="66" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="81" y="93" text-anchor="middle" font-size="20">📤</text>
+  <text x="81" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">1. Upload</text>
+  <line x1="146" y1="99" x2="166" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="172" y="66" width="130" height="66" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="237" y="93" text-anchor="middle" font-size="20">🏷️</text>
+  <text x="237" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#6d28d9">2. Label / Tag</text>
+  <line x1="302" y1="99" x2="322" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="328" y="66" width="130" height="66" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="393" y="93" text-anchor="middle" font-size="20">🧠</text>
+  <text x="393" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">3. Train</text>
+  <line x1="458" y1="99" x2="478" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="484" y="66" width="130" height="66" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="549" y="93" text-anchor="middle" font-size="20">📊</text>
+  <text x="549" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">4. Evaluate</text>
+  <line x1="614" y1="99" x2="634" y2="99" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="640" y="66" width="124" height="66" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="702" y="93" text-anchor="middle" font-size="20">🚀</text>
+  <text x="702" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">5. Publish</text>
+  <!-- Comparison -->
+  <rect x="16" y="152" width="370" height="172" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="201" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">🖼️ Image Classification</text>
+  <text x="201" y="196" text-anchor="middle" font-size="10" fill="#374151">Przypisuje etykietę (tag) do całego obrazu</text>
+  <text x="201" y="216" text-anchor="middle" font-size="10" fill="#374151">• Multiclass – jedna klasa na obraz</text>
+  <text x="201" y="234" text-anchor="middle" font-size="10" fill="#374151">• Multilabel – wiele klas na obraz</text>
+  <text x="201" y="260" text-anchor="middle" font-size="10" fill="#64748b">Przykład: To jest 🐱 kot (95%)</text>
+  <text x="201" y="280" text-anchor="middle" font-size="10" font-weight="600" fill="#1e40af">Min. 5 obrazów / tag</text>
+  <text x="201" y="300" text-anchor="middle" font-size="10" fill="#64748b">Domeny: General, Food, Retail, Landmarks…</text>
+  <rect x="398" y="152" width="366" height="172" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="581" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">📦 Object Detection</text>
+  <text x="581" y="196" text-anchor="middle" font-size="10" fill="#374151">Lokalizuje obiekty w regionach (Bounding Box)</text>
+  <text x="581" y="216" text-anchor="middle" font-size="10" fill="#374151">• Zwraca: tag, prawdopodobieństwo, współrzędne</text>
+  <text x="581" y="234" text-anchor="middle" font-size="10" fill="#374151">• Wymaga tagowania regionów (nie całych zdjęć)</text>
+  <text x="581" y="260" text-anchor="middle" font-size="10" fill="#64748b">Przykład: 🐱(92%) [x:10,y:20,w:80,h:60]</text>
+  <text x="581" y="280" text-anchor="middle" font-size="10" font-weight="600" fill="#6d28d9">Min. 15 obrazów / tag</text>
+  <text x="581" y="300" text-anchor="middle" font-size="10" fill="#64748b">Domeny: General, Logo, Products…</text>
 </svg>

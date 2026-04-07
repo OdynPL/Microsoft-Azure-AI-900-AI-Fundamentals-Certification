@@ -1,56 +1,39 @@
-<svg width="700" height="180" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 720 160" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI,Arial,sans-serif">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
-      <stop offset="0%" stop-color="#fafdff"/>
-      <stop offset="100%" stop-color="#e3eaf7"/>
-    </radialGradient>
-    <linearGradient id="dane" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#b3d1f7"/>
-      <stop offset="100%" stop-color="#6fa8dc"/>
-    </linearGradient>
-    <linearGradient id="trening" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#b3f7d1"/>
-      <stop offset="100%" stop-color="#4ecb8c"/>
-    </linearGradient>
-    <linearGradient id="walidacja" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f7e3b3"/>
-      <stop offset="100%" stop-color="#f4b942"/>
-    </linearGradient>
-    <linearGradient id="wdrozenie" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#e3b3f7"/>
-      <stop offset="100%" stop-color="#b97fdc"/>
-    </linearGradient>
-    <linearGradient id="monitoring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#b3e3f7"/>
-      <stop offset="100%" stop-color="#5fa8dc"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#b0c4de"/>
-    </filter>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L10,5 L0,10 L2,5 z" fill="#888" />
-    </marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10z" fill="#94a3b8"/></marker>
   </defs>
-  <rect width="700" height="180" fill="url(#bg)"/>
-  <g font-family="Segoe UI, Arial" font-size="15">
-    <text x="350" y="38" text-anchor="middle" font-size="26" fill="#1a355e" font-weight="bold">Cykl życia ML</text>
-    <!-- Bloki -->
-    <g filter="url(#shadow)">
-      <rect x="60" y="80" width="110" height="60" rx="18" fill="url(#dane)"/>
-      <text x="115" y="115" text-anchor="middle" fill="#1a355e" font-size="16" font-weight="bold">Dane</text>
-      <rect x="190" y="80" width="110" height="60" rx="18" fill="url(#trening)"/>
-      <text x="245" y="115" text-anchor="middle" fill="#1a3e2b" font-size="16" font-weight="bold">Trening</text>
-      <rect x="320" y="80" width="110" height="60" rx="18" fill="url(#walidacja)"/>
-      <text x="375" y="115" text-anchor="middle" fill="#7a4e1a" font-size="16" font-weight="bold">Walidacja</text>
-      <rect x="450" y="80" width="110" height="60" rx="18" fill="url(#wdrozenie)"/>
-      <text x="505" y="115" text-anchor="middle" fill="#4e1a7a" font-size="16" font-weight="bold">Wdrożenie</text>
-      <rect x="580" y="80" width="110" height="60" rx="18" fill="url(#monitoring)"/>
-      <text x="635" y="115" text-anchor="middle" fill="#1a3e7a" font-size="16" font-weight="bold">Monitoring</text>
-    </g>
-    <!-- Strzałki -->
-    <polyline points="170,110 190,110" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
-    <polyline points="300,110 320,110" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
-    <polyline points="430,110 450,110" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
-    <polyline points="560,110 580,110" fill="none" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
-  </g>
+  <rect width="720" height="160" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="720" height="44" fill="#1e40af" rx="12"/><rect y="32" width="720" height="12" fill="#1e40af"/>
+  <text x="360" y="28" text-anchor="middle" font-size="15" font-weight="700" fill="white">Cykl życia ML</text>
+  <!-- 5 steps -->
+  <rect x="16" y="62" width="120" height="56" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="76" y="84" text-anchor="middle" font-size="14">📊</text>
+  <text x="76" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#1e40af">Dane</text>
+  <line x1="136" y1="90" x2="156" y2="90" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="162" y="62" width="120" height="56" rx="10" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+  <text x="222" y="84" text-anchor="middle" font-size="14">🧠</text>
+  <text x="222" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#065f46">Trening</text>
+  <line x1="282" y1="90" x2="302" y2="90" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="308" y="62" width="120" height="56" rx="10" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="368" y="84" text-anchor="middle" font-size="14">✅</text>
+  <text x="368" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#92400e">Walidacja</text>
+  <line x1="428" y1="90" x2="448" y2="90" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="454" y="62" width="120" height="56" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="514" y="84" text-anchor="middle" font-size="14">🚀</text>
+  <text x="514" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#6d28d9">Wdrożenie</text>
+  <line x1="574" y1="90" x2="594" y2="90" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="600" y="62" width="104" height="56" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="652" y="84" text-anchor="middle" font-size="14">📈</text>
+  <text x="652" y="104" text-anchor="middle" font-size="11" font-weight="700" fill="#dc2626">Monitoring</text>
+
+  <!-- Labels -->
+  <text x="76" y="132" text-anchor="middle" font-size="8" fill="#64748b">Zbieranie, czyszczenie</text>
+  <text x="222" y="132" text-anchor="middle" font-size="8" fill="#64748b">Algorytm, hiperpar.</text>
+  <text x="368" y="132" text-anchor="middle" font-size="8" fill="#64748b">Metryki, testowanie</text>
+  <text x="514" y="132" text-anchor="middle" font-size="8" fill="#64748b">Endpoint, REST API</text>
+  <text x="652" y="132" text-anchor="middle" font-size="8" fill="#64748b">Drift, retraining</text>
 </svg>
