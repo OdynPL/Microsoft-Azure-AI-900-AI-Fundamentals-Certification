@@ -22,7 +22,7 @@
 
 ## Usługi **Azure**
 - **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
-![Azure AI Language](assets/ai-workloads.svg)
+![Azure AI Language](assets/azure-ai-language.svg)
 
 - **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
 - **Azure AI Language** – kompleksowa usługa do analizy tekstu. Umożliwia:
@@ -33,7 +33,7 @@
 	- Klasyfikację tekstu
 	- Wyszukiwanie semantyczne
 - **Azure AI Speech** – usługa do rozpoznawania i syntezy mowy. Pozwala na:
-![Azure AI Speech](assets/ai-workloads.svg)
+![Azure AI Speech](assets/azure-ai-speech.svg)
 	- Zamianę mowy na tekst (Speech-to-Text)
 	- Zamianę tekstu na mowę (Text-to-Speech)
 	- Rozpoznawanie mówców (Speaker Recognition)
