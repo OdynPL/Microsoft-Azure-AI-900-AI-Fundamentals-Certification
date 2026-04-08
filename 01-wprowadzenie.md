@@ -246,7 +246,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Label (etykieta)** | Prawidłowa odpowiedź przypisana do przykładu w uczeniu nadzorowanym (np. spam/nie-spam) |
 | **Feature Engineering** | Przygotowanie i wybór cech |
 | **Data Labeling** | Etykietowanie danych |
-| **Training Set** | Zbiór danych do trenowania modelu (~70–80% danych) |
+| **Training Set** | Zbiór danych do trenowania modelu (~70–80% danych); dane z etykietami (supervised) lub bez (unsupervised) – np. tabele CSV, obrazy, tekst, audio |
 | **Validation Set** | Zbiór do oceny modelu podczas treningu i doboru hiperparametrów (~10–15%) |
 | **Test Set** | Zbiór do końcowej, niezależnej oceny modelu (~10–15%) |
 | **Data Imbalance** | Nierównomierny rozkład klas w zbiorze danych (np. 95% klasy A, 5% klasy B) |
