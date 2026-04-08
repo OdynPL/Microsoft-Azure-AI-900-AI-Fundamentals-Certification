@@ -50,6 +50,22 @@
 - W pytaniach produkcyjnych zwracaj uwage na: **endpoint**, **autoryzacje** (klucz/Entra ID), **region**, **limity** i **koszty**.
 - W GenAI zawsze uwzgledniaj **Content Filters**, **grounding/RAG** oraz zasady **Responsible AI**.
 
+## Agenci AI – nowy temat (AI-900/AI-901)
+- **Agent** = LLM + Instructions + Tools, działający autonomicznie (nie tylko chatbot)
+- **Typy**: Prompt Agents (no-code), Workflow Agents (YAML, multi-step), Hosted Agents (kod, full control)
+- **Tools**: web search, file search, memory, code interpreter, API calls, Azure DevOps (MCP)
+- **Lifecycle**: Create → Test → Trace → Evaluate → Publish → Monitor
+- **RAG dla agentów**: Foundry IQ + Azure AI Search (vector store dla knowledge base)
+- **Bezpieczeństwo**: Content Filters, prompt injection defense, XPIA protection (cross-prompt injection)
+- **Evaluation**: coherence, fluency, relevance – metryki do oceny agenta
+- **Monitoring**: tracing każdego kroku, agent dashboard
+
+## Vector Search & Hybrid Search
+- **Vector Search**: similarity na bazie embedding'ów (semantyka, wielojęzyczność, multimodal)
+- **Hybrid Search**: vector + keyword razem = lepsze wyniki
+- **Azure AI Search**: wektorowa baza danych, integracja RAG, Foundry Agents
+- **Scenario**: Pytanie → embedding → vector query → top-K docs → LLM generuje odpowiedź
+
 ## Strategie egzaminacyjne
 - Czytaj uważnie scenariusz – kluczowe są słowa: „**klasyfikacja**”, „**generowanie**”, „**ekstrakcja**”, „**tłumaczenie**”, „**rozpoznawanie**”.
 - Eliminuj odpowiedzi niepassujące do typu workloadu (np. nie wybieraj usługi tekstowej do zadania z obrazem).
@@ -70,6 +86,10 @@
 | Chcę szybko gotowe AI bez trenowania | Azure AI Services (Vision, Language, Speech) | Gotowe API, mało konfiguracji |
 | Chcę trenować własne modele | Azure Machine Learning | AutoML, Designer, MLOps |
 | Chcę generować tekst/kod/obrazy | Azure OpenAI + RAG | LLM dla generacji, RAG dla danych firmy |
+| Budować agent autonomiczny z narzędziami | Foundry Agent Service (Prompt/Workflow/Hosted) | Fully managed, tools, lifecycle, monitoring |
+| Zarządzać knowledge base dla agenta | Foundry IQ + Azure AI Search | Embeddings, vector search, hybrid search |
+| Potrzebuję similarity search (semantyka) | Azure AI Search + Vector Search | Hybrid (vector + keyword), multimodal |
+| Szybkie wdrażanie bez kodu | No-code usługi (Designer, AutoML, AI Builder) | Portal, drag & drop, szybkie prototypy |
 | Kiedy miał wiele błędów na jednej grupie? | Fairlearn, Azure ML RAI Dashboard | Detekcja i mitygacja biasu |
 | Chcę A/B test nowego vs starego modelu | Azure ML Online Endpoint z traffic split | Monitoring real-time, bezpieczny rollout |
 | Moja dokładność spada w produkcji | Drift Detection, retrain pipeline | Data drift lub model drift |

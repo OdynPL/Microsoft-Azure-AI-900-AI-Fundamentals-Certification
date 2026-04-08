@@ -20,6 +20,27 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
 - **Integracja z Azure Machine Learning** – płynne wdrażanie i zarządzanie cyklem życia modeli (MLOps).
 - **Responsible AI** – wbudowane dashboardy Responsible AI, content safety i ewaluacja fairness.
 
+## Azure Foundry Agent Service – budowanie agentów AI
+- **Co to jest agent**: Aplikacja AI, która używa LLM do rozumowania i podejmowania autonomicznych decyzji. Różni się od chatbota – agent może kać narzędziami, dostępować danych i wykonywać wielokrokowe zadania.
+- **Komponenty agenta**:
+  - **Model (LLM)** – GPT-4, Llama, DeepSeek (wybierz z katalogów Foundry)
+  - **Instructions** – prompt systemowy, cele, ograniczenia
+  - **Tools** – wyszukiwarka, dostęp do plików, API, Azure DevOps, kod interpreter
+- **Trzy typy agentów**:
+  - **Prompt Agents** – bez kodu, tylko instrukcje + narzędzia, szybkie prototypowanie
+  - **Workflow Agents** – deklaratywna orkiestracja, wielokrokowe procesy, YAML, decisje logiczne
+  - **Hosted Agents** – kod-based (Agent Framework, LangGraph), pełna kontrola nad logiką
+- **Lifecycle agenta**:
+  1. **Create** – definiuj w portalu lub kodzie
+  2. **Test** – chat playground, testuj narzędzia, waliduj logikę
+  3. **Trace** – inspekcja każdego wywołania modelu i tool-call
+  4. **Evaluate** – automatyczne oceny jakości (coherence, fluency, relevance)
+  5. **Publish** – stable endpoint, versioning
+  6. **Monitor** – dashboard metryki, performance monitoring, błędy
+- **Built-in Tools**: web search, file search, memory, code interpreter, MCP servers
+- **Integration**: Foundry IQ (knowledge base dla agentów), Azure AI Search (vector store), Microsoft 365 Copilot
+- **Security**: Microsoft Entra identity, content filters, XPIA (Cross-Prompt Injection Attacks) protection, private networking
+
 ## Przykłady użycia (Use Cases)
 - Udostępnianie modeli AI zespołom deweloperskim i analitycznym.
 - Zarządzanie cyklem życia modeli w dużych organizacjach.

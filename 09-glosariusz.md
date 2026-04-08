@@ -96,5 +96,22 @@
 - **Traffic Split** – podział ruchu użytkowników między stary model (A) i nowy (B) w A/B testach
 - **Fairlearn** – open-source'owe narzędzie do pomiaru i poprawy sprawiedliwości modeli
 - **Azure AI Search** – wektorowa baza danych do wyszukiwania semantycznego, używana w RAG
+- **Embeddings** – reprezentacja tekstu/obrazu w postaci wektora liczbowego; używane do wyszukiwania semantycznego
+- **Vector Search** – wyszukiwanie na bazie podobieństwa embedding'ów zamiast słów kluczowych; używane w RAG
+- **Hybrid Search** – kombinacja vector search (semantyka) + keyword search (dokładne słowa)
+- **Similarity Search** – zwracanie dokumentów o najbardziej podobnych embedding'ach
+- **Multimodal Embeddings** – jedno embedding dla tekstu i obrazu, można szukać razem
+- **AI Agents** – aplikacje AI z LLM, instrukcjami i narzędziami, działające autonomicznie
+- **Prompt Agents** – agenci bez kodu, zdefiniowani instrukcjami i narzędziami
+- **Workflow Agents** – orkiestracja wielostopniowych procesów przez deklaratywny YAML
+- **Hosted Agents** – agenci zdefiniowani w kodzie (Agent Framework, LangGraph), full control
+- **Agent Tools** – web search, file search, memory, code interpreter, MCP servers, custom functions
+- **MCP (Model Context Protocol)** – protokół integracji narzędzi z agentami
+- **Foundry Agent Service** – platforma do budowy, testowania i publikacji agentów
+- **Agent Lifecycle** – Create, Test, Trace, Evaluate, Publish, Monitor
+- **Foundry IQ** – knowledge base dla agentów, integracja z Azure AI Search
+- **XPIA (Cross-Prompt Injection Attacks)** – zaawansowany atak na agenty pobierające z wielu źródeł
+- **Hallucinations** – generowanie przez model fałszywych lub zmyślonych informacji
+- **Guardrails** – safety mechanizmy dla agentów, blokowanie unsafe outputs
 
 [⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md) | [Następny: No-code i low-code ML ⟶](10-no-code-ml.md)

@@ -93,6 +93,24 @@
 - **Azure Machine Learning** – możliwość fine-tuningu i wdrażania własnych modeli generatywnych.
 - **Azure AI Content Safety** – filtrowanie i moderowanie treści generowanych przez AI: mowa nienawiści, przemoc, treści seksualne, samookaleczenie. Konfigurowalne poziomy czułości.
 
+## Vector Search & Embeddings – zaawansowana wyszukiwarka dla RAG
+- **Embeddings** – reprezentacja tekstu/obrazu w postaci wektora numerycznego (~1500 wymiarów dla tekstu). Modele podający semantyczne znaczenie.
+- **Similarity Search** – zamiast słów kluczowych, pytanie zostaje zamienione w embedding, a wyszukiwarka zwraca dokumenty o najbardziej podobnych embeddings'ach.
+- **Hybrid Search** – kombinacja vector search (semantyka) + keyword search (dokładne słowa):
+  - Vector search: "pies" i "canine" mogą mieć podobne embeddings
+  - Keyword search: tylko dokumenty z dokładnym słowem "pies"
+  - Hybrid: połączenie obu, lepsze wyniki niż każde osobno
+- **Multimodal Embeddings** – jedno embedding dla tekstu + obrazu, można szukać "psa" w obrazach i tekstach razem
+- **Azure AI Search** – wektorowa baza danych do RAG:
+  1. Dokumenty firmowe → chunking → embedding (za pomocą Azure OpenAI) → indeks w Azure AI Search
+  2. Pytanie użytkownika → embedding → vector query do Azure AI Search
+  3. Top-K dokumentów zwracane do modelu → model na bazie dokumentów generuje odpowiedź
+- **Praktyka**: Azure AI Search obsługuje:
+  - Integrated vectorization (automatyczne embeddings)
+  - Filtered vector search (metadata filtering na dokumenty)
+  - Hybrid queries (vector + keyword razem)
+  - Vector store dla long-term memory agentów
+
 ## Przykłady zastosowań
 - **Automatyzacja obsługi klienta** – chatboty, automatyczne odpowiedzi na e-maile
 - **Tworzenie treści marketingowych** – generowanie opisów produktów, postów na media społecznościowe
