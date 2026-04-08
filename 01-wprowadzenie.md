@@ -412,7 +412,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Generative AI** | Generatywna AI – tworzenie nowych treści: tekst, obrazy, kod, muzyka |
+| **Generative AI** | Generatywna AI – dziedzina AI tworząca **nowe treści** (tekst, obrazy, kod, muzyka) na podstawie promptów. W przeciwieństwie do tradycyjnej AI (predictive), która analizuje dane i zwraca etykiety/liczby, GenAI **generuje** oryginalne outputy. Bazuje na Foundation Models (GPT, DALL-E, Codex) trenowanych na ogromnych zbiorach danych |
+| | ![Traditional AI vs Generative AI](assets/genai-vs-traditional.svg) |
 | **Multimodal Models** | Modele przetwarzające jednocześnie tekst, obraz i audio (np. GPT-4o) |
 | **Prompt** | Polecenie lub zapytanie przekazywane do modelu generatywnego |
 | **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy (~¾ słowa) |
