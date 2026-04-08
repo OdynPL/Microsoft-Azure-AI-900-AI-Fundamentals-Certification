@@ -2,18 +2,7 @@
 
 Kompletne materiały w języku polskim do przygotowania się na egzamin certyfikacyjny **Microsoft AI-900: Azure AI Fundamentals**. Repozytorium zawiera notatki, diagramy SVG, przykłady kodu C# z oficjalnymi Azure SDK, porównania usług i pułapki egzaminacyjne.
 
-**Czego dotyczy egzamin AI-900?**
-- Podstawowe pojęcia AI i Machine Learning (supervised, unsupervised, reinforcement learning)
-- Usługi Azure AI: Vision, Face, Language, Speech, Translator, Document Intelligence, Content Safety
-- Azure OpenAI: GPT, DALL-E, Whisper, Prompt Engineering, RAG, Content Filters
-- Azure Machine Learning: AutoML, Designer, MLOps, endpointy, monitoring
-- Azure AI Foundry: Model Catalog, Prompt Flow, Agenci AI
-- Responsible AI: 6 filarów Microsoftu, Fairlearn, explainability, compliance
-
-**Format:** egzamin wielokrotnego wyboru, ~45 pytań, 45 minut, próg zdawalności 700/1000.
-
 ## Spis treści
-
 
 1. [Wprowadzenie i profil egzaminu](01-wprowadzenie.md)
 2. [Podstawy AI i rodzaje zadań](02-ai-workloads.md)
@@ -32,22 +21,5 @@ Kompletne materiały w języku polskim do przygotowania się na egzamin certyfik
 15. [Azure OpenAI](15-azure-openai.md)
 16. [Azure AI Foundry](16-azure-ai-foundry.md)
 17. [Azure Machine Learning](17-azure-machine-learning.md)
-
----
-
-## Jak korzystać z tych notatek?
-- Każdy plik odpowiada jednemu z głównych obszarów egzaminu AI-900.
-- Materiały są zwięzłe, praktyczne, z przykładami i porównaniami usług Azure.
-- Na końcu znajdziesz ściągę, glosariusz i checklistę powtórkową.
-
----
-
-## Zakres egzaminu (skills measured)
-- Opis zadań AI i rozpoznawanie typów workloadów (Computer Vision, NLP, Generative AI, Anomaly Detection, Recommendations)
-- Podstawy ML: typy uczenia (supervised, unsupervised, reinforcement), metryki, overfitting, pipeline, AutoML, Designer
-- Computer Vision: klasyfikacja, detekcja obiektów, segmentacja, OCR, Face, Custom Vision, Document Intelligence, Spatial Analysis
-- NLP: sentyment, NER, PII, CLU, Question Answering, Speech-to-Text, Text-to-Speech, Custom Speech/Voice, tłumaczenia
-- Generatywna AI: LLM, GPT, DALL-E, RAG, Grounding, System Message, Temperature, Tokens, Content Filters, Fine-tuning, Prompt Flow
-- Responsible AI: Fairness, Reliability, Privacy, Inclusiveness, Transparency, Accountability, Content Safety, Explainability, Compliance
 
 ---
