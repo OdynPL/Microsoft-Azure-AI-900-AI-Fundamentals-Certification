@@ -618,6 +618,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Agent Lifecycle** | Create → Test → Trace → Evaluate → Publish → Monitor |
 | **Foundry IQ** | Knowledge base dla agentów; integracja z Azure AI Search (vector store) |
 | **Guardrails** | Mechanizmy bezpieczeństwa agentów: content filters, prompt injection defense, output validation |
+| | 1. **Content Filters** – blokowanie szkodliwych treści (hate, violence, sexual, self-harm) na wejściu i wyjściu <br> 2. **Prompt Injection Defense** – wykrywanie prób manipulacji instrukcjami modelu (jailbreak, XPIA) <br> 3. **Output Validation** – weryfikacja formatu, długości i poprawności odpowiedzi przed zwróceniem <br> 4. **Grounding Detection** – sprawdzanie czy odpowiedź jest oparta na źródłach (nie halucynacja) <br> 5. **PII Redaction** – automatyczne maskowanie danych osobowych w odpowiedziach <br> 6. **Rate Limiting** – ograniczenie liczby żądań (TPM/RPM) zapobiegające nadużyciom <br> 7. **Blocklists** – niestandardowe listy zabronionych słów/fraz definiowane przez organizację |
 
 ### **Metryki ewaluacji GenAI i agentów**
 
