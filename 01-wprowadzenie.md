@@ -451,8 +451,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Fine-tuning** | Dodatkowe trenowanie pre-trenowanego modelu na własnych danych |
 | **MaaS (Model as a Service)** | Serverless API – wdrożenie modelu bez zarządzania infrastrukturą, płatność per token (vs Managed Compute = dedykowane GPU, per hour) |
 | | ![MaaS](assets/genai-maas.svg) |
-| **Azure OpenAI Deployment Types** | **Standard** – shared compute, TPM/RPM quota, najczęstszy; **Provisioned (PTU)** – dedykowana przepustowość, stała opłata; **Global** – routing między regionami, najlepsza dostępność |
-| **Azure OpenAI Playground** | Interaktywne środowisko testowe w portalu: **Chat** (rozmowa z modelem), **Completions** (uzupełnianie tekstu), **Assistants** (agenci z narzędziami) – idealne do prototypowania |
+| **Azure OpenAI Deployment Types** | 1. **Standard** – shared compute, TPM/RPM quota, najczęstszy <br> 2. **Provisioned (PTU)** – dedykowana przepustowość, stała opłata <br> 3. **Global** – routing między regionami, najlepsza dostępność |
+| **Azure OpenAI Playground** | Interaktywne środowisko testowe w portalu: <br> 1. **Chat** – rozmowa z modelem <br> 2. **Completions** – uzupełnianie tekstu <br> 3. **Assistants** – agenci z narzędziami <br> Idealne do prototypowania |
 | **Azure OpenAI vs OpenAI (publiczny)** | Na egzaminie! Różnice: <br> 1. Dane klientów **NIE** są używane do trenowania modeli Microsoft/OpenAI <br> 2. VNet, Private Endpoint, compliance (RODO, HIPAA, SOC2) <br> 3. Content Filters domyślnie włączone <br> 4. Te same modele, ale managed i zabezpieczone przez Microsoft <br> 5. Wymaga zatwierdzenia dostępu |
 | **Azure OpenAI Data Privacy** | „Your data is your data" – dane wysyłane do Azure OpenAI **nie trafiają** do OpenAI, nie są używane do trenowania modeli, nie są udostępniane innym klientom. Dane przetwarzane w wybranym regionie Azure |
 | **RAG (Retrieval Augmented Generation)** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami danych zamiast polegać na wiedzy treningowej. Pipeline: dokumenty → chunking → embedding → vector index (Azure AI Search); pytanie → embed query → similarity search → top-K docs + prompt → LLM → grounded answer. Korzyści: aktualne dane, mniej halucynacji, cytowanie źródeł, brak potrzeby fine-tuningu. Na egzaminie: RAG to **najważniejsza technika** redukcji halucynacji |
@@ -545,7 +545,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Traffic Split (A/B Test)** | Podział ruchu użytkowników między model A i B; stopniowy rollout (10% → 50% → 100%) |
 | **MLOps** | Praktyki DevOps dla modeli ML: CI/CD, wersjonowanie, monitoring, automatyczny retraining |
 | **Audit Trail** | Pełna historia: kto trenował model, kiedy, z jakimi danymi, jakie wyniki – compliance |
-| **Jobs w Azure ML** | **Command Job** – uruchamianie skryptu trenującego; **Pipeline Job** – wielokrokowy workflow; **Sweep Job** – automatyczne przeszukiwanie hiperparametrów |
+| **Jobs w Azure ML** | 1. **Command Job** – uruchamianie skryptu trenującego <br> 2. **Pipeline Job** – wielokrokowy workflow <br> 3. **Sweep Job** – automatyczne przeszukiwanie hiperparametrów |
 
 ### **Narzędzia i usługi Azure**
 
@@ -558,17 +558,17 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Designer** | Graficzny interfejs drag & drop w Azure ML do budowy pipeline'ów ML bez kodu |
 | **Azure AI Translator** | Osobna usługa do tłumaczeń maszynowych tekstu (100+ języków) |
 | **Azure AI Document Intelligence** | Ekstrakcja danych z formularzy, faktur, dokumentów (dawniej Form Recognizer) |
-| **Document Intelligence – Prebuilt Models** | Gotowe modele (egzamin!): **prebuilt-invoice** (faktury), **prebuilt-receipt** (paragony), **prebuilt-idDocument** (dowody, paszporty), **prebuilt-businessCard** (wizytówki), **prebuilt-layout** (tabele, tekst) – nie wymagają trenowania |
-| **Prebuilt vs Custom Model** | **Prebuilt:** gotowy model od Microsoft, działa od razu (Document Intelligence, Custom Vision prebuilt). **Custom:** trenujesz na własnych danych, gdy prebuilt nie pasuje do domeny. Egzamin: zawsze preferuj prebuilt jeśli wystarczy |
+| **Document Intelligence – Prebuilt Models** | Gotowe modele (egzamin!): <br> 1. **prebuilt-invoice** – faktury <br> 2. **prebuilt-receipt** – paragony <br> 3. **prebuilt-idDocument** – dowody, paszporty <br> 4. **prebuilt-businessCard** – wizytówki <br> 5. **prebuilt-layout** – tabele, tekst <br> Nie wymagają trenowania |
+| **Prebuilt vs Custom Model** | **Prebuilt:** gotowy model od Microsoft, działa od razu (Document Intelligence, Custom Vision prebuilt) <br> **Custom:** trenujesz na własnych danych, gdy prebuilt nie pasuje do domeny <br> Egzamin: zawsze preferuj prebuilt jeśli wystarczy |
 | **Azure AI Content Safety** | Filtrowanie szkodliwych treści: mowy nienawiści, przemocy, treści seksualnych |
 | **Azure AI Search** | Wektorowa baza danych i platforma wyszukiwania (indexer, index, skillset); kluczowa dla RAG |
 | **Custom Vision** | Trenowanie własnych modeli klasyfikacji/detekcji obrazów bez kodu |
 | **Azure Bot Service** | Usługa do budowy chatbotów; jeden bot obsługuje wiele kanałów (Web Chat, Teams, Facebook) |
 | **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI (dawniej Power Virtual Agents) |
-| **Bot Service vs Copilot Studio** | **Bot Service:** dla developerów, kod w C#/JS/Python, pełna kontrola. **Copilot Studio:** no-code, użytkownicy biznesowi, szybkie prototypowanie. Egzamin: Copilot Studio = no-code, Bot Service = pro-code |
+| **Bot Service vs Copilot Studio** | **Bot Service:** dla developerów, kod w C#/JS/Python, pełna kontrola <br> **Copilot Studio:** no-code, użytkownicy biznesowi, szybkie prototypowanie <br> Egzamin: Copilot Studio = no-code, Bot Service = pro-code |
 | **AI Builder** | Narzędzia AI w Power Platform dla użytkowników biznesowych |
 | **Knowledge Mining** | Wydobywanie wiedzy z niestrukturyzowanych danych za pomocą AI (OCR, NLP, wzbogacanie) |
-| **Knowledge Mining Pipeline** | Trójstopniowy wzorzec (egzamin!): **Ingest** (źródła: Blob, SQL, Cosmos DB) → **Enrich** (AI Skillset: OCR, NER, key phrases, language detection) → **Explore** (Search Index, Dashboard, Power BI) |
+| **Knowledge Mining Pipeline** | Trójstopniowy wzorzec (egzamin!): <br> 1. **Ingest** – źródła: Blob, SQL, Cosmos DB <br> 2. **Enrich** – AI Skillset: OCR, NER, key phrases, language detection <br> 3. **Explore** – Search Index, Dashboard, Power BI |
 | **Vector Search** | Wyszukiwanie na bazie podobieństwa embeddingów (semantyczne, nie słowa kluczowe) |
 | **AI Agents** | Aplikacje AI z LLM, instrukcjami i narzędziami, działające autonomicznie (3 typy: Prompt, Workflow, Hosted) |
 | **RBAC** | Role-Based Access Control – kontrola dostępu do zasobów Azure (właściciel, współpracownik, czytelnik) |
