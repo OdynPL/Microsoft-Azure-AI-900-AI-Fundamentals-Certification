@@ -16,6 +16,12 @@
 - **Sentiment Analysis** – analiza emocji w tekście (np. pozytywna/negatywna recenzja)
 - **Entity Recognition** – rozpoznawanie nazw własnych w tekście (np. osób, miejsc)
 - **Generative AI** – generatywna AI, modele tworzące nowe treści (tekst, obrazy, kod)
+- **Multimodal Models** – modele AI rozumiejące tekst i obrazy jednocześnie (np. GPT-4V, GPT-4o)
+- **Few-shot Learning** – model uczy się na 1–5 przykładach w promptie bez retrainingu
+- **Zero-shot Learning** – model radzi sobie z zadaniem bez żadnych przykładów
+- **Chain-of-Thought** – technika zachęcająca model do wypisania kroków rozumowania
+- **Anomaly Detection** – algorytmy wykrywające odbiegające od normy obserwacje (np. oszustwa, defekty)
+- **Recommendation Systems** – algorytmy przewidujące preferencje użytkownika (Collaborative Filtering, Content-Based)
 - **Responsible AI** – etyczne, bezpieczne i przejrzyste wdrażanie AI
 - **Bias** – tendencyjność modelu wynikająca z danych lub procesu uczenia
 - **Explainability** – możliwość wyjaśnienia, jak model podejmuje decyzje
@@ -23,6 +29,11 @@
 - **Compliance** – zgodność z regulacjami prawnymi (np. RODO)
 - **Overfitting** – przeuczenie modelu, zbyt dobre dopasowanie do danych treningowych
 - **Underfitting** – niedouczenie modelu, zbyt proste wzorce
+- **Data Imbalance** – nierównomierny rozkład klas w zbiorze (np. 95% vs 5%); wymaga Class Weighting, SMOTE
+- **Class Weighting** – przydzielenie wyższych wag mniejszościowej klasie w funkcji strat
+- **SMOTE** – Synthetic Minority Over-Sampling Technique; syntetyczne generowanie przykładów mniejszości
+- **Stratified Split** – dzielenie danych z zachowaniem proporcji klas
+- **A/B Testing** – porównywanie starego modelu (A) z nowym (B) na części użytkowników
 - **Accuracy** – dokładność, odsetek poprawnych przewidywań
 - **Precision** – precyzja, odsetek trafień wśród przewidzianych pozytywnych
 - **Recall** – czułość, odsetek wykrytych pozytywnych
@@ -77,5 +88,13 @@
 - **MSE (Mean Square Error)** – średnia kwadratów błędów – metryka oceny modeli regresyjnych
 - **Data Augmentation** – sztuczne zwiększanie zbioru danych przez modyfikacje (obrót zdjęć, synonimy tekstu)
 - **Transfer Learning** – wykorzystanie wytrenowanego modelu do nowego, pokrewnego zadania
+- **Model Monitoring** – ciągłe śledzenie wydajności wdrożonego modelu (latency, throughput, accuracy)
+- **Data Drift** – zmiana rozkładu danych wejściowych w produkcji pogorsza jakość modelu
+- **Model Drift** – pogorszenie się wydajności metryki (accuracy) na nowych danych
+- **Retraining Pipeline** – automatyczne wznowienie treningu modelu na nowych danych
+- **Model Versioning** – śledzenie historii wersji modelu, metadanych, metryk
+- **Traffic Split** – podział ruchu użytkowników między stary model (A) i nowy (B) w A/B testach
+- **Fairlearn** – open-source'owe narzędzie do pomiaru i poprawy sprawiedliwości modeli
+- **Azure AI Search** – wektorowa baza danych do wyszukiwania semantycznego, używana w RAG
 
 [⟵ Poprzedni: Szybka ściąga i pułapki](08-last-minute-cram.md) | [Następny: No-code i low-code ML ⟶](10-no-code-ml.md)

@@ -73,6 +73,28 @@
 - **Overfitting (przeuczenie)** – model zbyt dobrze dopasowany do danych treningowych, słabo generalizuje do nowych danych. Przykład: model zapamiętuje dane zamiast uczyć się ogólnych wzorców.
 - **Underfitting (niedouczenie)** – model zbyt prosty, nie uczy się zależności w danych, osiąga niską skuteczność zarówno na danych treningowych, jak i testowych.
 
+## Data Imbalance – klasy niezbalansowane
+- **Problem**: Zbiór danych ma nierówno rozmreszane klasy (np. 95% negatywnych przykładów, 5% pozytywnych). Model uczy się faworyzować większość i osiąga wysoką Accuracy, ale źle radzi sobie z mniejszością.
+  - Przykład: detekcia oszustw (99.95% transakcji legalne, 0.05% oszustwa) – model, który zawsze mówi „legalne", będzie miał 99.95% Accuracy, ale nie złapie żadnego oszustwa.
+- **Rozwiązania**:
+  - **Class Weighting** – wagi wysoksze dla mniejszościowej klasy w funkcji strat
+  - **Oversampling** – replikowanie przykładów mniejszości (SMOTE – Synthetic Minority Over-Sampling Technique)
+  - **Undersampling** – zmniejszenie większości klasy
+  - **Stratified Split** – dzielenie danych na trening/walidację/test z zachowaniem proporcji klas
+  - **Wybór metryki** – zamiast Accuracy użyć F1-score, Recall lub Precision w zależności od scenariusza
+- **Azure**: AutoML w Azure ML automatycznie wykrywa imbalance i stosuje Class Weighting, a designerach można konfigurować oversampling.
+
+## A/B Testing – porównywanie modeli w produkcji
+- **Co to jest**: Strategie wdrażania nowego modelu obok starego, gdzie część użytkowników otrzymuje stary model (A), część nowy (B). Porównuje się metryki biznesowe (CTR, konwersje, zadowolenie użytkownika).
+- **Kroki**:
+  1. Wytrenuj nowy model, oceń go na zbiorze testowym.
+  2. Wdróż jako **Azure ML Managed Online Endpoint** z małym podziale tracfficu (np. 10%).
+  3. Monitoruj metryki dla obu wersji (np. real-time latency, error rate, biznesowa metrika).
+  4. Jeśli nowy model jest lepszy, stopniowo zwiększaj traffic (gradual rollout).
+  5. Jeśli gorzej, wycofaj i powróć do starego modelu.
+- **Typowe metryki**: CTR (click-through rate), conversion rate, user satisfaction, model latency, inference cost.
+- **Azure**: Azure ML Endpoints obsługują traffic splitting i monitoring w real-time.
+
 ## Metryki oceny modeli
 
 ![Confusion Matrix – macierz pomyłek i metryki](assets/confusion-matrix.svg)

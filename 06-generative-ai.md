@@ -33,8 +33,41 @@
 - **Phi (Microsoft)** – małe, wydajne modele językowe (SLM – Small Language Models).
 - **Whisper (OpenAI)** – rozpoznawanie mowy i transkrypcja.
 
-## Prompt engineering
+## Prompt engineering – zaawansowane techniki
 - **Prompt engineering** – sztuka tworzenia skutecznych poleceń (promptów) dla modeli generatywnych, aby uzyskać pożądane wyniki. Odpowiednio sformułowany prompt pozwala uzyskać bardziej precyzyjne, kreatywne lub zgodne z oczekiwaniami odpowiedzi. Przykład: "Napisz podsumowanie tego artykułu w 3 zdaniach".
+- **Zero-shot learning** – model radzi sobie z zadaniem bez żadnych przykładów. Pytanie: "Przetłumacz na angielski: Cześć" – model wie, co to tłumaczenie, bez pokazania przykładu.
+- **Few-shot learning** – model uczy się na 1–5 przykładach w promptie. Przykład:
+  ```
+  Klasyfikuj sentyment: Pozytywny/Negatywny
+  "Ten produkt jest świetny!" → Pozytywny
+  "Zła jakość, rozczarowanie." → Negatywny
+  "Niespecjalnie się podoba" → ?
+  ```
+- **Chain-of-Thought (CoT)** – model prosi się o wypisanie kroków rozumowania zamiast od razu odpowiedzi. Prompt: "Pomyśl krok po kroku: Jaka jest cena X produktów po zniżce 20%?" – model pokazuje obliczenia, a odpowiedź jest dokładniejsza.
+- **System Message** – instrukcja na początku sesji definiująca rolę (np. "Jesteś ekspertem w finansach"), tone, ograniczenia. Zwiększa spójność odpowiedzi.
+
+## Multimodal Models – tekst + obrazy
+- **Multimodal models** – modele AI, które rozumieją zarówno tekst, jak i obrazy, i potrafią je łączyć. Przykład: GPT-4V, GPT-4o.
+- **Typowe scenariusze**:
+  - Opis obrazu: "Co widzisz na zdjęciu?" – model generuje opis językiem naturalnym.
+  - Analiza tekstu na obrazach: "Przeczytaj tekst z tego zdjęcia faktury" – model ekstrahuje dane.
+  - Odpowiedź na pytania o obrazy: "Ile osób jest na tym zdjęciu?" – model analizuje zawartość wizualną.
+  - Generowanie obrazów z tekstu: DALL-E (tekst → obraz).
+- **Azure**: GPT-4o w Azure OpenAI obsługuje vision (obrazy), DALL-E 3 do generowania.
+
+## RAG (Retrieval Augmented Generation) – praktyczne aspekty
+- **Problem bez RAG**: Model generuje odpowiedź na podstawie danych treningowych (np. do 2023). Halucynuje, jeśli pyta się o bieżące dane firmy.
+- **RAG solution**: Przed wysłaniem pytania do modelu, system wyszukuje w **Azure AI Search** (wektorowa baza danych) dokumenty/FAQ odpowiadające pytaniu. Model otrzymuje:
+  ```
+  System: Odpowiadaj na pytania na podstawie poniższych dokumentów.
+  Dokumenty: [wynik wyszukiwania z Azure AI Search]
+  User: Ile kosztuje produkt X?
+  ```
+- **Implementacja na Azure**:
+  1. Wgraj dokumenty firmowe do Azure Blob Storage.
+  2. Zindeksuj je w **Azure AI Search** (baza wektorowa) z embeddings.
+  3. Użytkownik pyta → Azure AI Search wyszukuje dokumenty → Azure OpenAI generuje odpowiedź na bazie dokumentów.
+- **Korzyści**: Aktualne dane (FAQ zmienia się codziennie), wiarygodne źródła, mniejsze halucynacje.
 
 ## Ograniczenia generatywnej AI
 - **Halucynacje (Hallucinations)** – model może generować nieprawdziwe lub zmyślone informacje.

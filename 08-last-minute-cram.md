@@ -63,4 +63,28 @@
 - **Content Safety** – jeśli pytanie dotyczy blokowania szkodliwych treści w AI – to Azure AI Content Safety.
 - **Limited Access** – identyfikacja twarzy i niektóre inne funkcje wymagają formalnej zgody Microsoft.
 
+## Decision Guide – kiedy użyć czego?
+
+| Problem | Rozwiązanie | Dlaczego |
+|---------|-----------|---------|
+| Chcę szybko gotowe AI bez trenowania | Azure AI Services (Vision, Language, Speech) | Gotowe API, mało konfiguracji |
+| Chcę trenować własne modele | Azure Machine Learning | AutoML, Designer, MLOps |
+| Chcę generować tekst/kod/obrazy | Azure OpenAI + RAG | LLM dla generacji, RAG dla danych firmy |
+| Kiedy miał wiele błędów na jednej grupie? | Fairlearn, Azure ML RAI Dashboard | Detekcja i mitygacja biasu |
+| Chcę A/B test nowego vs starego modelu | Azure ML Online Endpoint z traffic split | Monitoring real-time, bezpieczny rollout |
+| Moja dokładność spada w produkcji | Drift Detection, retrain pipeline | Data drift lub model drift |
+| Moje dane są niezbalansowane 95% vs 5% | Class Weighting, SMOTE, stratified split | Metrics: F1-score, Recall, nie Accuracy |
+| Chcę wyjaśnić decyzję modelu użytkownikowi | SHAP/LIME + Azure ML Explainability | Feature importance, kontrfaktualne przykłady |
+| Chcę RAG dla danych firmowych FAQ | Azure OpenAI + Azure AI Search | Vektorowa wyszukiwarka + LLM |
+
+## Najnowsze do zapamiętania (AI-900)
+- **Few-shot learning** – model uczy się na 1–5 przykładach w promptie
+- **Chain-of-Thought** – prośba o wypisanie kroków rozumowania
+- **Anomaly Detection** – one-class SVM, Isolation Forest, autoencoders
+- **Recommendation Systems** – Collaborative Filtering, Content-Based, Hybrid
+- **Data Imbalance** – Class Weighting, SMOTE, Stratified Split
+- **A/B Testing** – traffic split, gradual rollout, business metrics
+- **Model Monitoring** – data drift, model drift, prediction drift
+- **Retraining Strategy** – automatyczne pipeline'y, versioning, A/B test
+
 [⟵ Poprzedni: Responsible AI](07-responsible-ai.md) | [Następny: Glosariusz ⟶](09-glosariusz.md)

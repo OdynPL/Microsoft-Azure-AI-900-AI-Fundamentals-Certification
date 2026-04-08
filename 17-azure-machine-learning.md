@@ -57,6 +57,35 @@ var endpoint = new OnlineEndpoint(
 mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
 ```
 
+## Monitorowanie modeli w produkcji – drift detection
+- **Model Monitoring (Zlecenia/MLOps)** – ciągłe śledzenie wydajności wdrożonego modelu:
+	- **Real-time metrics**: latency (czas odpowiedzi), throughput (liczba żądań), error rate.
+	- **Data drift**: zmiana rozkładu danych wejściowych w czasie (np. zmiana profilu użytkownika). Model wytrenowany na starych danych może działać gorzej.
+	- **Model drift**: pogorszenie się wydajności metryki predykcyjnej (accuracy, precision, recall) na nowych danych.
+	- **Prediction drift**: nagła zmiana przewidywań modelu (bez zmiany danych wejściowych).
+- **Scenariusz problemu**:
+  - Wytrenowałeś model kredytowy w 2024 na danych klientów głównie międzywiekowych).
+  - W 2025 pojawia się nowa demografika (starsze osoby starają się o kredyty).
+  - Model zaczyna źle przewidywać dla nowych grup → **DATA DRIFT**.
+  - Trzeba retrenować model na nowych danych.
+
+## Model Versioning & Retraining Strategy
+- **Model Registry** – wszystkie wersje modelu w jednym miejscu:
+  - Każda wersja ma metadane: autor, data, metryki testowe, parametry.
+  - Łatwe zarządzanie: promowania starego modelu, rollback'u, porównania wersji.
+- **Retraining Pipeline**:
+  1. Zbierz nowe dane w produkcji (co tydzień, miesiąc).
+  2. Uruchom eksperyment ML (AutoML lub custom trening) na nowych danych.
+  3. Porównaj metryki nowego modelu ze starym.
+  4. Jeśli nowy jest lepszy: A/B test (traffic split) i postupniowy rollout.
+  5. Jeśli gorzej: pozostań przy starym, zbierz więcej danych.
+- **Azure ML Schedules**: automatyzacja retrainingu – co miesiąc uruchom pipeline, przetrenuj, oceń, potencjalnie wdróż.
+
+## Integracja z DevOps (MLOps)
+- **CI/CD dla modeli**: GitHub Actions / Azure DevOps → automatyczne testy, budowanie, wdrażanie nowych wersji modelu.
+- **Reproducibility**: Environment + seedy kodów = powtarzalne wyniki treningu.
+- **Audit trail**: kto trenował model, kiedy, z jakimi danymi, jakie były wyniki.
+
 ## Ważne informacje
 - Obsługa pracy zespołowej i zarządzania uprawnieniami.
 - Integracja z GitHub, Azure DevOps, Power BI.

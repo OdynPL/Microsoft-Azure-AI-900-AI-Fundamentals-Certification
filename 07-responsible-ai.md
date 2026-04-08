@@ -25,9 +25,30 @@
 - **Monitorowanie modeli** – śledzenie skuteczności i sprawiedliwości modeli po wdrożeniu.
 
 ## Narzędzia i usługi **Azure** wspierające Responsible AI
-- **Azure Machine Learning Responsible AI dashboard** – panel do monitorowania, audytu, wykrywania biasu, wyjaśniania decyzji modeli (Error Analysis, Fairness, Explainability, Causal Analysis).
-- **Fairlearn** – open-source’owe narzędzie do oceny i poprawy sprawiedliwości modeli ML.
-- **InterpretML** – narzędzie do wyjaśniania decyzji modeli (SHAP, LIME) – explainability.
+- **Azure Machine Learning Responsible AI dashboard** – panel do monitorowania, audytu, wykrywania biasu, wyjaśniania decyzji modeli:
+	- **Fairness Assessment** – porównanie wydajności modelu dla różnych grup demograficznych (np. wiek, płeć, pochodzenie). Jeśli model radzi sobie lepiej dla jednej grupy niż drugiej, to jest bias.
+	- **Error Analysis** – gdzie i dla kogo model robi wiele błędów?
+	- **Explainability (SHAP/LIME)** – które cechy wpłynęły na daną decyzję modelu? (Feature Importance)
+	- **Causal Analysis** – czy zmienna X rzeczywiście wpływa na Y, czy to korelacja?
+- **Fairlearn** – open-source'owe narzędzie do oceny i poprawy sprawiedliwości modeli ML:
+	- Automatycznie mierzy bias w modelach (Group Fairness, Individual Fairness).
+	- Oferuje algorytmy do zmniejszania biasu (Reductions, Threshold Optimizer).
+- **InterpretML (SHAP, LIME)** – wyjaśnianie decyzji modeli:
+	- **SHAP** – wartości Shapleya pokazują wkład każdej cechy w predykcję.
+	- **LIME** – lokalne wyjaśnienia, co byłoby jeśli zmienimy pojedynczą cechę.
+
+## Praktyczne użycie – Bias Detection & Mitigation
+- **Scenariusz**: Rekrutacyjny model AI preferuje mężczyzn niż kobiety do roli inżyniera (bias w danych treningowych).
+- **Detekcja**:
+  1. Wytrenuj model na danych historycznych (gdzie mężczyźni byli preferowani).
+  2. W Azure ML Responsible AI Dashboard sprawdź Fairness Assessment.
+  3. Wynik: Model radzi sobie z 85% dokładnością dla mężczyzn, ale tylko 65% dla kobiet → **BIAS DETECTED**.
+- **Mitygacja**:
+  - **Upstream**: Zbierz więcej CV od kobiet (data augmentation), usuń zmienne powiązane z płcią.
+  - **Model level**: Użyj Class Weighting (wyższe kary za błędy dla mniejszości), zastosuj Fairlearn Reductions.
+  - **Downstream**: Ustaw threshold decyzji inaczej dla różnych grup, by wyrównać FPR między grupami.
+  - **Monitoring**: Co miesiąc sprawdzaj Fairness, czy nowe dane znowu nie wprowadzają biasu.
+
 - **Azure AI Content Safety** – wykrywanie i blokowanie szkodliwych treści generowanych lub podawanych przez AI: mowa nienawiści, przemoc, treści seksualne, samookaleczenie. Dostępna jako osobna usługa API.
 
 ![Azure AI Content Safety](assets/content-safety.svg)

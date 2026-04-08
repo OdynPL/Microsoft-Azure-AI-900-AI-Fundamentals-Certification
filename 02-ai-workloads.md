@@ -38,6 +38,33 @@
 
 ![Typowe workloady AI](assets/ai-workloads.svg)
 
+## Anomaly Detection - szczegóły
+- **Co to jest**: Algorytmy uczenia maszynowego / statystyczne szukające obserwacji istotnie różnych od większości danych (outliers, odchylenia od normy).
+- **Typowe algorytmy**:
+	- **Statistical methods** (Isolation Forest, Local Outlier Factor) – szybkie, dla danych tabelarycznych
+	- **Neural networks** (autoencoders) – bardziej zaawansowane, dla danych złożonych (obrazy, sekwencje)
+	- **One-class SVM** – dla problemów binarnych (normalne vs anomalne)
+- **Typowe scenariusze biznesowe**:
+	- Detekcja oszustw finansowych (transakcje o nietypowych kwotach, lokalizacjach, częstości)
+	- Monitoring maszyn produkcyjnych (czujniki wskazujące anomalę = możliwa awaria)
+	- Bezpieczeństwo sieci (anomalny ruch sieciowy = potencjalny atak)
+	- Medycyna: wykrywanie pacjentów o atypowych wskaźnikach zdrowia
+- **Azure**: Azure Machine Learning (AutoML obsługuje anomaly detection), Azure Stream Analytics (real-time anomalies), custom modele.
+
+## Recommendation Systems - szczegóły
+- **Co to jest**: Algorytmy przewidujące, jakie produkty/zawartość użytkownik może polubić, na podstawie historii, preferencji lub zachowania podobnych użytkowników.
+- **Typowe algorytmy**:
+	- **Collaborative Filtering** – „użytkownicy podobni do ciebie polubili..." (wymaga historii zachowań wielu użytkowników)
+	- **Content-Based Filtering** – „produkty podobne do tych, które polubiłeś" (cechy produktu: gatunek, poziom ceny itp.)
+	- **Hybrid** – kombinacja obu podejść (Microsoft, Netflix, Amazon)
+	- **Matrix Factorization** – rozkład macierzy preferencji użytkowników (złożone, ale wydajne)
+- **Typowe scenariusze biznesowe**:
+	- E-commerce: „inni kupujący też kupili..." (Netflix, Amazon, Spotify)
+	- Wyszukiwarki: spersonalizowane wyniki na podstawie profilu użytkownika
+	- Media społecznościowe: feed personalizowany dla każdego użytkownika
+	- Advertising: reklamy o wyższym CTR na podstawie preferencji
+- **Azure**: Azure Machine Learning (budowanie modeli), Azure Personalization Service (historycznie: Recommendation API), Power Automate (integracja).
+
 ## Przykłady zastosowań
 - **Rozpoznawanie twarzy** w systemach bezpieczeństwa
 - **Analiza sentymentu** opinii klientów
