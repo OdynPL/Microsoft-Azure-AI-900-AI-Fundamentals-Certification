@@ -21,6 +21,9 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
 - **Responsible AI** – wbudowane dashboardy Responsible AI, content safety i ewaluacja fairness.
 
 ## Azure Foundry Agent Service – budowanie agentów AI
+
+![AI Agent Lifecycle](assets/agent-lifecycle.svg)
+
 - **Co to jest agent**: Aplikacja AI, która używa LLM do rozumowania i podejmowania autonomicznych decyzji. Różni się od chatbota – agent może kać narzędziami, dostępować danych i wykonywać wielokrokowe zadania.
 - **Komponenty agenta**:
   - **Model (LLM)** – GPT-4, Llama, DeepSeek (wybierz z katalogów Foundry)

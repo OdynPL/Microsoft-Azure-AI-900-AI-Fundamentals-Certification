@@ -34,6 +34,9 @@
 - **Whisper (OpenAI)** – rozpoznawanie mowy i transkrypcja.
 
 ## Prompt engineering – zaawansowane techniki
+
+![Prompt Engineering – techniki](assets/prompt-engineering.svg)
+
 - **Prompt engineering** – sztuka tworzenia skutecznych poleceń (promptów) dla modeli generatywnych, aby uzyskać pożądane wyniki. Odpowiednio sformułowany prompt pozwala uzyskać bardziej precyzyjne, kreatywne lub zgodne z oczekiwaniami odpowiedzi. Przykład: "Napisz podsumowanie tego artykułu w 3 zdaniach".
 - **Zero-shot learning** – model radzi sobie z zadaniem bez żadnych przykładów. Pytanie: "Przetłumacz na angielski: Cześć" – model wie, co to tłumaczenie, bez pokazania przykładu.
 - **Few-shot learning** – model uczy się na 1–5 przykładach w promptie. Przykład:
@@ -94,6 +97,9 @@
 - **Azure AI Content Safety** – filtrowanie i moderowanie treści generowanych przez AI: mowa nienawiści, przemoc, treści seksualne, samookaleczenie. Konfigurowalne poziomy czułości.
 
 ## Vector Search & Embeddings – zaawansowana wyszukiwarka dla RAG
+
+![Vector Search & Hybrid Search](assets/vector-search.svg)
+
 - **Embeddings** – reprezentacja tekstu/obrazu w postaci wektora numerycznego (~1500 wymiarów dla tekstu). Modele podający semantyczne znaczenie.
 - **Similarity Search** – zamiast słów kluczowych, pytanie zostaje zamienione w embedding, a wyszukiwarka zwraca dokumenty o najbardziej podobnych embeddings'ach.
 - **Hybrid Search** – kombinacja vector search (semantyka) + keyword search (dokładne słowa):

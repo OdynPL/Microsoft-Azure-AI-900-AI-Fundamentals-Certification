@@ -38,6 +38,9 @@
 	- **LIME** – lokalne wyjaśnienia, co byłoby jeśli zmienimy pojedynczą cechę.
 
 ## Praktyczne użycie – Bias Detection & Mitigation
+
+![Bias Detection & Mitigation](assets/bias-detection.svg)
+
 - **Scenariusz**: Rekrutacyjny model AI preferuje mężczyzn niż kobiety do roli inżyniera (bias w danych treningowych).
 - **Detekcja**:
   1. Wytrenuj model na danych historycznych (gdzie mężczyźni byli preferowani).

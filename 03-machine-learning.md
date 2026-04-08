@@ -74,6 +74,9 @@
 - **Underfitting (niedouczenie)** – model zbyt prosty, nie uczy się zależności w danych, osiąga niską skuteczność zarówno na danych treningowych, jak i testowych.
 
 ## Data Imbalance – klasy niezbalansowane
+
+![Data Imbalance](assets/data-imbalance.svg)
+
 - **Problem**: Zbiór danych ma nierówno rozmreszane klasy (np. 95% negatywnych przykładów, 5% pozytywnych). Model uczy się faworyzować większość i osiąga wysoką Accuracy, ale źle radzi sobie z mniejszością.
   - Przykład: detekcia oszustw (99.95% transakcji legalne, 0.05% oszustwa) – model, który zawsze mówi „legalne", będzie miał 99.95% Accuracy, ale nie złapie żadnego oszustwa.
 - **Rozwiązania**:
@@ -85,6 +88,9 @@
 - **Azure**: AutoML w Azure ML automatycznie wykrywa imbalance i stosuje Class Weighting, a designerach można konfigurować oversampling.
 
 ## A/B Testing – porównywanie modeli w produkcji
+
+![A/B Testing – Traffic Split](assets/ab-testing.svg)
+
 - **Co to jest**: Strategie wdrażania nowego modelu obok starego, gdzie część użytkowników otrzymuje stary model (A), część nowy (B). Porównuje się metryki biznesowe (CTR, konwersje, zadowolenie użytkownika).
 - **Kroki**:
   1. Wytrenuj nowy model, oceń go na zbiorze testowym.

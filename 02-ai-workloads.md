@@ -39,6 +39,9 @@
 ![Typowe workloady AI](assets/ai-workloads.svg)
 
 ## Anomaly Detection - szczegóły
+
+![Anomaly Detection](assets/anomaly-detection.svg)
+
 - **Co to jest**: Algorytmy uczenia maszynowego / statystyczne szukające obserwacji istotnie różnych od większości danych (outliers, odchylenia od normy).
 - **Typowe algorytmy**:
 	- **Statistical methods** (Isolation Forest, Local Outlier Factor) – szybkie, dla danych tabelarycznych
@@ -52,6 +55,9 @@
 - **Azure**: Azure Machine Learning (AutoML obsługuje anomaly detection), Azure Stream Analytics (real-time anomalies), custom modele.
 
 ## Recommendation Systems - szczegóły
+
+![Recommendation Systems](assets/recommendation-systems.svg)
+
 - **Co to jest**: Algorytmy przewidujące, jakie produkty/zawartość użytkownik może polubić, na podstawie historii, preferencji lub zachowania podobnych użytkowników.
 - **Typowe algorytmy**:
 	- **Collaborative Filtering** – „użytkownicy podobni do ciebie polubili..." (wymaga historii zachowań wielu użytkowników)

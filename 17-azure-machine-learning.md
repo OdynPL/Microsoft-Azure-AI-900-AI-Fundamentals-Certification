@@ -58,6 +58,9 @@ mlClient.OnlineEndpoints.CreateOrUpdate(endpoint);
 ```
 
 ## Monitorowanie modeli w produkcji – drift detection
+
+![Drift Detection & Retraining Pipeline](assets/drift-retraining.svg)
+
 - **Model Monitoring (Zlecenia/MLOps)** – ciągłe śledzenie wydajności wdrożonego modelu:
 	- **Real-time metrics**: latency (czas odpowiedzi), throughput (liczba żądań), error rate.
 	- **Data drift**: zmiana rozkładu danych wejściowych w czasie (np. zmiana profilu użytkownika). Model wytrenowany na starych danych może działać gorzej.
