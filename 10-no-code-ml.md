@@ -37,7 +37,7 @@
 
 ## Usługi Azure wspierające no-code/low-code ML
 - **Azure Machine Learning Designer** – graficzne budowanie pipeline'ów ML (drag & drop)
-- **Automated ML (AutoML)** – automatyczne trenowanie modeli (klasyfikacja, regresja, klasteryzacja, Computer Vision, NLP)
+- **Automated ML (AutoML)** – automatyczne trenowanie modeli (klasyfikacja, regresja, klasteryzacja, Computer Vision, NLP – Natural Language Processing)
 - **Power Platform AI Builder** – narzędzia AI dla użytkowników biznesowych:
 	- Klasyfikacja tekstu i obrazów
 	- Wykrywanie obiektów

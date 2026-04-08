@@ -5,7 +5,7 @@
 ![Last Minute Cram](assets/last-minute-cram.svg)
 
 ## Najważniejsze różnice i pułapki
-- **Computer Vision** ≠ **NLP** ≠ **Generatywna AI** – rozpoznawaj typ workloadu po opisie zadania (np. "analiza obrazu" to Computer Vision, "analiza tekstu" to NLP).
+- **Computer Vision** ≠ **NLP (Natural Language Processing)** ≠ **Generatywna AI** – rozpoznawaj typ workloadu po opisie zadania (np. "analiza obrazu" to Computer Vision, "analiza tekstu" to NLP).
 - **OCR** = rozpoznawanie tekstu na obrazach, nie analiza sentymentu (OCR to Computer Vision, nie NLP).
 - **Sentiment analysis** = **NLP**, nie **Computer Vision** (emocje w tekście, nie na obrazach).
 - **GPT** = **generatywna AI**, nie klasyczne **ML** (GPT generuje tekst, nie klasyfikuje danych).
@@ -20,7 +20,7 @@
 |---------|--------------|------|
 | Klasyfikacja obrazów | **AI Vision / Custom Vision** | Rozpoznawanie, tagowanie, analiza obrazów; Custom Vision – własne modele |
 | Detekcja twarzy | **AI Face** | Identyfikacja, analiza emocji, weryfikacja tożsamości |
-| Analiza tekstu | **AI Language** | Sentyment, frazy kluczowe, NER, PII, podsumowanie |
+| Analiza tekstu | **AI Language** | Sentyment, frazy kluczowe, NER (Named Entity Recognition), PII (Personally Identifiable Information), podsumowanie |
 | Rozpoznawanie intencji w chatbocie | **AI Language (CLU)** | Conversational Language Understanding – następca LUIS |
 | Baza Q&A | **AI Language (Question Answering)** | Odpowiedzi na pytania z dokumentów i FAQ |
 | Rozpoznawanie mowy | **AI Speech** | Zamiana mowy na tekst i odwrotnie |
@@ -45,15 +45,15 @@
 - **Azure AI Services** to gotowe modele AI jako API - szybkie wdrozenie bez trenowania od zera.
 - **Single-service resource** = jeden zasob dla jednej uslugi; **Multi-service resource** = jeden zasob dla wielu uslug.
 - **Azure OpenAI** to oddzielny zasob i oddzielny proces dostepu (wymagana akceptacja Microsoft).
-- Gdy scenariusz mowi o szybkim wdrozeniu gotowych funkcji (OCR, NER, STT, TTS), zwykle wybierasz **Azure AI Services**.
+- Gdy scenariusz mowi o szybkim wdrozeniu gotowych funkcji (OCR, NER, STT – Speech-to-Text, TTS – Text-to-Speech), zwykle wybierasz **Azure AI Services**.
 - Gdy scenariusz wymaga pelnej kontroli treningu, eksperymentow i MLOps, zwykle wybierasz **Azure Machine Learning**.
 - W pytaniach produkcyjnych zwracaj uwage na: **endpoint**, **autoryzacje** (klucz/Entra ID), **region**, **limity** i **koszty**.
 - W GenAI zawsze uwzgledniaj **Content Filters**, **grounding/RAG** oraz zasady **Responsible AI**.
 
 ## Agenci AI – nowy temat (AI-900/AI-901)
-- **Agent** = LLM + Instructions + Tools, działający autonomicznie (nie tylko chatbot)
+- **Agent** = LLM (Large Language Model) + Instructions + Tools, działający autonomicznie (nie tylko chatbot)
 - **Typy**: Prompt Agents (no-code), Workflow Agents (YAML, multi-step), Hosted Agents (kod, full control)
-- **Tools**: web search, file search, memory, code interpreter, API calls, Azure DevOps (MCP)
+- **Tools**: web search, file search, memory, code interpreter, API calls, Azure DevOps, MCP (Model Context Protocol)
 - **Lifecycle**: Create → Test → Trace → Evaluate → Publish → Monitor
 - **RAG dla agentów**: Foundry IQ + Azure AI Search (vector store dla knowledge base)
 - **Bezpieczeństwo**: Content Filters, prompt injection defense, XPIA protection (cross-prompt injection)
@@ -93,8 +93,8 @@
 | Kiedy miał wiele błędów na jednej grupie? | Fairlearn, Azure ML RAI Dashboard | Detekcja i mitygacja biasu |
 | Chcę A/B test nowego vs starego modelu | Azure ML Online Endpoint z traffic split | Monitoring real-time, bezpieczny rollout |
 | Moja dokładność spada w produkcji | Drift Detection, retrain pipeline | Data drift lub model drift |
-| Moje dane są niezbalansowane 95% vs 5% | Class Weighting, SMOTE, stratified split | Metrics: F1-score, Recall, nie Accuracy |
-| Chcę wyjaśnić decyzję modelu użytkownikowi | SHAP/LIME + Azure ML Explainability | Feature importance, kontrfaktualne przykłady |
+| Moje dane są niezbalansowane 95% vs 5% | Class Weighting, SMOTE (Synthetic Minority Over-Sampling Technique), stratified split | Metrics: F1-score, Recall, nie Accuracy |
+| Chcę wyjaśnić decyzję modelu użytkownikowi | SHAP (SHapley Additive exPlanations) / LIME (Local Interpretable Model-agnostic Explanations) + Azure ML Explainability | Feature importance, kontrfaktualne przykłady |
 | Chcę RAG dla danych firmowych FAQ | Azure OpenAI + Azure AI Search | Vektorowa wyszukiwarka + LLM |
 
 ## Najnowsze do zapamiętania (AI-900)
@@ -102,7 +102,7 @@
 - **Chain-of-Thought** – prośba o wypisanie kroków rozumowania
 - **Anomaly Detection** – one-class SVM, Isolation Forest, autoencoders
 - **Recommendation Systems** – Collaborative Filtering, Content-Based, Hybrid
-- **Data Imbalance** – Class Weighting, SMOTE, Stratified Split
+- **Data Imbalance** – Class Weighting, SMOTE (Synthetic Minority Over-Sampling Technique), Stratified Split
 - **A/B Testing** – traffic split, gradual rollout, business metrics
 - **Model Monitoring** – data drift, model drift, prediction drift
 - **Retraining Strategy** – automatyczne pipeline'y, versioning, A/B test

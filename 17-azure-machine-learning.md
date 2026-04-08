@@ -10,14 +10,14 @@ Azure Machine Learning (Azure ML) to kompleksowa platforma do budowy, trenowania
 
 ## Kluczowe funkcje
 - **Projektowanie pipeline'ów ML (Designer)** – graficzny interfejs drag & drop do budowy procesów ML bez kodowania.
-- **Automated ML (AutoML)** – automatyczne dobieranie algorytmów i hiperparametrów. Obsługuje klasyfikację, regresję, klasteryzację, szeregi czasowe, Computer Vision i NLP.
+- **Automated ML (AutoML)** – automatyczne dobieranie algorytmów i hiperparametrów. Obsługuje klasyfikację, regresję, klasteryzację, szeregi czasowe, Computer Vision i NLP (Natural Language Processing).
 - **Trenowanie modeli** – obsługa frameworków: scikit-learn, PyTorch, TensorFlow, XGBoost.
 - **Wdrażanie modeli** – publikacja jako REST endpointy: **Managed Online Endpoint** (real-time), **Batch Endpoint** (wsadowe).
 - **Monitorowanie i rejestracja modeli (Model Registry)** – wersjonowanie, śledzenie metryk, audyt.
 - **Zarządzanie danymi (Data Assets)** – rejestracja, wersjonowanie i przetwarzanie zbiorów danych.
 - **Compute clusters i compute instances** – klastry do trenowania (skalowalne) i instancje do dewelopmentu/notebooków.
 - **Data Labeling** – narzędzie do etykietowania danych (obrazy, tekst) z opcją asysty ML.
-- **MLOps** – automatyzacja wdrożeń ML: integracja z GitHub, Azure DevOps, CI/CD dla modeli ML.
+- **MLOps (Machine Learning Operations)** – automatyzacja wdrożeń ML: integracja z GitHub, Azure DevOps, CI/CD (Continuous Integration / Continuous Deployment) dla modeli ML.
 - **Responsible AI Dashboard** – kompleksowy panel do analizy modeli pod kątem:
 	- **Fairness** (wykrywanie dyskryminacji między grupami)
 	- **Error Analysis** (analiza błędów modelu)

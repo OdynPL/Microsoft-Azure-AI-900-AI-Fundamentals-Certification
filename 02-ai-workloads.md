@@ -105,7 +105,7 @@
 - **Azure AI Vision** – analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, analiza cech wizualnych, moderacja treści
 - **Azure AI Face** – detekcja, identyfikacja i weryfikacja tożsamości, analiza emocji, grupowanie twarzy
 - **Azure AI Language** – analiza sentymentu, ekstrakcja kluczowych fraz, rozpoznawanie encji, tłumaczenia, klasyfikacja tekstu, wyszukiwanie semantyczne
-- **Azure AI Speech** – rozpoznawanie mowy (STT), synteza mowy (TTS), rozpoznawanie mówców, tłumaczenia mowy w czasie rzeczywistym
+- **Azure AI Speech** – rozpoznawanie mowy (STT – Speech-to-Text), synteza mowy (TTS – Text-to-Speech), rozpoznawanie mówców, tłumaczenia mowy w czasie rzeczywistym
 - **Azure OpenAI** – generowanie tekstu, obrazów, kodu, podsumowań i tłumaczeń (modele GPT-4, DALL-E), wsparcie dla prompt engineering
 - **Azure AI Foundry** – katalog modeli AI, zarządzanie cyklem życia modeli, integracja z innymi usługami
 - **Azure Machine Learning** – trenowanie, wdrażanie i zarządzanie modelami ML, AutoML, pipeline'y, rejestr modeli, endpointy, monitoring, audyt

@@ -40,7 +40,7 @@ Azure AI Foundry to platforma do zarządzania, katalogowania i wdrażania modeli
   4. **Evaluate** – automatyczne oceny jakości (coherence, fluency, relevance)
   5. **Publish** – stable endpoint, versioning
   6. **Monitor** – dashboard metryki, performance monitoring, błędy
-- **Built-in Tools**: web search, file search, memory, code interpreter, MCP servers
+- **Built-in Tools**: web search, file search, memory, code interpreter, MCP (Model Context Protocol) servers
 - **Integration**: Foundry IQ (knowledge base dla agentów), Azure AI Search (vector store), Microsoft 365 Copilot
 - **Security**: Microsoft Entra identity, content filters, XPIA (Cross-Prompt Injection Attacks) protection, private networking
 

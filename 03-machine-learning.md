@@ -181,7 +181,7 @@
 	- **Modele Meta**: Llama 3, Llama 2
 	- **Modele Mistral**: Mistral Large, Mistral Small
 	- **Modele Microsoft**: Phi-3, Phi-2 (małe, wydajne modele językowe)
-	- **Modele Hugging Face**: tysiące modeli open-source (NLP, Vision, Audio)
+	- **Modele Hugging Face**: tysiące modeli open-source (NLP – Natural Language Processing, Vision, Audio)
 	- **Modele Cohere**: Command, Embed (generowanie, embeddingi)
 
 [⟵ Poprzedni: Podstawy AI i rodzaje zadań](02-ai-workloads.md) | [Następny: Computer Vision ⟶](04-computer-vision.md)
