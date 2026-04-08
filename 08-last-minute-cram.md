@@ -41,6 +41,15 @@
 | Aktualizacja wiedzy | Łatwa (zmiana bazy) | Trudna (ponowny trening) |
 | Zastosowanie | Aktualne dane firmowe, FAQ, dokumenty | Specyficzny styl, ton, terminologia |
 
+## Azure AI Services - szybkie fakty na egzamin
+- **Azure AI Services** to gotowe modele AI jako API - szybkie wdrozenie bez trenowania od zera.
+- **Single-service resource** = jeden zasob dla jednej uslugi; **Multi-service resource** = jeden zasob dla wielu uslug.
+- **Azure OpenAI** to oddzielny zasob i oddzielny proces dostepu (wymagana akceptacja Microsoft).
+- Gdy scenariusz mowi o szybkim wdrozeniu gotowych funkcji (OCR, NER, STT, TTS), zwykle wybierasz **Azure AI Services**.
+- Gdy scenariusz wymaga pelnej kontroli treningu, eksperymentow i MLOps, zwykle wybierasz **Azure Machine Learning**.
+- W pytaniach produkcyjnych zwracaj uwage na: **endpoint**, **autoryzacje** (klucz/Entra ID), **region**, **limity** i **koszty**.
+- W GenAI zawsze uwzgledniaj **Content Filters**, **grounding/RAG** oraz zasady **Responsible AI**.
+
 ## Strategie egzaminacyjne
 - Czytaj uważnie scenariusz – kluczowe są słowa: „**klasyfikacja**”, „**generowanie**”, „**ekstrakcja**”, „**tłumaczenie**”, „**rozpoznawanie**”.
 - Eliminuj odpowiedzi niepassujące do typu workloadu (np. nie wybieraj usługi tekstowej do zadania z obrazem).

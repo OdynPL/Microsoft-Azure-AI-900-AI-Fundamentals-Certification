@@ -20,6 +20,42 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 
 Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami. Usługi te są szeroko wykorzystywane w zadaniach takich jak: rozpoznawanie obrazów, analiza tekstu, automatyzacja obsługi klienta, generowanie treści, digitalizacja dokumentów czy monitorowanie bezpieczeństwa.
 
+## Azure AI Services - co warto wiedzieć
+
+**Azure AI Services** (historycznie: Cognitive Services) to rodzina gotowych modeli AI udostepnianych jako uslugi chmurowe przez REST API i SDK. Z perspektywy egzaminu AI-900 najwazniejsze jest rozumienie, kiedy wybrac gotowa usluge AI Services, a kiedy budowac model samodzielnie w Azure Machine Learning.
+
+### Jak to dziala w praktyce
+- Tworzysz zasob w Azure (portal/CLI/Bicep/Terraform).
+- Otrzymujesz **endpoint** i sposob autoryzacji (klucz API lub Entra ID).
+- Aplikacja wysyla dane do endpointu (tekst, obraz, audio, prompt).
+- Usluga zwraca wynik inferencji (np. sentyment, transkrypcja, tagi obrazu, odpowiedz modelu).
+
+### Typy zasobow
+- **Single-service resource** - zasob dla jednej uslugi (np. sam Language lub sam Speech).
+- **Multi-service resource** - jeden wspolny zasob dla wielu uslug AI Services.
+- **Azure OpenAI resource** - osobny typ zasobu dla modeli OpenAI wdrazanych na Azure.
+
+### Kiedy Azure AI Services, a kiedy Azure Machine Learning?
+- **Azure AI Services**: gdy chcesz szybko wdrozyc gotowe AI bez trenowania modelu od zera.
+- **Azure Machine Learning**: gdy potrzebujesz pelnej kontroli nad danymi, treningiem, eksperymentami i MLOps.
+
+### Bezpieczenstwo i zgodnosc
+- Uwierzytelnianie: klucze API lub Microsoft Entra ID (rekomendowane w srodowisku produkcyjnym).
+- Kontrola dostepu: RBAC, Managed Identity, Private Endpoints, VNet.
+- Ochrona danych i zgodnosc: wsparcie dla standardow korporacyjnych i regulacji (np. RODO/GDPR).
+- Dla GenAI: filtry tresci, logowanie, monitorowanie i praktyki Responsible AI.
+
+### Koszty i skalowanie
+- Rozliczanie przewaznie za liczbe zadan, tokeny, sekundy audio lub strony dokumentow.
+- Rozne warstwy cenowe (tiers), limity i throughput zalezne od uslugi i regionu.
+- Skalowanie odbywa sie po stronie platformy - aplikacja korzysta z gotowego endpointu.
+
+### Typowe scenariusze biznesowe
+- **Contact center**: Speech-to-Text + Sentiment + podsumowanie rozmow.
+- **Digitalizacja dokumentow**: OCR + Document Intelligence + walidacja danych.
+- **Moderacja tresci**: Vision/Language + Azure AI Content Safety.
+- **Asystent firmowy**: Azure OpenAI + RAG (np. Azure AI Search) + polityki Responsible AI.
+
 ## Najważniejsze pojęcia AI na egzaminie
 
 - **AI (Artificial Intelligence)** – sztuczna inteligencja, systemy naśladujące ludzkie zdolności poznawcze
