@@ -416,7 +416,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Generative AI** | Generatywna AI – dziedzina AI tworząca **nowe treści** (tekst, obrazy, kod, muzyka) na podstawie promptów. W przeciwieństwie do tradycyjnej AI (predictive), która analizuje dane i zwraca etykiety/liczby, GenAI **generuje** oryginalne outputy. Bazuje na Foundation Models (GPT, DALL-E, Codex) trenowanych na ogromnych zbiorach danych |
+| **Generative AI** | AI tworzaca **nowe treści** (tekst, obrazy, kod) z promptów – w odróżnieniu od Traditional AI, która **analizuje** dane i zwraca predykcje (etykiety/liczby), GenAI **generuje** oryginalne outputy |
 | | ![Traditional AI vs Generative AI](assets/genai-vs-traditional.svg) |
 | **Multimodal Models** | Modele przetwarzające jednocześnie tekst, obraz i audio (np. GPT-4o) |
 | **DALL-E** | Model generowania obrazów z promptów tekstowych (text-to-image); DALL-E 3 w Azure OpenAI |
