@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Context Hallucination – sprzeczność z kontekstem</text>
+  <!-- RAG context box -->
+  <rect x="15" y="30" width="180" height="65" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="105" y="44" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Kontekst (RAG / dokument)</text>
+  <text x="25" y="58" fill="#333" font-size="7">"Regulamin firmy XYZ:</text>
+  <text x="25" y="69" fill="#333" font-size="7">Urlop wynosi 26 dni rocznie.</text>
+  <text x="25" y="80" fill="#333" font-size="7">Premia kwartalna = 10% pensji."</text>
+  <text x="25" y="91" fill="#28A745" font-size="6" font-weight="bold">✓ Fakty z Twojej bazy wiedzy</text>
+  <!-- Arrow -->
+  <line x1="200" y1="62" x2="215" y2="62" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- LLM -->
+  <rect x="220" y="38" width="55" height="48" fill="#0078D4" stroke="#005A9E" stroke-width="1" rx="8"/>
+  <text x="247" y="58" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">LLM</text>
+  <text x="247" y="72" text-anchor="middle" fill="#D6EAF8" font-size="6">+ kontekst</text>
+  <!-- Arrow -->
+  <line x1="278" y1="62" x2="293" y2="62" stroke="#E74C3C" stroke-width="1.5" marker-end="url(#arrR)"/>
+  <!-- Hallucinated output -->
+  <rect x="298" y="30" width="170" height="65" fill="#FDECEA" stroke="#E74C3C" stroke-width="1.5" rx="6"/>
+  <text x="383" y="44" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">Odpowiedź AI (halucynacja)</text>
+  <text x="306" y="58" fill="#333" font-size="7">"Urlop w firmie XYZ wynosi</text>
+  <text x="306" y="69" fill="#E74C3C" font-size="7" font-weight="bold">20 dni rocznie (zamiast 26!).</text>
+  <text x="306" y="80" fill="#333" font-size="7">Premia kwartalna wynosi</text>
+  <text x="306" y="91" fill="#E74C3C" font-size="7" font-weight="bold">15% pensji (zamiast 10!)."</text>
+  <!-- Info box -->
+  <rect x="15" y="102" width="452" height="42" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="241" y="116" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Context Hallucination – kiedy model ma dane, ale je przekręca</text>
+  <text x="25" y="130" fill="#333" font-size="7">Model otrzymuje poprawny kontekst (RAG/dokument), ale generuje odpowiedź sprzeczną z tym kontekstem</text>
+  <text x="25" y="142" fill="#333" font-size="7">Niebezpieczne: użytkownik myśli, że odpowiedź jest z dokumentu, a model zmienił fakty / liczby / warunki</text>
+  <!-- Solutions -->
+  <rect x="15" y="150" width="452" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="6"/>
+  <text x="241" y="164" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Rozwiązanie: Groundedness check (Azure) + ewaluacja faithfulness + cytowanie źródeł</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

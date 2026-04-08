@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Instruction Hallucination – ignoruje polecenie</text>
+  <!-- Chat example -->
+  <rect x="15" y="30" width="250" height="112" fill="#FFF" stroke="#CCC" stroke-width="1" rx="6"/>
+  <text x="22" y="44" fill="#0078D4" font-size="8" font-weight="bold">System Message:</text>
+  <rect x="22" y="48" width="230" height="16" fill="#E8E8E8" stroke="#999" stroke-width="0.5" rx="3"/>
+  <text x="30" y="59" fill="#555" font-size="7">"Odpowiadaj TYLKO po polsku. Max 2 zdania."</text>
+  <text x="22" y="76" fill="#0078D4" font-size="8" font-weight="bold">User:</text>
+  <rect x="22" y="80" width="230" height="14" fill="#F0F7FF" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="30" y="90" fill="#333" font-size="7">"Opisz sztuczną inteligencję"</text>
+  <text x="22" y="106" fill="#28A745" font-size="8" font-weight="bold">AI (halucynacja):</text>
+  <rect x="22" y="110" width="230" height="24" fill="#FDECEA" stroke="#E74C3C" stroke-width="0.5" rx="3"/>
+  <text x="30" y="121" fill="#333" font-size="7">"Artificial Intelligence is a branch of computer</text>
+  <text x="30" y="131" fill="#E74C3C" font-size="6" font-weight="bold">✗ Po angielsku! ✗ Więcej niż 2 zdania!</text>
+  <!-- Right info -->
+  <rect x="280" y="30" width="188" height="80" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="374" y="46" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Instruction Drift</text>
+  <text x="288" y="62" fill="#333" font-size="7">Model ignoruje lub zapomina:</text>
+  <text x="288" y="74" fill="#333" font-size="7">• System Message</text>
+  <text x="288" y="85" fill="#333" font-size="7">• Format wyjścia (JSON, lista)</text>
+  <text x="288" y="96" fill="#333" font-size="7">• Ograniczenia (język, długość)</text>
+  <text x="288" y="107" fill="#333" font-size="7">• Zakres tematyczny</text>
+  <!-- Solutions -->
+  <rect x="280" y="115" width="188" height="30" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="6"/>
+  <text x="374" y="128" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">Rozwiązanie:</text>
+  <text x="288" y="140" fill="#555" font-size="7">Wzmocnij prompt, dodaj przykłady (few-shot)</text>
+  <!-- Bottom -->
+  <rect x="15" y="150" width="452" height="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="6"/>
+  <text x="241" y="164" text-anchor="middle" fill="#555" font-size="7">Instruction hallucination nasila się przy długich konwersacjach – model „zapomina" wcześniejsze instrukcje</text>
+</svg>

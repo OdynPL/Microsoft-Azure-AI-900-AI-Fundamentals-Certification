@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Hallucinations – halucynacje modeli AI</text>
+  <!-- Left: How it happens -->
+  <rect x="15" y="28" width="160" height="62" fill="#FDECEA" stroke="#E74C3C" stroke-width="1.5" rx="6"/>
+  <text x="95" y="42" text-anchor="middle" fill="#E74C3C" font-size="9" font-weight="bold">Halucynacja</text>
+  <rect x="25" y="48" width="140" height="14" fill="#FFF" stroke="#E74C3C" stroke-width="0.5" rx="3"/>
+  <text x="95" y="58" text-anchor="middle" fill="#333" font-size="7" font-style="italic">"Stolica Australii to Sydney"</text>
+  <rect x="25" y="66" width="140" height="14" fill="#FFF" stroke="#E74C3C" stroke-width="0.5" rx="3"/>
+  <text x="95" y="76" text-anchor="middle" fill="#E74C3C" font-size="6">✗ Fałsz! Stolica = Canberra</text>
+  <!-- LLM box -->
+  <rect x="190" y="28" width="90" height="62" fill="#F0F7FF" stroke="#0078D4" stroke-width="1.5" rx="8"/>
+  <text x="235" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">LLM</text>
+  <text x="235" y="62" text-anchor="middle" fill="#555" font-size="7">Przewiduje</text>
+  <text x="235" y="73" text-anchor="middle" fill="#555" font-size="7">kolejny token</text>
+  <text x="235" y="84" text-anchor="middle" fill="#999" font-size="6">(nie weryfikuje)</text>
+  <!-- Arrow from LLM to hallucination -->
+  <line x1="188" y1="58" x2="178" y2="58" stroke="#E74C3C" stroke-width="1.5" marker-end="url(#arrR)"/>
+  <!-- Causes -->
+  <rect x="295" y="28" width="175" height="62" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="6"/>
+  <text x="382" y="42" text-anchor="middle" fill="#8B6A00" font-size="8" font-weight="bold">Przyczyny halucynacji</text>
+  <text x="302" y="55" fill="#333" font-size="7">• Brak wiedzy w danych treningowych</text>
+  <text x="302" y="66" fill="#333" font-size="7">• Niejednoznaczna instrukcja (prompt)</text>
+  <text x="302" y="77" fill="#333" font-size="7">• Wysoka temperature (losowość)</text>
+  <text x="302" y="88" fill="#333" font-size="7">• Brak groundingu w faktach</text>
+  <!-- Types -->
+  <rect x="15" y="96" width="452" height="50" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="241" y="110" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">5 typów halucynacji</text>
+  <text x="50" y="124" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Factual</text>
+  <text x="50" y="134" text-anchor="middle" fill="#555" font-size="6">fałszywe fakty</text>
+  <text x="145" y="124" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Fabrication</text>
+  <text x="145" y="134" text-anchor="middle" fill="#555" font-size="6">zmyślone źródła</text>
+  <text x="241" y="124" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Instruction</text>
+  <text x="241" y="134" text-anchor="middle" fill="#555" font-size="6">ignoruje polecenie</text>
+  <text x="337" y="124" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Context</text>
+  <text x="337" y="134" text-anchor="middle" fill="#555" font-size="6">sprzeczne z danymi</text>
+  <text x="433" y="124" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Autocomplete</text>
+  <text x="433" y="134" text-anchor="middle" fill="#555" font-size="6">generuje „bo pasuje"</text>
+  <!-- Separators -->
+  <line x1="97" y1="116" x2="97" y2="140" stroke="#DDD" stroke-width="0.5"/>
+  <line x1="193" y1="116" x2="193" y2="140" stroke="#DDD" stroke-width="0.5"/>
+  <line x1="289" y1="116" x2="289" y2="140" stroke="#DDD" stroke-width="0.5"/>
+  <line x1="385" y1="116" x2="385" y2="140" stroke="#DDD" stroke-width="0.5"/>
+  <!-- Solutions -->
+  <rect x="15" y="150" width="452" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="6"/>
+  <text x="241" y="164" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Rozwiązania: RAG + Grounding + System Message + Temperature ↓ + Human-in-the-loop + Content Filters</text>
+  <defs>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

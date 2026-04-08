@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Factual Hallucination – fałszywe fakty</text>
+  <!-- Chat example -->
+  <rect x="15" y="30" width="250" height="100" fill="#FFF" stroke="#CCC" stroke-width="1" rx="6"/>
+  <text x="22" y="44" fill="#0078D4" font-size="8" font-weight="bold">User:</text>
+  <rect x="22" y="48" width="230" height="16" fill="#F0F7FF" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="30" y="59" fill="#333" font-size="7">"Kto wynalazł telefon i w którym roku?"</text>
+  <text x="22" y="78" fill="#28A745" font-size="8" font-weight="bold">AI (halucynacja):</text>
+  <rect x="22" y="82" width="230" height="26" fill="#FDECEA" stroke="#E74C3C" stroke-width="0.5" rx="3"/>
+  <text x="30" y="93" fill="#333" font-size="7">"Telefon wynalazł Thomas Edison w 1880 roku."</text>
+  <text x="30" y="104" fill="#E74C3C" font-size="6" font-weight="bold">✗ Fałsz! A.G. Bell, 1876</text>
+  <text x="22" y="122" fill="#28A745" font-size="7" font-weight="bold">✓ Poprawnie: "Alexander Graham Bell, 1876"</text>
+  <!-- Info box -->
+  <rect x="280" y="30" width="188" height="100" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="374" y="46" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Factual Hallucination</text>
+  <text x="288" y="62" fill="#333" font-size="7">Model generuje nieprawdziwe</text>
+  <text x="288" y="73" fill="#333" font-size="7">fakty, daty, nazwiska, statystyki,</text>
+  <text x="288" y="84" fill="#333" font-size="7">prezentując je jako pewnik.</text>
+  <line x1="288" y1="90" x2="460" y2="90" stroke="#DDD" stroke-width="0.5"/>
+  <text x="288" y="102" fill="#28A745" font-size="7" font-weight="bold">Rozwiązanie:</text>
+  <text x="288" y="113" fill="#555" font-size="7">RAG + weryfikacja źródeł</text>
+  <text x="288" y="124" fill="#555" font-size="7">Grounding + niski temperature</text>
+  <!-- Bottom -->
+  <rect x="15" y="138" width="452" height="30" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="6"/>
+  <text x="241" y="152" text-anchor="middle" fill="#8B6A00" font-size="8" font-weight="bold">Najczęstszy typ na egzaminie AI-900</text>
+  <text x="241" y="164" text-anchor="middle" fill="#555" font-size="7">Model „nie wie, że nie wie" – generuje odpowiedź statystycznie prawdopodobną, nie faktycznie prawdziwą</text>
+</svg>

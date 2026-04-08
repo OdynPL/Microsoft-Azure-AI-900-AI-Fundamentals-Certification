@@ -437,9 +437,22 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Top-p (Nucleus Sampling)** | Alternatywny parametr kontrolujący różnorodność odpowiedzi |
 | **Context Window** | Maksymalna liczba tokenów przetwarzana jednorazowo przez model (np. 128k dla GPT-4o) |
 | **Fine-tuning** | Dodatkowe trenowanie pre-trenowanego modelu na własnych danych |
+| **MaaS (Model as a Service)** | Serverless API – wdrożenie modelu bez zarządzania infrastrukturą, płatność per token (vs Managed Compute = dedykowane GPU, per hour) |
+| | ![MaaS](assets/genai-maas.svg) |
 | **RAG** | Retrieval Augmented Generation – łączy LLM z zewnętrznymi źródłami wiedzy; redukuje halucynacje |
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
-| **Hallucinations** | Generowanie nieprawdziwych informacji przez model |
+| **Hallucinations** | Generowanie nieprawdziwych informacji przez model – najczęściej pytany problem GenAI na egzaminie |
+| | ![Hallucinations](assets/genai-hallucinations.svg) |
+| | 1. **Factual Hallucination** – fałszywe fakty, daty, nazwiska (np. „stolica Australii to Sydney") |
+| | ![Factual Hallucination](assets/hal-factual.svg) |
+| | 2. **Fabrication** – zmyślone źródła, cytaty, artykuły naukowe, URL-e (wyglądają wiarygodnie!) |
+| | ![Fabrication](assets/hal-fabrication.svg) |
+| | 3. **Instruction Hallucination** – model ignoruje System Message, format, język, ograniczenia |
+| | ![Instruction Hallucination](assets/hal-instruction.svg) |
+| | 4. **Context Hallucination** – odpowiedź sprzeczna z dostarczonym kontekstem (RAG/dokument) |
+| | ![Context Hallucination](assets/hal-context.svg) |
+| | 5. **Autocomplete Hallucination** – generuje token „bo statystycznie pasuje", nie sprawdza prawdziwości |
+| | ![Autocomplete Hallucination](assets/hal-autocomplete.svg) |
 | **Content Filters** | Mechanizmy Azure OpenAI blokujące szkodliwe treści |
 | | 1. **Hate (nienawiść)** – mowa nienawiści, dyskryminacja grup |
 | | ![Hate](assets/cf-hate.svg) |

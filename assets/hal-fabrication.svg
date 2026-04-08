@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Fabrication – zmyślone źródła i cytaty</text>
+  <!-- Chat example -->
+  <rect x="15" y="30" width="250" height="108" fill="#FFF" stroke="#CCC" stroke-width="1" rx="6"/>
+  <text x="22" y="44" fill="#0078D4" font-size="8" font-weight="bold">User:</text>
+  <rect x="22" y="48" width="230" height="16" fill="#F0F7FF" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="30" y="59" fill="#333" font-size="7">"Podaj źródło naukowe o wpływie AI na edukację"</text>
+  <text x="22" y="76" fill="#28A745" font-size="8" font-weight="bold">AI (halucynacja):</text>
+  <rect x="22" y="80" width="230" height="36" fill="#FDECEA" stroke="#E74C3C" stroke-width="0.5" rx="3"/>
+  <text x="30" y="91" fill="#333" font-size="7">"Smith, J. (2023). AI in Education:</text>
+  <text x="30" y="101" fill="#333" font-size="7">A Comprehensive Review. Nature, 612, 45-52."</text>
+  <text x="30" y="112" fill="#E74C3C" font-size="6" font-weight="bold">✗ Ten artykuł NIE ISTNIEJE! Zmyślony DOI, autor, journal</text>
+  <text x="22" y="130" fill="#E74C3C" font-size="7" font-weight="bold">Fabrication = model tworzy fikcyjne referencje</text>
+  <!-- Right info -->
+  <rect x="280" y="30" width="188" height="108" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="374" y="46" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Fabrication</text>
+  <text x="288" y="62" fill="#333" font-size="7" font-weight="bold">Co model zmyśla:</text>
+  <text x="288" y="74" fill="#333" font-size="7">• Artykuły naukowe (DOI, ISBN)</text>
+  <text x="288" y="85" fill="#333" font-size="7">• Cytaty znanych osób</text>
+  <text x="288" y="96" fill="#333" font-size="7">• URL / linki do stron</text>
+  <text x="288" y="107" fill="#333" font-size="7">• Statystyki i dane liczbowe</text>
+  <line x1="288" y1="112" x2="460" y2="112" stroke="#DDD" stroke-width="0.5"/>
+  <text x="288" y="124" fill="#28A745" font-size="7" font-weight="bold">Rozwiązanie:</text>
+  <text x="288" y="134" fill="#555" font-size="7">RAG z real-time retrieval</text>
+  <!-- Bottom -->
+  <rect x="15" y="145" width="452" height="24" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="6"/>
+  <text x="241" y="161" text-anchor="middle" fill="#555" font-size="7">Fabrication jest szczególnie niebezpieczna w kontekście prawnym, medycznym i naukowym – referencje wyglądają wiarygodnie</text>
+</svg>
