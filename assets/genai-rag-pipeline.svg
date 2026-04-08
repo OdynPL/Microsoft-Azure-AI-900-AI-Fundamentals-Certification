@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="15" text-anchor="middle" fill="#0078D4" font-size="12" font-weight="bold">RAG Pipeline – krok po kroku</text>
+  <!-- INGESTION PHASE (top) -->
+  <text x="240" y="28" text-anchor="middle" fill="#555" font-size="7" font-weight="bold">FAZA 1: Indeksowanie (offline)</text>
+  <!-- Documents -->
+  <rect x="12" y="34" width="62" height="30" fill="#FFF" stroke="#999" stroke-width="1" rx="3"/>
+  <text x="43" y="48" text-anchor="middle" fill="#555" font-size="6" font-weight="bold">Dokumenty</text>
+  <text x="43" y="58" text-anchor="middle" fill="#999" font-size="5">PDF, Word, FAQ</text>
+  <!-- Arrow -->
+  <line x1="77" y1="49" x2="89" y2="49" stroke="#0078D4" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Chunking -->
+  <rect x="93" y="34" width="55" height="30" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="3"/>
+  <text x="120" y="48" text-anchor="middle" fill="#0078D4" font-size="6" font-weight="bold">Chunking</text>
+  <text x="120" y="58" text-anchor="middle" fill="#999" font-size="5">dzielenie</text>
+  <!-- Arrow -->
+  <line x1="151" y1="49" x2="163" y2="49" stroke="#0078D4" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Embedding model -->
+  <rect x="167" y="34" width="65" height="30" fill="#0078D4" stroke="#005A9E" stroke-width="1" rx="4"/>
+  <text x="199" y="48" text-anchor="middle" fill="#FFF" font-size="6" font-weight="bold">Embedding</text>
+  <text x="199" y="58" text-anchor="middle" fill="#D6EAF8" font-size="5">text → wektor</text>
+  <!-- Arrow -->
+  <line x1="235" y1="49" x2="247" y2="49" stroke="#0078D4" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Vector Store -->
+  <rect x="251" y="34" width="82" height="30" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="4"/>
+  <text x="292" y="48" text-anchor="middle" fill="#28A745" font-size="6" font-weight="bold">Azure AI Search</text>
+  <text x="292" y="58" text-anchor="middle" fill="#1B7A30" font-size="5">Vector Index</text>
+  <!-- QUERY PHASE -->
+  <text x="240" y="80" text-anchor="middle" fill="#555" font-size="7" font-weight="bold">FAZA 2: Zapytanie (runtime)</text>
+  <!-- User query -->
+  <rect x="12" y="86" width="58" height="28" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="4"/>
+  <text x="41" y="100" text-anchor="middle" fill="#8B6A00" font-size="6" font-weight="bold">Pytanie</text>
+  <text x="41" y="109" text-anchor="middle" fill="#8B6A00" font-size="5">użytkownika</text>
+  <!-- Arrow to embedding -->
+  <line x1="73" y1="100" x2="85" y2="100" stroke="#E6A800" stroke-width="1" marker-end="url(#arrY)"/>
+  <!-- Embed query -->
+  <rect x="89" y="86" width="52" height="28" fill="#0078D4" stroke="#005A9E" stroke-width="1" rx="4"/>
+  <text x="115" y="100" text-anchor="middle" fill="#FFF" font-size="6" font-weight="bold">Embed</text>
+  <text x="115" y="109" text-anchor="middle" fill="#D6EAF8" font-size="5">query</text>
+  <!-- Arrow to search -->
+  <line x1="144" y1="100" x2="156" y2="100" stroke="#0078D4" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Search -->
+  <rect x="160" y="86" width="68" height="28" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="4"/>
+  <text x="194" y="97" text-anchor="middle" fill="#28A745" font-size="6" font-weight="bold">Similarity</text>
+  <text x="194" y="107" text-anchor="middle" fill="#1B7A30" font-size="5">Search</text>
+  <!-- Arrow: top-K docs -->
+  <line x1="231" y1="100" x2="247" y2="100" stroke="#28A745" stroke-width="1" marker-end="url(#arrG)"/>
+  <!-- Retrieved docs -->
+  <rect x="251" y="86" width="65" height="28" fill="#FFF" stroke="#28A745" stroke-width="1" rx="3"/>
+  <text x="283" y="97" text-anchor="middle" fill="#333" font-size="6" font-weight="bold">Top-K docs</text>
+  <text x="283" y="107" text-anchor="middle" fill="#999" font-size="5">(kontekst)</text>
+  <!-- Arrow to LLM -->
+  <line x1="319" y1="100" x2="331" y2="100" stroke="#0078D4" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- LLM -->
+  <rect x="335" y="86" width="55" height="28" fill="#0078D4" stroke="#005A9E" stroke-width="1.5" rx="6"/>
+  <text x="362" y="100" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">LLM</text>
+  <text x="362" y="109" text-anchor="middle" fill="#D6EAF8" font-size="5">GPT-4</text>
+  <!-- Arrow to answer -->
+  <line x1="393" y1="100" x2="408" y2="100" stroke="#28A745" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <!-- Grounded answer -->
+  <rect x="412" y="86" width="58" height="28" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="441" y="97" text-anchor="middle" fill="#28A745" font-size="6" font-weight="bold">Odpowiedź</text>
+  <text x="441" y="108" text-anchor="middle" fill="#1B7A30" font-size="5">grounded</text>
+  <!-- Connect vector store to search -->
+  <line x1="292" y1="67" x2="292" y2="72" stroke="#28A745" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="292" y1="72" x2="194" y2="72" stroke="#28A745" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="194" y1="72" x2="194" y2="83" stroke="#28A745" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrG)"/>
+  <!-- Benefits box -->
+  <rect x="12" y="122" width="220" height="50" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="122" y="135" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">RAG – korzyści</text>
+  <text x="20" y="147" fill="#333" font-size="6">✓ Aktualne dane (nie training cut-off)</text>
+  <text x="125" y="147" fill="#333" font-size="6">✓ Mniej halucynacji</text>
+  <text x="20" y="159" fill="#333" font-size="6">✓ Cytowanie źródeł</text>
+  <text x="125" y="159" fill="#333" font-size="6">✓ Brak fine-tuningu</text>
+  <text x="20" y="170" fill="#333" font-size="6">✓ Specjalistyczna wiedza firmy</text>
+  <!-- Without RAG -->
+  <rect x="247" y="122" width="222" height="50" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="6"/>
+  <text x="358" y="135" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">Bez RAG – problemy</text>
+  <text x="255" y="147" fill="#333" font-size="6">✗ Przestarzałe dane (training cut-off)</text>
+  <text x="370" y="147" fill="#333" font-size="6">✗ Halucynacje</text>
+  <text x="255" y="159" fill="#333" font-size="6">✗ Brak firmowej wiedzy</text>
+  <text x="370" y="159" fill="#333" font-size="6">✗ Brak źródeł</text>
+  <text x="255" y="170" fill="#333" font-size="6">✗ Wymaga kosztownego fine-tuningu</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+    <marker id="arrY" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E6A800"/></marker>
+  </defs>
+</svg>
