@@ -136,13 +136,33 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **ML (Machine Learning)** | Uczenie maszynowe, algorytmy uczące się na podstawie danych |
 | **Deep Learning** | Głębokie sieci neuronowe |
 | **Neural Network (sieć neuronowa)** | Model ML inspirowany mózgiem, złożony z warstw neuronów przetwarzających dane |
-| | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych <br> 2. **RNN (Recurrent Neural Network)** – dane sekwencyjne, tekst, szeregi czasowe <br> 3. **LSTM (Long Short-Term Memory)** – ulepszona RNN, lepsza pamięć długoterminowa <br> 4. **GAN (Generative Adversarial Network)** – generator + dyskryminator; tworzenie obrazów, deepfake <br> 5. **Autoencoder** – kompresja i rekonstrukcja danych; anomaly detection, denoising <br> 6. **Transformer** – mechanizm attention; podstawa GPT, BERT (najważniejsza na egzaminie) |
+| | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych |
+| | ![CNN](assets/nn-cnn.svg) |
+| | 2. **RNN (Recurrent Neural Network)** – dane sekwencyjne, tekst, szeregi czasowe |
+| | ![RNN](assets/nn-rnn.svg) |
+| | 3. **LSTM (Long Short-Term Memory)** – ulepszona RNN, lepsza pamięć długoterminowa |
+| | ![LSTM](assets/nn-lstm.svg) |
+| | 4. **GAN (Generative Adversarial Network)** – generator + dyskryminator; tworzenie obrazów, deepfake |
+| | ![GAN](assets/nn-gan.svg) |
+| | 5. **Autoencoder** – kompresja i rekonstrukcja danych; anomaly detection, denoising |
+| | ![Autoencoder](assets/nn-autoencoder.svg) |
+| | 6. **Transformer** – mechanizm attention; podstawa GPT, BERT (najważniejsza na egzaminie) |
+| | ![Transformer](assets/nn-transformer.svg) |
 | **Supervised Learning** | Uczenie nadzorowane (dane z etykietami) |
 | **Unsupervised Learning** | Uczenie nienadzorowane (grupowanie bez etykiet) |
 | **Reinforcement Learning** | Uczenie ze wzmocnieniem (nagrody i kary) |
 | **Weights (wagi)** | Parametry modelu neuronowego aktualizowane podczas treningu; definiują siłę połączeń między neuronami |
 | **Activation Function** | Funkcja aktywacji w neuronach wprowadzająca nieliniowość do modelu |
-| | 1. **ReLU (Rectified Linear Unit)** – najczęstsza; f(x)=max(0,x); szybka, prosta <br> 2. **Sigmoid** – wyjście 0–1; używana w klasyfikacji binarnej (warstwa wyjściowa) <br> 3. **Tanh** – wyjście -1 do 1; lepsza od Sigmoid w warstwach ukrytych <br> 4. **Softmax** – normalizuje wyjścia do prawdopodobieństw (suma=1); klasyfikacja wieloklasowa <br> 5. **Leaky ReLU** – wariant ReLU; przepuszcza małe wartości ujemne (zapobiega „martwym neuronom”) |
+| | 1. **ReLU (Rectified Linear Unit)** – najczęstsza; f(x)=max(0,x); szybka, prosta |
+| | ![ReLU](assets/af-relu.svg) |
+| | 2. **Sigmoid** – wyjście 0–1; używana w klasyfikacji binarnej (warstwa wyjściowa) |
+| | ![Sigmoid](assets/af-sigmoid.svg) |
+| | 3. **Tanh** – wyjście -1 do 1; lepsza od Sigmoid w warstwach ukrytych |
+| | ![Tanh](assets/af-tanh.svg) |
+| | 4. **Softmax** – normalizuje wyjścia do prawdopodobieństw (suma=1); klasyfikacja wieloklasowa |
+| | ![Softmax](assets/af-softmax.svg) |
+| | 5. **Leaky ReLU** – wariant ReLU; przepuszcza małe wartości ujemne (zapobiega „martwym neuronom") |
+| | ![Leaky ReLU](assets/af-leaky-relu.svg) |
 | **Parameters (parametry modelu)** | Całkowita liczba wag i bias'ów w modelu (np. GPT-4 ma setki miliardów parametrów) |
 
 ### **Architektura Transformer i modele językowe**
@@ -234,7 +254,16 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **SMOTE** | Synthetic Minority Over-Sampling Technique – syntetyczne generowanie przykładów klasy mniejszościowej |
 | **Stratified Split** | Podział danych z zachowaniem proporcji klas w każdym zbiorze |
 | **Data Augmentation** | Sztuczne zwiększanie liczby przykładów przez modyfikacje danych |
-| | 1. **Obraz: Flip / Rotation** – odbicie lustrzane, obrót <br> 2. **Obraz: Crop / Resize** – wycinanie fragmentów, zmiana rozmiaru <br> 3. **Obraz: Color Jitter** – losowe zmiany jasności, kontrastu, nasycenia <br> 4. **Tekst: Synonym Replacement** – zamiana słów na synonimy <br> 5. **Tekst: Back-Translation** – tłumaczenie na inny język i z powrotem |
+| | 1. **Obraz: Flip / Rotation** – odbicie lustrzane, obrót |
+| | ![Flip / Rotation](assets/aug-flip-rotation.svg) |
+| | 2. **Obraz: Crop / Resize** – wycinanie fragmentów, zmiana rozmiaru |
+| | ![Crop / Resize](assets/aug-crop-resize.svg) |
+| | 3. **Obraz: Color Jitter** – losowe zmiany jasności, kontrastu, nasycenia |
+| | ![Color Jitter](assets/aug-color-jitter.svg) |
+| | 4. **Tekst: Synonym Replacement** – zamiana słów na synonimy |
+| | ![Synonym Replacement](assets/aug-synonym.svg) |
+| | 5. **Tekst: Back-Translation** – tłumaczenie na inny język i z powrotem |
+| | ![Back-Translation](assets/aug-back-translation.svg) |
 | **Normalization** | Skalowanie wartości cech do wspólnego zakresu (np. 0–1); ważne dla algorytmów opartych na odległościach |
 | **One-hot Encoding** | Zamiana kategorii na wektory binarne (np. kolor: czerwony → [1,0,0], zielony → [0,1,0]) |
 
@@ -246,11 +275,29 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Hyperparameter (hiperparametr)** | Parametr ustawiany przed treningiem (np. learning rate, liczba epok), w odróżnieniu od wag uczonych automatycznie |
 | **Epoch (epoka)** | Jedno pełne przejście przez cały zbiór treningowy podczas trenowania modelu |
 | **Loss Function (funkcja straty)** | Miara błędu modelu; cel treningu to jej minimalizacja |
-| | 1. **MSE (Mean Squared Error)** – regresja; średnia kwadratów błędów <br> 2. **Cross-Entropy (Log Loss)** – klasyfikacja; mierzy różnicę między przewidywanym a rzeczywistym rozkładem <br> 3. **Binary Cross-Entropy** – klasyfikacja binarna (2 klasy) <br> 4. **Categorical Cross-Entropy** – klasyfikacja wieloklasowa <br> 5. **MAE (Mean Absolute Error)** – regresja; mniej wrażliwa na outliery niż MSE |
+| | 1. **MSE (Mean Squared Error)** – regresja; średnia kwadratów błędów |
+| | ![MSE](assets/loss-mse.svg) |
+| | 2. **Cross-Entropy (Log Loss)** – klasyfikacja; mierzy różnicę między przewidywanym a rzeczywistym rozkładem |
+| | ![Cross-Entropy](assets/loss-cross-entropy.svg) |
+| | 3. **Binary Cross-Entropy** – klasyfikacja binarna (2 klasy) |
+| | ![Binary Cross-Entropy](assets/loss-binary-ce.svg) |
+| | 4. **Categorical Cross-Entropy** – klasyfikacja wieloklasowa |
+| | ![Categorical Cross-Entropy](assets/loss-categorical-ce.svg) |
+| | 5. **MAE (Mean Absolute Error)** – regresja; mniej wrażliwa na outliery niż MSE |
+| | ![MAE](assets/loss-mae.svg) |
 | **Gradient Descent** | Algorytm optymalizacji minimalizujący funkcję straty poprzez iteracyjne dopasowywanie wag |
 | **Backpropagation** | Mechanizm propagacji błędu wstecz w sieci neuronowej, do obliczania gradientów i aktualizacji wag |
 | **Regularization** | Techniki zapobiegające overfittingowi |
-| | 1. **L1 (Lasso)** – dodaje sumę wart. bezwzględnych wag do loss; zeruje nieistotne cechy (feature selection) <br> 2. **L2 (Ridge)** – dodaje sumę kwadratów wag do loss; zmniejsza wagi, ale nie zeruje <br> 3. **Elastic Net** – kombinacja L1 + L2 <br> 4. **Dropout** – losowe wyłączanie neuronów podczas treningu; zapobiega współzależności <br> 5. **Early Stopping** – zatrzymanie treningu, gdy metryka walidacyjna przestaje się poprawiać |
+| | 1. **L1 (Lasso)** – dodaje sumę wart. bezwzględnych wag do loss; zeruje nieistotne cechy (feature selection) |
+| | ![L1 Lasso](assets/reg-l1-lasso.svg) |
+| | 2. **L2 (Ridge)** – dodaje sumę kwadratów wag do loss; zmniejsza wagi, ale nie zeruje |
+| | ![L2 Ridge](assets/reg-l2-ridge.svg) |
+| | 3. **Elastic Net** – kombinacja L1 + L2 |
+| | ![Elastic Net](assets/reg-elastic-net.svg) |
+| | 4. **Dropout** – losowe wyłączanie neuronów podczas treningu; zapobiega współzależności |
+| | ![Dropout](assets/reg-dropout.svg) |
+| | 5. **Early Stopping** – zatrzymanie treningu, gdy metryka walidacyjna przestaje się poprawiać |
+| | ![Early Stopping](assets/reg-early-stopping.svg) |
 | **Overfitting (przeuczenie)** | Model zbyt dobrze dopasowany do danych treningowych; świetne wyniki na treningu, słabe na nowych danych |
 | **Underfitting (niedouczenie)** | Model zbyt prosty, nie wychwytuje wzorców; słabe wyniki zarówno na treningu, jak i na nowych danych |
 | **Transfer Learning** | Wykorzystanie modelu wytrenowanego na jednym zadaniu do przyspieszenia nauki na innym |
@@ -283,13 +330,27 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 |---|---|
 | **Computer Vision** | Analiza i interpretacja obrazów/wideo |
 | **Image Classification** | Klasyfikacja obrazów – co jest na obrazie |
-| | 1. **Binary Classification** – dwie kategorie (np. kot/pies, zdrowy/chory) <br> 2. **Multi-class Classification** – wiele kategorii, jeden label na obraz (np. kot, pies, ptak) <br> 3. **Multi-label Classification** – wiele tagów na obraz (np. „plaża” + „zachód słońca” + „ludzie”) |
+| | 1. **Binary Classification** – dwie kategorie (np. kot/pies, zdrowy/chory) |
+| | ![Binary Classification](assets/cv-binary-class.svg) |
+| | 2. **Multi-class Classification** – wiele kategorii, jeden label na obraz (np. kot, pies, ptak) |
+| | ![Multi-class Classification](assets/cv-multiclass.svg) |
+| | 3. **Multi-label Classification** – wiele tagów na obraz (np. „plaża" + „zachód słońca" + „ludzie") |
+| | ![Multi-label Classification](assets/cv-multilabel.svg) |
 | **Object Detection** | Detekcja obiektów – klasa + prawdopodobieństwo + bounding box |
 | **Bounding Box** | Prostokąt otaczający wykryty obiekt na obrazie (x, y, szerokość, wysokość) |
 | **OCR (Optical Character Recognition)** | Rozpoznawanie tekstu na obrazach |
 | **Semantic Segmentation** | Klasyfikacja każdego piksela obrazu do kategorii (np. droga, budynek, niebo) |
 | **Face Recognition** | Rozpoznawanie twarzy |
-| | 1. **Face Detection** – wykrywanie twarzy na obrazie + atrybuty (wiek, okulary, emocje) <br> 2. **Face Verification** – porównanie 1:1 – „czy to ta sama osoba?” <br> 3. **Face Identification** – porównanie 1:N – „kto to jest?” (wymaga PersonGroup) <br> 4. **Face Grouping** – grupowanie podobnych twarzy ze zbioru zdjęć <br> 5. **Find Similar** – wyszukiwanie twarzy podobnych do podanej |
+| | 1. **Face Detection** – wykrywanie twarzy na obrazie + atrybuty (wiek, okulary, emocje) |
+| | ![Face Detection](assets/face-detection.svg) |
+| | 2. **Face Verification** – porównanie 1:1 – „czy to ta sama osoba?" |
+| | ![Face Verification](assets/face-verification.svg) |
+| | 3. **Face Identification** – porównanie 1:N – „kto to jest?" (wymaga PersonGroup) |
+| | ![Face Identification](assets/face-identification.svg) |
+| | 4. **Face Grouping** – grupowanie podobnych twarzy ze zbioru zdjęć |
+| | ![Face Grouping](assets/face-grouping.svg) |
+| | 5. **Find Similar** – wyszukiwanie twarzy podobnych do podanej |
+| | ![Find Similar](assets/face-find-similar.svg) |
 | **Face Liveness Detection** | Wykrywanie żywej osoby (ochrona przed atakami zdjęciowymi / deepfake) – Limited Access |
 | **PersonGroup** | Grupa osób w Face API z wieloma zdjęciami; wymagana do Face Identification |
 | **Limited Access Policy** | Niektóre funkcje AI (identyfikacja twarzy) wymagają formalnej zgody Microsoft |
@@ -305,7 +366,14 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Lematyzacja (Lemmatization)** | Sprowadzanie słów do formy podstawowej |
 | **Stemming** | Obcinanie końcówek słów do rdzenia; normalizacja tekstu przed analizą częstości |
 | **Embeddingi (Embeddings)** | Reprezentacja tekstu w postaci wektorów liczbowych |
-| | 1. **Word2Vec** – klasyczny; każde słowo = jeden wektor (nie rozróżnia kontekstu) <br> 2. **GloVe** – Global Vectors; wektory na bazie statystyk współwystępowania słów <br> 3. **BERT Embeddings** – kontekstowe; to samo słowo ma różny wektor zależnie od zdania <br> 4. **OpenAI text-embedding** – modele embeddingów Azure OpenAI (text-embedding-ada, text-embedding-3) do RAG i wyszukiwania semantycznego |
+| | 1. **Word2Vec** – klasyczny; każde słowo = jeden wektor (nie rozróżnia kontekstu) |
+| | ![Word2Vec](assets/emb-word2vec.svg) |
+| | 2. **GloVe** – Global Vectors; wektory na bazie statystyk współwystępowania słów |
+| | ![GloVe](assets/emb-glove.svg) |
+| | 3. **BERT Embeddings** – kontekstowe; to samo słowo ma różny wektor zależnie od zdania |
+| | ![BERT Embeddings](assets/emb-bert.svg) |
+| | 4. **OpenAI text-embedding** – modele embeddingów Azure OpenAI (text-embedding-ada, text-embedding-3) do RAG i wyszukiwania semantycznego |
+| | ![OpenAI text-embedding](assets/emb-openai.svg) |
 | **Entity Recognition (NER)** | Rozpoznawanie encji nazwanych (osoby, miejsca, organizacje, daty) |
 | **Entity Linking** | Identyfikacja encji + powiązanie z bazą wiedzy (np. Wikipedia); różni się od NER linkami |
 | **PII Detection** | Automatyczne wykrywanie i maskowanie danych osobowych (PESEL, email, nr karty) |
@@ -335,7 +403,18 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Prompt** | Polecenie lub zapytanie przekazywane do modelu generatywnego |
 | **Token** | Najmniejsza jednostka tekstu przetwarzana przez model językowy (~¾ słowa) |
 | **Prompt Engineering** | Tworzenie skutecznych poleceń dla modeli generatywnych |
-| | 1. **Zero-shot** – bez przykładów; model radzi sobie sam <br> 2. **One-shot** – jeden przykład w promptie <br> 3. **Few-shot** – kilka przykładów (1–5) w promptie <br> 4. **Chain-of-Thought (CoT)** – krok po kroku; poprawia rozumowanie <br> 5. **System Message** – instrukcja definiująca rolę i ograniczenia modelu <br> 6. **Retrieval Augmented Generation (RAG)** – wzbogacenie promptu danymi z bazy wiedzy |
+| | 1. **Zero-shot** – bez przykładów; model radzi sobie sam |
+| | ![Zero-shot](assets/pe-zero-shot.svg) |
+| | 2. **One-shot** – jeden przykład w promptie |
+| | ![One-shot](assets/pe-one-shot.svg) |
+| | 3. **Few-shot** – kilka przykładów (1–5) w promptie |
+| | ![Few-shot](assets/pe-few-shot.svg) |
+| | 4. **Chain-of-Thought (CoT)** – krok po kroku; poprawia rozumowanie |
+| | ![Chain-of-Thought](assets/pe-chain-of-thought.svg) |
+| | 5. **System Message** – instrukcja definiująca rolę i ograniczenia modelu |
+| | ![System Message](assets/pe-system-message.svg) |
+| | 6. **Retrieval Augmented Generation (RAG)** – wzbogacenie promptu danymi z bazy wiedzy |
+| | ![RAG](assets/pe-rag.svg) |
 | **Zero-shot learning** | Model radzi sobie z zadaniem, którego nie widział podczas treningu |
 | **Few-shot learning** | Model uczy się na bardzo małej liczbie przykładów (1–5 w promptie) |
 | **Chain-of-Thought** | Technika zachęcająca model do wypisania kroków rozumowania (poprawia dokładność) |
@@ -348,7 +427,17 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Grounding (zakotwiczenie)** | Powiązanie odpowiedzi modelu z konkretnymi, zweryfikowanymi dokumentami |
 | **Hallucinations** | Generowanie nieprawdziwych informacji przez model |
 | **Content Filters** | Mechanizmy Azure OpenAI blokujące szkodliwe treści |
-| | 1. **Hate (nienawiść)** – mowa nienawiści, dyskryminacja grup <br> 2. **Violence (przemoc)** – treści promujące przemoc fizyczną <br> 3. **Sexual (treści seksualne)** – treści dla dorosłych <br> 4. **Self-harm (samookaleczenie)** – treści promujące samookaleczenie <br> 5. **Jailbreak detection** – wykrywanie prób obejścia ograniczeń modelu <br> Severity levels: Safe, Low, Medium, High |
+| | 1. **Hate (nienawiść)** – mowa nienawiści, dyskryminacja grup |
+| | ![Hate](assets/cf-hate.svg) |
+| | 2. **Violence (przemoc)** – treści promujące przemoc fizyczną |
+| | ![Violence](assets/cf-violence.svg) |
+| | 3. **Sexual (treści seksualne)** – treści dla dorosłych |
+| | ![Sexual](assets/cf-sexual.svg) |
+| | 4. **Self-harm (samookaleczenie)** – treści promujące samookaleczenie |
+| | ![Self-harm](assets/cf-self-harm.svg) |
+| | 5. **Jailbreak detection** – wykrywanie prób obejścia ograniczeń modelu |
+| | ![Jailbreak](assets/cf-jailbreak.svg) |
+| | Severity levels: Safe, Low, Medium, High |
 | **Prompt Injection** | Atak polegający na wstrzyknięciu złośliwych instrukcji w danych wejściowych |
 | **XPIA** | Cross-Prompt Injection Attacks – atak przez wstrzyknięcie instrukcji w jedno ze źródeł RAG agenta |
 | **Hybrid Search** | Kombinacja vector search (semantyka) + keyword search (dokładne słowa) – lepsze wyniki niż każde osobno |

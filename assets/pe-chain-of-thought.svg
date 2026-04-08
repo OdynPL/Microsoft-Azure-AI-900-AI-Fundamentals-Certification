@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Chain-of-Thought (CoT) – krok po kroku</text>
+  <!-- Prompt -->
+  <rect x="15" y="35" width="200" height="40" fill="#F0F7FF" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="25" y="52" fill="#0078D4" font-size="7" font-weight="bold">PROMPT:</text>
+  <text x="25" y="64" fill="#333" font-size="7">"Ile to 17 × 24? Myśl krok po kroku."</text>
+  <!-- Steps chain -->
+  <line x1="115" y1="78" x2="115" y2="88" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="15" y="90" width="105" height="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="4"/>
+  <text x="67" y="104" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Krok 1: 17 × 20 = 340</text>
+  <line x1="122" y1="101" x2="130" y2="101" stroke="#E6A800" stroke-width="1.5" marker-end="url(#arrY)"/>
+  <rect x="133" y="90" width="105" height="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="4"/>
+  <text x="185" y="104" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Krok 2: 17 × 4 = 68</text>
+  <line x1="185" y1="115" x2="185" y2="125" stroke="#E6A800" stroke-width="1.5" marker-end="url(#arrY)"/>
+  <rect x="120" y="128" width="130" height="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="4"/>
+  <text x="185" y="142" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Krok 3: 340 + 68 = 408</text>
+  <!-- Final answer -->
+  <line x1="185" y1="153" x2="185" y2="162" stroke="#28A745" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <rect x="145" y="163" width="80" height="15" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="4"/>
+  <text x="185" y="174" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Odp: 408</text>
+  <!-- Info box -->
+  <rect x="270" y="35" width="200" height="125" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="370" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Chain-of-Thought</text>
+  <text x="280" y="68" fill="#333" font-size="8">• „Myśl krok po kroku"</text>
+  <text x="280" y="82" fill="#333" font-size="8">• Poprawia rozumowanie</text>
+  <text x="280" y="96" fill="#333" font-size="8">• Matematyka, logika, planowanie</text>
+  <text x="280" y="110" fill="#333" font-size="8">• Zmniejsza halucynacje</text>
+  <text x="280" y="124" fill="#333" font-size="8">• Więcej tokenów = droższe</text>
+  <text x="280" y="138" fill="#333" font-size="8">• Warianty: Tree-of-Thought</text>
+  <text x="280" y="152" fill="#333" font-size="8">• Widoczne reasoning = debugow.</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+    <marker id="arrY" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E6A800"/></marker>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+  </defs>
+</svg>

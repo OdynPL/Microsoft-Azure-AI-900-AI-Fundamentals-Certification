@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">System Message – instrukcja roli modelu</text>
+  <!-- Chat structure -->
+  <!-- System message -->
+  <rect x="20" y="35" width="260" height="35" fill="#FDECEA" stroke="#E74C3C" stroke-width="1.5" rx="6"/>
+  <text x="30" y="48" fill="#E74C3C" font-size="7" font-weight="bold">SYSTEM:</text>
+  <text x="30" y="61" fill="#333" font-size="8">"Jesteś pomocnym asystentem medycznym. Odpowiadaj krótko."</text>
+  <!-- User message -->
+  <rect x="20" y="78" width="260" height="25" fill="#E8F4FD" stroke="#0078D4" stroke-width="1" rx="4"/>
+  <text x="30" y="91" fill="#0078D4" font-size="7" font-weight="bold">USER:</text>
+  <text x="68" y="91" fill="#333" font-size="8">"Co to jest nadciśnienie?"</text>
+  <!-- Assistant response -->
+  <rect x="20" y="110" width="260" height="35" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="4"/>
+  <text x="30" y="123" fill="#28A745" font-size="7" font-weight="bold">ASSISTANT:</text>
+  <text x="30" y="136" fill="#333" font-size="8">"Nadciśnienie to podwyższone ciśnienie krwi &gt;140/90."</text>
+  <!-- Scope indicators -->
+  <line x1="288" y1="45" x2="295" y2="45" stroke="#E74C3C" stroke-width="1"/>
+  <line x1="295" y1="35" x2="295" y2="145" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="300" y="90" fill="#E74C3C" font-size="7" transform="rotate(90,300,90)">wpływa na całą sesję</text>
+  <!-- Info box -->
+  <rect x="320" y="30" width="150" height="130" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="395" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">System Message</text>
+  <text x="328" y="64" fill="#333" font-size="8">• Definiuje rolę modelu</text>
+  <text x="328" y="77" fill="#333" font-size="8">• Ton i styl odpowiedzi</text>
+  <text x="328" y="90" fill="#333" font-size="8">• Ograniczenia (nie pytaj o X)</text>
+  <text x="328" y="103" fill="#333" font-size="8">• Ukryty przed użytkownikiem</text>
+  <text x="328" y="116" fill="#333" font-size="8">• Grounding rules</text>
+  <text x="328" y="129" fill="#333" font-size="8">• Tylko Azure OpenAI API</text>
+  <text x="328" y="142" fill="#333" font-size="8">• Metaprompt w Foundry</text>
+  <!-- Legend -->
+  <text x="150" y="160" text-anchor="middle" fill="#666" font-size="8" font-style="italic">System → User → Assistant: trzy role w Azure OpenAI Chat API</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Autoencoder – kompresja i rekonstrukcja</text>
+  <!-- Input layer -->
+  <text x="30" y="35" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Input</text>
+  <circle cx="30" cy="50" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="30" cy="72" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="30" cy="94" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="30" cy="116" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="30" cy="138" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Encoder hidden -->
+  <text x="90" y="35" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Encoder</text>
+  <circle cx="90" cy="60" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="90" cy="85" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="90" cy="110" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Bottleneck -->
+  <text x="150" y="35" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">Bottleneck</text>
+  <circle cx="150" cy="75" r="10" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <circle cx="150" cy="100" r="10" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <!-- Decoder hidden -->
+  <text x="210" y="35" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Decoder</text>
+  <circle cx="210" cy="60" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <circle cx="210" cy="85" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <circle cx="210" cy="110" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <!-- Output -->
+  <text x="270" y="35" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Output</text>
+  <circle cx="270" cy="50" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <circle cx="270" cy="72" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <circle cx="270" cy="94" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <circle cx="270" cy="116" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <circle cx="270" cy="138" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <!-- Connections (simplified) -->
+  <line x1="38" y1="50" x2="82" y2="60" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="72" x2="82" y2="85" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="94" x2="82" y2="85" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="116" x2="82" y2="110" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="138" x2="82" y2="110" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="98" y1="60" x2="140" y2="75" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="98" y1="85" x2="140" y2="87" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="98" y1="110" x2="140" y2="100" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="160" y1="75" x2="202" y2="60" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="160" y1="87" x2="202" y2="85" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="160" y1="100" x2="202" y2="110" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="218" y1="60" x2="262" y2="50" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="218" y1="85" x2="262" y2="72" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="218" y1="85" x2="262" y2="94" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="218" y1="110" x2="262" y2="116" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="218" y1="110" x2="262" y2="138" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <!-- Info box -->
+  <rect x="310" y="30" width="160" height="115" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Zastosowania</text>
+  <text x="320" y="64" fill="#333" font-size="8">• Kompresja danych</text>
+  <text x="320" y="77" fill="#333" font-size="8">• Anomaly detection</text>
+  <text x="320" y="90" fill="#333" font-size="8">• Denoising (odszumianie)</text>
+  <text x="320" y="103" fill="#333" font-size="8">• Redukcja wymiarowości</text>
+  <text x="320" y="116" fill="#333" font-size="8">• Generowanie danych (VAE)</text>
+  <text x="320" y="129" fill="#333" font-size="8">• Wykrywanie defektów</text>
+  <!-- Legend -->
+  <text x="150" y="162" text-anchor="middle" fill="#666" font-size="8" font-style="italic">5 → 3 → 2 → 3 → 5: kompresja do bottleneck i rekonstrukcja</text>
+</svg>

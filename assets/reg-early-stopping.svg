@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Early Stopping – zatrzymaj gdy walidacja rośnie</text>
+  <!-- Axes -->
+  <line x1="40" y1="25" x2="40" y2="145" stroke="#333" stroke-width="1.5"/>
+  <line x1="40" y1="145" x2="280" y2="145" stroke="#333" stroke-width="1.5"/>
+  <text x="280" y="158" fill="#333" font-size="8">Epoki</text>
+  <text x="48" y="28" fill="#333" font-size="8">Loss</text>
+  <!-- Grid -->
+  <line x1="40" y1="60" x2="280" y2="60" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="40" y1="100" x2="280" y2="100" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="100" y1="25" x2="100" y2="145" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="160" y1="25" x2="160" y2="145" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="220" y1="25" x2="220" y2="145" stroke="#EEE" stroke-width="0.5"/>
+  <!-- Training loss (keeps going down) -->
+  <polyline points="50,130 70,105 90,85 110,70 130,60 150,52 170,46 190,42 210,39 230,37 250,36 270,35" fill="none" stroke="#0078D4" stroke-width="2.5"/>
+  <text x="270" y="31" fill="#0078D4" font-size="7" font-weight="bold">Train</text>
+  <!-- Validation loss (goes down then up) -->
+  <polyline points="50,135 70,110 90,90 110,78 130,72 150,70 160,70 170,72 190,78 210,86 230,96 250,108 270,120" fill="none" stroke="#E74C3C" stroke-width="2.5"/>
+  <text x="270" y="125" fill="#E74C3C" font-size="7" font-weight="bold">Valid</text>
+  <!-- Best point -->
+  <circle cx="155" cy="70" r="5" fill="#28A745"/>
+  <text x="155" y="63" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">STOP</text>
+  <!-- Vertical stop line -->
+  <line x1="155" y1="25" x2="155" y2="145" stroke="#28A745" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <!-- Zones -->
+  <rect x="41" y="26" width="114" height="118" fill="#D5F5E3" opacity="0.1"/>
+  <rect x="156" y="26" width="123" height="118" fill="#FDECEA" opacity="0.1"/>
+  <text x="95" y="140" text-anchor="middle" fill="#28A745" font-size="7">Uczenie się</text>
+  <text x="220" y="140" text-anchor="middle" fill="#E74C3C" font-size="7">Overfitting</text>
+  <!-- Info box -->
+  <rect x="300" y="30" width="170" height="125" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="385" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Early Stopping</text>
+  <text x="310" y="64" fill="#333" font-size="8">• Monitor: val_loss</text>
+  <text x="310" y="77" fill="#333" font-size="8">• Patience: N epok bez poprawy</text>
+  <text x="310" y="90" fill="#333" font-size="8">• Przywraca najlepsze wagi</text>
+  <text x="310" y="103" fill="#333" font-size="8">• Zapobiega overfitting</text>
+  <text x="310" y="116" fill="#333" font-size="8">• Nie wymaga tuning λ</text>
+  <text x="310" y="129" fill="#333" font-size="8">• Callback w frameworkach</text>
+  <text x="310" y="142" fill="#333" font-size="8">• Najprostsza regularyzacja</text>
+  <!-- Legend -->
+  <text x="240" y="172" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Zatrzymaj trening, gdy strata walidacyjna przestaje maleć – zapobiega przeuczeniu</text>
+</svg>

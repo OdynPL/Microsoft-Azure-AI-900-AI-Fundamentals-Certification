@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Content Filter: Violence – przemoc</text>
+  <!-- Shield -->
+  <path d="M60,40 L95,40 L95,85 Q95,110 77,120 Q60,110 60,85Z" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <text x="77" y="68" text-anchor="middle" fill="#E74C3C" font-size="10" font-weight="bold">Violence</text>
+  <text x="77" y="84" text-anchor="middle" fill="#E74C3C" font-size="7">Filter</text>
+  <!-- Flow: input → filter → safe output -->
+  <rect x="120" y="40" width="110" height="22" fill="#EEE" stroke="#999" stroke-width="1" rx="3"/>
+  <text x="175" y="55" text-anchor="middle" fill="#555" font-size="8">Input prompt</text>
+  <line x1="233" y1="51" x2="248" y2="51" stroke="#E6A800" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="252" y="40" width="70" height="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="4"/>
+  <text x="287" y="55" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Analiza</text>
+  <line x1="325" y1="51" x2="340" y2="51" stroke="#28A745" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <rect x="344" y="40" width="70" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="4"/>
+  <text x="379" y="55" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">Safe output</text>
+  <!-- Blocked path -->
+  <line x1="287" y1="65" x2="287" y2="78" stroke="#E74C3C" stroke-width="1.5" marker-end="url(#arrR)"/>
+  <rect x="252" y="80" width="70" height="22" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="4"/>
+  <text x="287" y="95" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">BLOCKED</text>
+  <!-- Examples -->
+  <rect x="120" y="112" width="340" height="55" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="290" y="128" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Wykrywane treści Violence:</text>
+  <text x="130" y="142" fill="#333" font-size="7">• Przemoc fizyczna, groźby, broń, tortury, maltretowanie</text>
+  <text x="130" y="155" fill="#333" font-size="7">• Opisywanie przemocy wobec osób / grup, instrukcje niszczenia</text>
+  <text x="130" y="168" fill="#333" font-size="7">Progi: Safe (OK) → Low → Medium → High (zablokowany)</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E6A800"/></marker>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

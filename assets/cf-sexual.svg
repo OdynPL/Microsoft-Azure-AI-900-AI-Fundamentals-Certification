@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Content Filter: Sexual – treści seksualne</text>
+  <!-- Shield -->
+  <path d="M60,40 L95,40 L95,85 Q95,110 77,120 Q60,110 60,85Z" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <text x="77" y="68" text-anchor="middle" fill="#E74C3C" font-size="10" font-weight="bold">Sexual</text>
+  <text x="77" y="84" text-anchor="middle" fill="#E74C3C" font-size="7">Filter</text>
+  <!-- Severity scale -->
+  <text x="130" y="48" fill="#555" font-size="8" font-weight="bold">Skala severity:</text>
+  <rect x="130" y="55" width="300" height="30" fill="#FFF" stroke="#CCC" stroke-width="1" rx="4"/>
+  <rect x="130" y="55" width="75" height="30" fill="#D5F5E3" rx="4"/>
+  <text x="167" y="73" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Safe</text>
+  <rect x="205" y="55" width="75" height="30" fill="#FFF3CD"/>
+  <text x="242" y="73" text-anchor="middle" fill="#8B6A00" font-size="8" font-weight="bold">Low</text>
+  <rect x="280" y="55" width="75" height="30" fill="#FDECEA"/>
+  <text x="317" y="73" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">Medium</text>
+  <rect x="355" y="55" width="75" height="30" fill="#E74C3C" rx="4"/>
+  <text x="392" y="73" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">High</text>
+  <!-- Threshold arrow -->
+  <line x1="280" y1="90" x2="280" y2="98" stroke="#E74C3C" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="280" y="112" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">Domyślny próg blokowania</text>
+  <!-- Info -->
+  <rect x="120" y="120" width="350" height="50" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="295" y="136" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Sexual content filter:</text>
+  <text x="130" y="150" fill="#333" font-size="7">• Treści dla dorosłych, język pornograficzny, sugestywne opisy</text>
+  <text x="130" y="163" fill="#333" font-size="7">• Konfigurowalny próg · Filtruje input i output · Domyślnie włączony w Azure OpenAI</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

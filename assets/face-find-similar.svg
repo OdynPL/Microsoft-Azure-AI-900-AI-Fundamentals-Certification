@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Find Similar – wyszukiwanie podobnych twarzy</text>
+  <!-- Query face -->
+  <rect x="20" y="45" width="60" height="60" fill="#FFF3CD" stroke="#E6A800" stroke-width="2" rx="6"/>
+  <ellipse cx="50" cy="68" rx="15" ry="18" fill="#FFF" stroke="#E6A800" stroke-width="1"/>
+  <circle cx="44" cy="64" r="2" fill="#333"/>
+  <circle cx="56" cy="64" r="2" fill="#333"/>
+  <path d="M44,75 Q50,80 56,75" fill="none" stroke="#333" stroke-width="1"/>
+  <text x="50" y="115" text-anchor="middle" fill="#E6A800" font-size="7" font-weight="bold">Query face</text>
+  <!-- Arrow -->
+  <line x1="83" y1="75" x2="108" y2="75" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="95" y="68" text-anchor="middle" fill="#555" font-size="7">search</text>
+  <!-- Face list -->
+  <rect x="115" y="38" width="175" height="85" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="202" y="52" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Face List / PersonGroup</text>
+  <!-- Results ranked -->
+  <rect x="122" y="58" width="38" height="38" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="3"/>
+  <circle cx="141" cy="72" r="10" fill="#B5E8C3"/>
+  <text x="141" y="105" text-anchor="middle" fill="#28A745" font-size="6" font-weight="bold">0.95</text>
+  <rect x="165" y="58" width="38" height="38" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="3"/>
+  <circle cx="184" cy="72" r="10" fill="#C5ECD3"/>
+  <text x="184" y="105" text-anchor="middle" fill="#28A745" font-size="6">0.87</text>
+  <rect x="208" y="58" width="38" height="38" fill="#EEE" stroke="#999" stroke-width="1" rx="3"/>
+  <circle cx="227" cy="72" r="10" fill="#DDD"/>
+  <text x="227" y="105" text-anchor="middle" fill="#999" font-size="6">0.42</text>
+  <rect x="251" y="58" width="32" height="38" fill="#EEE" stroke="#999" stroke-width="1" rx="3"/>
+  <circle cx="267" cy="72" r="10" fill="#DDD"/>
+  <text x="267" y="105" text-anchor="middle" fill="#999" font-size="6">0.31</text>
+  <!-- Ranking label -->
+  <text x="190" y="132" text-anchor="middle" fill="#555" font-size="8">Ranking od najbardziej podobnych</text>
+  <!-- Info box -->
+  <rect x="310" y="35" width="160" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Find Similar</text>
+  <text x="318" y="68" fill="#333" font-size="8">• Query → ranked similar faces</text>
+  <text x="318" y="82" fill="#333" font-size="8">• matchPerson / matchFace</text>
+  <text x="318" y="96" fill="#333" font-size="8">• Face List lub PersonGroup</text>
+  <text x="318" y="110" fill="#333" font-size="8">• Confidence ranking</text>
+  <text x="318" y="124" fill="#333" font-size="8">• Wyszukiwanie celebrytów</text>
+  <text x="318" y="138" fill="#333" font-size="8">• Deduplication twarzy</text>
+  <text x="240" y="162" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Podaj twarz → otrzymaj listę najbardziej podobnych twarzy z kolekcji</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Face Detection – wykrywanie twarzy + atrybuty</text>
+  <!-- Photo frame -->
+  <rect x="20" y="35" width="120" height="110" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="4"/>
+  <!-- Face oval -->
+  <ellipse cx="80" cy="80" rx="25" ry="32" fill="#FFF3CD" stroke="#E6A800" stroke-width="1"/>
+  <!-- Bounding box -->
+  <rect x="50" y="43" width="60" height="75" fill="none" stroke="#28A745" stroke-width="2" rx="2"/>
+  <text x="82" y="42" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">BBox</text>
+  <!-- Eyes -->
+  <circle cx="70" cy="72" r="3" fill="#333"/>
+  <circle cx="90" cy="72" r="3" fill="#333"/>
+  <!-- Mouth -->
+  <path d="M70,92 Q80,100 90,92" fill="none" stroke="#333" stroke-width="1.5"/>
+  <!-- Face landmarks -->
+  <circle cx="80" cy="82" r="1.5" fill="#E74C3C"/>
+  <circle cx="70" cy="72" r="1.5" fill="#E74C3C"/>
+  <circle cx="90" cy="72" r="1.5" fill="#E74C3C"/>
+  <circle cx="70" cy="92" r="1.5" fill="#E74C3C"/>
+  <circle cx="90" cy="92" r="1.5" fill="#E74C3C"/>
+  <!-- Attributes -->
+  <rect x="160" y="35" width="150" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="235" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Wykryte atrybuty</text>
+  <text x="170" y="68" fill="#333" font-size="8">Wiek: ~28 lat</text>
+  <text x="170" y="82" fill="#333" font-size="8">Okulary: Tak</text>
+  <text x="170" y="96" fill="#333" font-size="8">Emocje: Radość 0.92</text>
+  <text x="170" y="110" fill="#333" font-size="8">Pozycja głowy: roll, yaw, pitch</text>
+  <text x="170" y="124" fill="#333" font-size="8">Rozmycie: Niskie</text>
+  <text x="170" y="138" fill="#333" font-size="8">Ekspozycja: Dobra</text>
+  <!-- Info box -->
+  <rect x="330" y="35" width="140" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="400" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">API</text>
+  <text x="338" y="68" fill="#333" font-size="8">• Azure AI Face</text>
+  <text x="338" y="82" fill="#333" font-size="8">• BBox + landmarks</text>
+  <text x="338" y="96" fill="#333" font-size="8">• 27 punktów twarzy</text>
+  <text x="338" y="110" fill="#333" font-size="8">• Wiele twarzy na foto</text>
+  <text x="338" y="124" fill="#333" font-size="8">• Atrybuty opcjonalne</text>
+  <text x="338" y="138" fill="#333" font-size="8">• Nie wymaga Limited</text>
+  <text x="240" y="162" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Wykrywa pozycję twarzy (BBox) + opcjonalne atrybuty (wiek, emocje, okulary)</text>
+</svg>

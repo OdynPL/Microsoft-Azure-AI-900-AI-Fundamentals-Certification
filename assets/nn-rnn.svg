@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">RNN – Recurrent Neural Network</text>
+  <!-- Unrolled RNN cells -->
+  <!-- Cell t-1 -->
+  <rect x="30" y="60" width="55" height="40" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="57" y="83" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">h(t-1)</text>
+  <text x="57" y="50" text-anchor="middle" fill="#555" font-size="8">x(t-1)</text>
+  <line x1="57" y1="55" x2="57" y2="60" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="57" y="115" text-anchor="middle" fill="#555" font-size="8">y(t-1)</text>
+  <line x1="57" y1="100" x2="57" y2="108" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Cell t -->
+  <rect x="120" y="60" width="55" height="40" fill="#C0DCFA" stroke="#0078D4" stroke-width="2" rx="6"/>
+  <text x="147" y="83" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">h(t)</text>
+  <text x="147" y="50" text-anchor="middle" fill="#555" font-size="8">x(t)</text>
+  <line x1="147" y1="55" x2="147" y2="60" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="147" y="115" text-anchor="middle" fill="#555" font-size="8">y(t)</text>
+  <line x1="147" y1="100" x2="147" y2="108" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Cell t+1 -->
+  <rect x="210" y="60" width="55" height="40" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="237" y="83" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">h(t+1)</text>
+  <text x="237" y="50" text-anchor="middle" fill="#555" font-size="8">x(t+1)</text>
+  <line x1="237" y1="55" x2="237" y2="60" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="237" y="115" text-anchor="middle" fill="#555" font-size="8">y(t+1)</text>
+  <line x1="237" y1="100" x2="237" y2="108" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Recurrent arrows -->
+  <line x1="85" y1="80" x2="120" y2="80" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrR)"/>
+  <line x1="175" y1="80" x2="210" y2="80" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrR)"/>
+  <line x1="265" y1="80" x2="285" y2="80" stroke="#E74C3C" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- Recurrent label -->
+  <text x="102" y="73" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">stan</text>
+  <text x="192" y="73" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">stan</text>
+  <!-- Info box -->
+  <rect x="310" y="30" width="160" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Kluczowe cechy</text>
+  <text x="320" y="64" fill="#333" font-size="8">• Pamięć stanu h(t)</text>
+  <text x="320" y="77" fill="#333" font-size="8">• Sekwencje: tekst, audio</text>
+  <text x="320" y="90" fill="#333" font-size="8">• Szeregi czasowe</text>
+  <text x="320" y="103" fill="#333" font-size="8">• Problem: vanishing gradient</text>
+  <text x="320" y="116" fill="#333" font-size="8">• Poprzednik Transformera</text>
+  <text x="320" y="129" fill="#333" font-size="8">• Zastąpione przez LSTM / GRU</text>
+  <!-- Timeline -->
+  <line x1="30" y1="140" x2="280" y2="140" stroke="#CCC" stroke-width="1"/>
+  <text x="57" y="155" text-anchor="middle" fill="#999" font-size="7">t-1</text>
+  <text x="147" y="155" text-anchor="middle" fill="#999" font-size="7">t</text>
+  <text x="237" y="155" text-anchor="middle" fill="#999" font-size="7">t+1</text>
+  <text x="155" y="170" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Stan ukryty h(t) przenosi informację z poprzednich kroków</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

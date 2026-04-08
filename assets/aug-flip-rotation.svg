@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Flip / Rotation – augmentacja obrazów</text>
+  <!-- Original image -->
+  <rect x="20" y="35" width="70" height="70" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="4"/>
+  <text x="55" y="60" text-anchor="middle" fill="#0078D4" font-size="10" font-weight="bold">A</text>
+  <text x="55" y="75" text-anchor="middle" fill="#0078D4" font-size="8">oryginał</text>
+  <text x="55" y="120" text-anchor="middle" fill="#999" font-size="7">Original</text>
+  <!-- Horizontal flip -->
+  <rect x="120" y="35" width="70" height="70" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="4"/>
+  <text x="155" y="60" text-anchor="middle" fill="#28A745" font-size="10" font-weight="bold" transform="scale(-1,1) translate(-310,0)">A</text>
+  <text x="155" y="75" text-anchor="middle" fill="#28A745" font-size="8">flip H</text>
+  <text x="155" y="120" text-anchor="middle" fill="#999" font-size="7">Horizontal Flip</text>
+  <line x1="93" y1="70" x2="117" y2="70" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Vertical flip -->
+  <rect x="220" y="35" width="70" height="70" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="4"/>
+  <text x="255" y="65" text-anchor="middle" fill="#8B6A00" font-size="10" font-weight="bold" transform="rotate(180,255,63)">A</text>
+  <text x="255" y="80" text-anchor="middle" fill="#8B6A00" font-size="8">flip V</text>
+  <text x="255" y="120" text-anchor="middle" fill="#999" font-size="7">Vertical Flip</text>
+  <line x1="193" y1="70" x2="217" y2="70" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Rotation -->
+  <rect x="320" y="35" width="70" height="70" fill="#FDECEA" stroke="#E74C3C" stroke-width="1.5" rx="4" transform="rotate(15,355,70)"/>
+  <text x="355" y="65" text-anchor="middle" fill="#E74C3C" font-size="10" font-weight="bold" transform="rotate(15,355,63)">A</text>
+  <text x="355" y="80" text-anchor="middle" fill="#E74C3C" font-size="8" transform="rotate(15,355,78)">90°/180°</text>
+  <text x="355" y="120" text-anchor="middle" fill="#999" font-size="7">Rotation</text>
+  <line x1="293" y1="70" x2="317" y2="70" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Curved rotation arrow -->
+  <path d="M370,30 A20,20 0 0,1 390,50" fill="none" stroke="#E74C3C" stroke-width="1.5" marker-end="url(#arrR)"/>
+  <!-- Info -->
+  <rect x="410" y="35" width="60" height="70" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="4"/>
+  <text x="440" y="50" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Cechy</text>
+  <text x="415" y="62" fill="#333" font-size="6">• Nie zmienia</text>
+  <text x="415" y="71" fill="#333" font-size="6">  kształtów</text>
+  <text x="415" y="82" fill="#333" font-size="6">• ×2-4 danych</text>
+  <text x="415" y="93" fill="#333" font-size="6">• Kluczowe</text>
+  <text x="415" y="102" fill="#333" font-size="6">  dla CNN</text>
+  <!-- Legend -->
+  <text x="240" y="150" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Tworzenie nowych wersji obrazu bez zmiany treści – zwiększa różnorodność danych</text>
+  <text x="240" y="165" text-anchor="middle" fill="#999" font-size="7">Losowe transformacje geometryczne: random_flip, random_rotation</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

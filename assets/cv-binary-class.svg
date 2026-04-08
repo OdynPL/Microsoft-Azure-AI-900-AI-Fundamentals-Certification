@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Binary Classification – 2 kategorie</text>
+  <!-- Input image -->
+  <rect x="30" y="50" width="60" height="60" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="60" y="78" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Obraz?</text>
+  <text x="60" y="90" text-anchor="middle" fill="#555" font-size="7">zdjęcie RTG</text>
+  <!-- Arrow -->
+  <line x1="93" y1="80" x2="115" y2="80" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Model box -->
+  <rect x="118" y="60" width="55" height="40" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="6"/>
+  <text x="145" y="83" text-anchor="middle" fill="#8B6A00" font-size="8" font-weight="bold">Model</text>
+  <!-- Two outputs -->
+  <line x1="176" y1="72" x2="208" y2="55" stroke="#28A745" stroke-width="2" marker-end="url(#arrG)"/>
+  <line x1="176" y1="88" x2="208" y2="105" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrR)"/>
+  <!-- Class A -->
+  <rect x="212" y="40" width="65" height="30" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="6"/>
+  <text x="244" y="59" text-anchor="middle" fill="#28A745" font-size="9" font-weight="bold">Zdrowy</text>
+  <text x="284" y="59" fill="#28A745" font-size="8">92%</text>
+  <!-- Class B -->
+  <rect x="212" y="90" width="65" height="30" fill="#FDECEA" stroke="#E74C3C" stroke-width="2" rx="6"/>
+  <text x="244" y="109" text-anchor="middle" fill="#E74C3C" font-size="9" font-weight="bold">Chory</text>
+  <text x="284" y="109" fill="#E74C3C" font-size="8">8%</text>
+  <!-- Info box -->
+  <rect x="320" y="30" width="150" height="115" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="395" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy</text>
+  <text x="328" y="64" fill="#333" font-size="8">• Dokładnie 2 klasy</text>
+  <text x="328" y="77" fill="#333" font-size="8">• Tak/Nie, Spam/Nie-spam</text>
+  <text x="328" y="90" fill="#333" font-size="8">• Kot/Pies, Zdrowy/Chory</text>
+  <text x="328" y="103" fill="#333" font-size="8">• Sigmoid na wyjściu</text>
+  <text x="328" y="116" fill="#333" font-size="8">• Binary Cross-Entropy</text>
+  <text x="328" y="129" fill="#333" font-size="8">• Metryki: AUC, F1</text>
+  <text x="328" y="142" fill="#333" font-size="8">• Próg decyzyjny: 0.5</text>
+  <text x="240" y="155" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Jedno zdjęcie → jedna z dwóch klas + prawdopodobieństwo</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

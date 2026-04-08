@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">LSTM – Long Short-Term Memory</text>
+  <!-- Cell body -->
+  <rect x="40" y="30" width="250" height="120" fill="#F0F7FF" stroke="#0078D4" stroke-width="1.5" rx="8"/>
+  <!-- Cell state line -->
+  <line x1="40" y1="50" x2="290" y2="50" stroke="#28A745" stroke-width="3"/>
+  <text x="165" y="43" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Cell State (C)</text>
+  <!-- Forget gate -->
+  <circle cx="90" cy="85" r="18" fill="#FDECEA" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="90" y="82" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Forget</text>
+  <text x="90" y="92" text-anchor="middle" fill="#E74C3C" font-size="7">Gate</text>
+  <text x="90" y="113" text-anchor="middle" fill="#E74C3C" font-size="6">sigma</text>
+  <line x1="90" y1="67" x2="90" y2="53" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Input gate -->
+  <circle cx="165" cy="85" r="18" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5"/>
+  <text x="165" y="82" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Input</text>
+  <text x="165" y="92" text-anchor="middle" fill="#8B6A00" font-size="7">Gate</text>
+  <text x="165" y="113" text-anchor="middle" fill="#8B6A00" font-size="6">sigma + tanh</text>
+  <line x1="165" y1="67" x2="165" y2="53" stroke="#E6A800" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Output gate -->
+  <circle cx="240" cy="85" r="18" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <text x="240" y="82" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">Output</text>
+  <text x="240" y="92" text-anchor="middle" fill="#28A745" font-size="7">Gate</text>
+  <text x="240" y="113" text-anchor="middle" fill="#28A745" font-size="6">sigma</text>
+  <line x1="240" y1="67" x2="240" y2="53" stroke="#28A745" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- h(t-1) input -->
+  <text x="20" y="88" text-anchor="middle" fill="#0078D4" font-size="8">h(t-1)</text>
+  <!-- h(t) output -->
+  <text x="305" y="88" text-anchor="end" fill="#0078D4" font-size="8">h(t)</text>
+  <!-- Info box -->
+  <rect x="320" y="30" width="150" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="395" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Kluczowe cechy</text>
+  <text x="330" y="64" fill="#333" font-size="8">• 3 bramki: forget, input, output</text>
+  <text x="330" y="77" fill="#333" font-size="8">• Cell state: pamięć długoterm.</text>
+  <text x="330" y="90" fill="#333" font-size="8">• Rozwiązuje vanishing gradient</text>
+  <text x="330" y="103" fill="#333" font-size="8">• Tekst, tłumaczenie, mowa</text>
+  <text x="330" y="116" fill="#333" font-size="8">• Wariant: GRU (2 bramki)</text>
+  <text x="330" y="129" fill="#333" font-size="8">• Lepsza od RNN dla długich sekw.</text>
+  <!-- Legend bottom -->
+  <text x="165" y="165" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Bramki kontrolują przepływ informacji – co zapamiętać, co zapomnieć</text>
+</svg>

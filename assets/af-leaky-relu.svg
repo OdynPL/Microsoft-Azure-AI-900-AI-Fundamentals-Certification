@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Leaky ReLU – f(x) = max(αx, x)</text>
+  <!-- Axes -->
+  <line x1="140" y1="25" x2="140" y2="155" stroke="#333" stroke-width="1.5"/>
+  <line x1="10" y1="95" x2="270" y2="95" stroke="#333" stroke-width="1.5"/>
+  <text x="275" y="99" fill="#333" font-size="8">x</text>
+  <text x="144" y="25" fill="#333" font-size="8">f(x)</text>
+  <!-- Grid -->
+  <line x1="10" y1="55" x2="270" y2="55" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="10" y1="135" x2="270" y2="135" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="70" y1="25" x2="70" y2="155" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="210" y1="25" x2="210" y2="155" stroke="#EEE" stroke-width="0.5"/>
+  <!-- ReLU for comparison (dashed) -->
+  <line x1="10" y1="95" x2="140" y2="95" stroke="#CCC" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="140" y1="95" x2="250" y2="30" stroke="#CCC" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="80" y="88" text-anchor="middle" fill="#CCC" font-size="7">ReLU (= 0)</text>
+  <!-- Leaky ReLU -->
+  <line x1="10" y1="108" x2="140" y2="95" stroke="#28A745" stroke-width="3"/>
+  <line x1="140" y1="95" x2="250" y2="30" stroke="#0078D4" stroke-width="3"/>
+  <!-- Zero point -->
+  <circle cx="140" cy="95" r="4" fill="#0078D4"/>
+  <!-- Labels -->
+  <text x="70" y="120" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">αx (α=0.01)</text>
+  <text x="210" y="50" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">x (slope=1)</text>
+  <!-- Formula -->
+  <text x="140" y="148" text-anchor="middle" fill="#0078D4" font-size="10" font-weight="bold">f(x) = max(0.01·x, x)</text>
+  <!-- Annotation: small negative slope -->
+  <line x1="35" y1="105" x2="35" y2="95" stroke="#28A745" stroke-width="1.5"/>
+  <line x1="32" y1="105" x2="38" y2="105" stroke="#28A745" stroke-width="1"/>
+  <line x1="32" y1="95" x2="38" y2="95" stroke="#28A745" stroke-width="1"/>
+  <text x="47" y="102" fill="#28A745" font-size="6">mały gradient ≠ 0</text>
+  <!-- Info box -->
+  <rect x="290" y="30" width="180" height="120" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="380" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Leaky ReLU</text>
+  <text x="300" y="64" fill="#333" font-size="8">• α = 0.01 (lub parametryczny)</text>
+  <text x="300" y="77" fill="#333" font-size="8">• Brak „martwych neuronów"</text>
+  <text x="300" y="90" fill="#333" font-size="8">• Gradient ≠ 0 dla x &lt; 0</text>
+  <text x="300" y="103" fill="#333" font-size="8">• Wariant: PReLU (α uczony)</text>
+  <text x="300" y="116" fill="#333" font-size="8">• Wariant: ELU (wykładniczy)</text>
+  <text x="300" y="129" fill="#333" font-size="8">• Szybsza zbieżność</text>
+  <text x="300" y="142" fill="#333" font-size="8">• Warstwy ukryte deep learning</text>
+</svg>

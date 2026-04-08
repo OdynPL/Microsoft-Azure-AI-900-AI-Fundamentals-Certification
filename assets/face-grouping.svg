@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Face Grouping – grupowanie podobnych twarzy</text>
+  <!-- Input: mixed faces -->
+  <text x="60" y="38" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Zbiór zdjęć (niesortowany)</text>
+  <circle cx="25" cy="58" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="50" cy="58" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="75" cy="58" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="100" cy="58" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="37" cy="82" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="62" cy="82" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="87" cy="82" r="12" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <!-- Arrow -->
+  <line x1="60" y1="100" x2="60" y2="112" stroke="#0078D4" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="80" y="109" fill="#0078D4" font-size="7" font-weight="bold">Group API</text>
+  <!-- Grouped output -->
+  <!-- Group 1 -->
+  <rect x="10" y="118" width="55" height="45" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="4"/>
+  <text x="37" y="132" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">Grupa 1</text>
+  <circle cx="25" cy="148" r="8" fill="#B5E8C3" stroke="#28A745" stroke-width="1"/>
+  <circle cx="47" cy="148" r="8" fill="#B5E8C3" stroke="#28A745" stroke-width="1"/>
+  <!-- Group 2 -->
+  <rect x="72" y="118" width="55" height="45" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="4"/>
+  <text x="99" y="132" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Grupa 2</text>
+  <circle cx="82" cy="148" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1"/>
+  <circle cx="100" cy="148" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1"/>
+  <circle cx="118" cy="148" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1"/>
+  <!-- Ungrouped -->
+  <rect x="134" y="118" width="55" height="45" fill="#EEE" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="161" y="132" text-anchor="middle" fill="#999" font-size="6" font-weight="bold">Niegrupowane</text>
+  <circle cx="147" cy="148" r="8" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <circle cx="168" cy="148" r="8" fill="#DDD" stroke="#999" stroke-width="1"/>
+  <!-- Info box -->
+  <rect x="210" y="35" width="260" height="120" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="340" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Face Grouping</text>
+  <text x="220" y="68" fill="#333" font-size="8">• Wiele zdjęć → grupy podobnych twarzy</text>
+  <text x="220" y="82" fill="#333" font-size="8">• Bez wcześniejszego treningu</text>
+  <text x="220" y="96" fill="#333" font-size="8">• Niegrupowane = unikalne twarze</text>
+  <text x="220" y="110" fill="#333" font-size="8">• Sortowanie albumów zdjęć</text>
+  <text x="220" y="124" fill="#333" font-size="8">• Azure AI Face – Group API</text>
+  <text x="220" y="138" fill="#333" font-size="8">• Nie wymaga PersonGroup (w odróżnieniu od Identify)</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">CNN – Convolutional Neural Network</text>
+  <!-- Input image -->
+  <rect x="15" y="50" width="50" height="50" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="3"/>
+  <text x="40" y="72" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Obraz</text>
+  <text x="40" y="82" text-anchor="middle" fill="#555" font-size="7">28×28</text>
+  <!-- Conv layer 1 -->
+  <rect x="85" y="40" width="30" height="60" fill="#D4E8FC" stroke="#0078D4" stroke-width="1" rx="2"/>
+  <rect x="88" y="43" width="30" height="60" fill="#C0DCFA" stroke="#0078D4" stroke-width="1" rx="2"/>
+  <rect x="91" y="46" width="30" height="60" fill="#A8D0F8" stroke="#0078D4" stroke-width="1" rx="2"/>
+  <text x="106" y="80" text-anchor="middle" fill="#fff" font-size="7" font-weight="bold">Conv</text>
+  <line x1="65" y1="75" x2="85" y2="75" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Pooling -->
+  <rect x="140" y="50" width="25" height="45" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="2"/>
+  <text x="152" y="72" text-anchor="middle" fill="#8B6A00" font-size="6" font-weight="bold">Pool</text>
+  <text x="152" y="81" text-anchor="middle" fill="#8B6A00" font-size="6">2×2</text>
+  <line x1="121" y1="75" x2="140" y2="75" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Conv layer 2 -->
+  <rect x="182" y="45" width="25" height="50" fill="#C0DCFA" stroke="#0078D4" stroke-width="1" rx="2"/>
+  <rect x="185" y="48" width="25" height="50" fill="#A8D0F8" stroke="#0078D4" stroke-width="1" rx="2"/>
+  <text x="197" y="76" text-anchor="middle" fill="#fff" font-size="7" font-weight="bold">Conv</text>
+  <line x1="165" y1="72" x2="182" y2="72" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Pool 2 -->
+  <rect x="228" y="52" width="20" height="38" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="2"/>
+  <text x="238" y="72" text-anchor="middle" fill="#8B6A00" font-size="6" font-weight="bold">Pool</text>
+  <line x1="210" y1="72" x2="228" y2="72" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Flatten + FC -->
+  <rect x="265" y="55" width="15" height="35" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="2"/>
+  <text x="272" y="76" text-anchor="middle" fill="#28A745" font-size="5" font-weight="bold">FC</text>
+  <line x1="248" y1="72" x2="265" y2="72" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Output -->
+  <rect x="297" y="58" width="12" height="28" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="2"/>
+  <text x="303" y="76" text-anchor="middle" fill="#28A745" font-size="5" font-weight="bold">Out</text>
+  <line x1="280" y1="72" x2="297" y2="72" stroke="#28A745" stroke-width="1.5" marker-end="url(#arr2)"/>
+  <!-- Info box -->
+  <rect x="330" y="30" width="140" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="400" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Kluczowe cechy</text>
+  <text x="340" y="64" fill="#333" font-size="8">• Filtry konwolucyjne</text>
+  <text x="340" y="77" fill="#333" font-size="8">• Feature maps (mapy cech)</text>
+  <text x="340" y="90" fill="#333" font-size="8">• Max/Avg Pooling</text>
+  <text x="340" y="103" fill="#333" font-size="8">• Rozpoznawanie obrazów</text>
+  <text x="340" y="116" fill="#333" font-size="8">• Translacja-inwariantność</text>
+  <text x="340" y="129" fill="#333" font-size="8">• ImageNet, ResNet, VGG</text>
+  <!-- Labels -->
+  <text x="40" y="115" text-anchor="middle" fill="#999" font-size="7">Input</text>
+  <text x="106" y="120" text-anchor="middle" fill="#999" font-size="7">Feature</text>
+  <text x="106" y="128" text-anchor="middle" fill="#999" font-size="7">Extraction</text>
+  <text x="272" y="105" text-anchor="middle" fill="#999" font-size="7">Classification</text>
+  <!-- Legend -->
+  <text x="150" y="155" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Obraz → Conv → Pool → Conv → Pool → Fully Connected → Klasa</text>
+  <text x="150" y="168" text-anchor="middle" fill="#999" font-size="7">Każda warstwa Conv wykrywa coraz bardziej złożone cechy</text>
+  <!-- Arrows -->
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+    <marker id="arr2" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Few-shot – kilka przykładów (1–5)</text>
+  <!-- Prompt box -->
+  <rect x="20" y="32" width="270" height="120" fill="#F0F7FF" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="30" y="47" fill="#0078D4" font-size="8" font-weight="bold">PROMPT:</text>
+  <!-- Examples (highlighted) -->
+  <rect x="28" y="52" width="255" height="18" fill="#FFF3CD" stroke="#E6A800" stroke-width="0.5" rx="2"/>
+  <text x="35" y="64" fill="#8B6A00" font-size="7">'Jedzenie było okropne' → Negatywny</text>
+  <rect x="28" y="72" width="255" height="18" fill="#FFF3CD" stroke="#E6A800" stroke-width="0.5" rx="2"/>
+  <text x="35" y="84" fill="#8B6A00" font-size="7">'Świetna obsługa!' → Pozytywny</text>
+  <rect x="28" y="92" width="255" height="18" fill="#FFF3CD" stroke="#E6A800" stroke-width="0.5" rx="2"/>
+  <text x="35" y="104" fill="#8B6A00" font-size="7">'Nic specjalnego' → Neutralny</text>
+  <!-- Task -->
+  <text x="30" y="125" fill="#333" font-size="8">Sklasyfikuj: <tspan fill="#555" font-style="italic">'Produkt jest naprawdę świetny!'</tspan></text>
+  <text x="30" y="140" fill="#333" font-size="8">→</text>
+  <!-- N examples indicator -->
+  <rect x="200" y="35" width="80" height="18" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="4"/>
+  <text x="240" y="47" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">3 przykłady</text>
+  <!-- Arrow + Response -->
+  <line x1="155" y1="155" x2="155" y2="162" stroke="#0078D4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="75" y="165" width="160" height="14" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="4"/>
+  <text x="155" y="175" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">→ Pozytywny</text>
+  <!-- Info box -->
+  <rect x="310" y="35" width="160" height="120" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Few-shot</text>
+  <text x="318" y="68" fill="#333" font-size="8">• 2–5 przykładów</text>
+  <text x="318" y="82" fill="#333" font-size="8">• Najlepsza jakość (bez FT)</text>
+  <text x="318" y="96" fill="#333" font-size="8">• Ustala format + logikę</text>
+  <text x="318" y="110" fill="#333" font-size="8">• Więcej tokenów = droższe</text>
+  <text x="318" y="124" fill="#333" font-size="8">• Różnorodne przykłady!</text>
+  <text x="318" y="138" fill="#333" font-size="8">• Context window limit</text>
+  <text x="318" y="152" fill="#333" font-size="8">• Najczęstsze w praktyce</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+  </defs>
+</svg>

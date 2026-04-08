@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">GAN – Generative Adversarial Network</text>
+  <!-- Noise input -->
+  <rect x="15" y="65" width="45" height="30" fill="#EEE" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="37" y="78" text-anchor="middle" fill="#666" font-size="7" font-weight="bold">Szum z</text>
+  <text x="37" y="88" text-anchor="middle" fill="#999" font-size="6">losowy</text>
+  <!-- Generator -->
+  <rect x="80" y="55" width="70" height="50" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="8"/>
+  <text x="115" y="76" text-anchor="middle" fill="#28A745" font-size="9" font-weight="bold">Generator</text>
+  <text x="115" y="88" text-anchor="middle" fill="#28A745" font-size="7">G(z)</text>
+  <line x1="60" y1="80" x2="80" y2="80" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Fake image -->
+  <rect x="170" y="62" width="35" height="35" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="3"/>
+  <text x="187" y="82" text-anchor="middle" fill="#8B6A00" font-size="6" font-weight="bold">Fake</text>
+  <line x1="150" y1="80" x2="170" y2="80" stroke="#28A745" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Real image -->
+  <rect x="170" y="115" width="35" height="35" fill="#D4E8FC" stroke="#0078D4" stroke-width="1" rx="3"/>
+  <text x="187" y="136" text-anchor="middle" fill="#0078D4" font-size="6" font-weight="bold">Real</text>
+  <!-- Discriminator -->
+  <rect x="225" y="70" width="75" height="50" fill="#FDECEA" stroke="#E74C3C" stroke-width="2" rx="8"/>
+  <text x="262" y="90" text-anchor="middle" fill="#E74C3C" font-size="9" font-weight="bold">Discriminator</text>
+  <text x="262" y="102" text-anchor="middle" fill="#E74C3C" font-size="7">D(x)</text>
+  <line x1="205" y1="80" x2="225" y2="88" stroke="#E6A800" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="205" y1="132" x2="225" y2="100" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Output -->
+  <text x="322" y="85" text-anchor="start" fill="#28A745" font-size="8" font-weight="bold">Real?</text>
+  <text x="322" y="100" text-anchor="start" fill="#E74C3C" font-size="8" font-weight="bold">Fake?</text>
+  <line x1="300" y1="92" x2="318" y2="92" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Feedback loop -->
+  <path d="M262,120 L262,155 L115,155 L115,105" fill="none" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrR)"/>
+  <text x="188" y="165" text-anchor="middle" fill="#E74C3C" font-size="7" font-style="italic">Feedback: Generator uczy się oszukiwać Discriminatora</text>
+  <!-- Info box -->
+  <rect x="355" y="30" width="115" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="412" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Zastosowania</text>
+  <text x="365" y="64" fill="#333" font-size="8">• Generowanie obrazów</text>
+  <text x="365" y="77" fill="#333" font-size="8">• Deepfake</text>
+  <text x="365" y="90" fill="#333" font-size="8">• Super-resolution</text>
+  <text x="365" y="103" fill="#333" font-size="8">• Data augmentation</text>
+  <text x="365" y="116" fill="#333" font-size="8">• Style transfer</text>
+  <text x="365" y="129" fill="#333" font-size="8">• DALL-E (wariant)</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

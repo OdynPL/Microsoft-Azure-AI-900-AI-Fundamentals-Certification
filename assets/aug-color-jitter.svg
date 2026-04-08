@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Color Jitter – losowe zmiany koloru</text>
+  <!-- Original -->
+  <rect x="20" y="40" width="65" height="65" fill="#6BA3D6" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="52" y="70" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">Original</text>
+  <text x="52" y="82" text-anchor="middle" fill="#FFF" font-size="7">bazowy kolor</text>
+  <!-- Brightness -->
+  <rect x="105" y="35" width="55" height="30" fill="#A3CEF1" stroke="#0078D4" stroke-width="1" rx="4"/>
+  <text x="132" y="53" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Jasność +</text>
+  <rect x="105" y="70" width="55" height="30" fill="#3A6FA0" stroke="#0078D4" stroke-width="1" rx="4"/>
+  <text x="132" y="88" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">Jasność −</text>
+  <line x1="88" y1="60" x2="102" y2="50" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="88" y1="78" x2="102" y2="85" stroke="#555" stroke-width="1" marker-end="url(#arr)"/>
+  <!-- Contrast -->
+  <rect x="180" y="35" width="55" height="30" fill="#D4D4D4" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="207" y="53" text-anchor="middle" fill="#555" font-size="7" font-weight="bold">Kontrast −</text>
+  <rect x="180" y="70" width="55" height="30" fill="#2C5F8A" stroke="#0A4470" stroke-width="1" rx="4"/>
+  <text x="207" y="88" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">Kontrast +</text>
+  <!-- Saturation -->
+  <rect x="255" y="35" width="55" height="30" fill="#888" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="282" y="53" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">Saturacja −</text>
+  <rect x="255" y="70" width="55" height="30" fill="#0060FF" stroke="#0040CC" stroke-width="1" rx="4"/>
+  <text x="282" y="88" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">Saturacja +</text>
+  <!-- Hue -->
+  <rect x="180" y="108" width="55" height="30" fill="#D66B6B" stroke="#C44" stroke-width="1" rx="4"/>
+  <text x="207" y="126" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">Hue shift</text>
+  <!-- Info box -->
+  <rect x="330" y="30" width="140" height="115" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="400" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Parametry</text>
+  <text x="340" y="64" fill="#333" font-size="8">• Brightness (jasność)</text>
+  <text x="340" y="77" fill="#333" font-size="8">• Contrast (kontrast)</text>
+  <text x="340" y="90" fill="#333" font-size="8">• Saturation (nasycenie)</text>
+  <text x="340" y="103" fill="#333" font-size="8">• Hue (odcień)</text>
+  <text x="340" y="116" fill="#333" font-size="8">• Losowe wartości</text>
+  <text x="340" y="129" fill="#333" font-size="8">• Odporność na oświetlenie</text>
+  <text x="340" y="142" fill="#333" font-size="8">• Nie zmienia kształtów</text>
+  <!-- Legend -->
+  <text x="240" y="160" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Losowe zmiany kolorystyczne uczą model ignorować warunki oświetleniowe</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+  </defs>
+</svg>

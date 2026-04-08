@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">L1 (Lasso) – regularyzacja rzadka</text>
+  <!-- Constraint region: diamond -->
+  <polygon points="140,40 200,90 140,140 80,90" fill="#E8F4FD" stroke="#0078D4" stroke-width="2" fill-opacity="0.4"/>
+  <text x="140" y="95" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">|w₁|+|w₂| ≤ t</text>
+  <!-- Axes -->
+  <line x1="40" y1="90" x2="240" y2="90" stroke="#333" stroke-width="1"/>
+  <line x1="140" y1="30" x2="140" y2="150" stroke="#333" stroke-width="1"/>
+  <text x="238" y="85" fill="#333" font-size="8">w₁</text>
+  <text x="145" y="35" fill="#333" font-size="8">w₂</text>
+  <!-- Loss contours (ellipses) -->
+  <ellipse cx="190" cy="60" rx="45" ry="30" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="4,2" opacity="0.5"/>
+  <ellipse cx="190" cy="60" rx="65" ry="50" fill="none" stroke="#E74C3C" stroke-width="1" stroke-dasharray="4,2" opacity="0.3"/>
+  <text x="200" y="45" fill="#E74C3C" font-size="7">kontury loss</text>
+  <!-- Intersection point on axis (sparse!) -->
+  <circle cx="140" cy="55" r="5" fill="#28A745" stroke="#28A745" stroke-width="2"/>
+  <text x="120" y="52" text-anchor="end" fill="#28A745" font-size="8" font-weight="bold">w₁=0!</text>
+  <text x="120" y="62" text-anchor="end" fill="#28A745" font-size="7">feature selection</text>
+  <!-- Weight bar chart -->
+  <text x="140" y="165" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Romb wymusza wagi do zera → automatyczna selekcja cech</text>
+  <!-- Info box -->
+  <rect x="270" y="30" width="200" height="125" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="370" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy L1 (Lasso)</text>
+  <text x="280" y="64" fill="#333" font-size="8">• Penalty: λ·Σ|wᵢ|</text>
+  <text x="280" y="77" fill="#333" font-size="8">• Zeruje nieistotne wagi</text>
+  <text x="280" y="90" fill="#333" font-size="8">• Feature selection (selekcja cech)</text>
+  <text x="280" y="103" fill="#333" font-size="8">• Sparse model (rzadki)</text>
+  <text x="280" y="116" fill="#333" font-size="8">• Interpretowalny wynik</text>
+  <text x="280" y="129" fill="#333" font-size="8">• Lasso Regression</text>
+  <text x="280" y="142" fill="#333" font-size="8">• Nieliniowy gradient (subdifferential)</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Content Filter: Self-harm – samookaleczenie</text>
+  <!-- Shield -->
+  <path d="M60,40 L95,40 L95,85 Q95,110 77,120 Q60,110 60,85Z" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <text x="77" y="65" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">Self-</text>
+  <text x="77" y="78" text-anchor="middle" fill="#E74C3C" font-size="8" font-weight="bold">harm</text>
+  <text x="77" y="92" text-anchor="middle" fill="#E74C3C" font-size="7">Filter</text>
+  <!-- Protected content -->
+  <rect x="120" y="40" width="210" height="70" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="225" y="58" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Chronione kategorie:</text>
+  <text x="130" y="74" fill="#333" font-size="7">• Treści promujące samookaleczenie</text>
+  <text x="130" y="86" fill="#333" font-size="7">• Instrukcje szkodliwych działań wobec siebie</text>
+  <text x="130" y="98" fill="#333" font-size="7">• Gloryfikacja samookaleczeń</text>
+  <!-- Severity levels -->
+  <rect x="120" y="118" width="210" height="50" fill="#FFF" stroke="#CCC" stroke-width="1" rx="4"/>
+  <text x="225" y="134" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Severity → Akcja</text>
+  <text x="130" y="148" fill="#28A745" font-size="7" font-weight="bold">Safe: Przepuść</text>
+  <text x="200" y="148" fill="#E6A800" font-size="7" font-weight="bold">Low: Monitoruj</text>
+  <text x="275" y="148" fill="#E74C3C" font-size="7" font-weight="bold">Med/High: Blokuj</text>
+  <text x="130" y="162" fill="#999" font-size="6">Domyślny próg: Medium</text>
+  <!-- Info box -->
+  <rect x="350" y="40" width="120" height="100" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="410" y="56" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Azure OpenAI</text>
+  <text x="358" y="72" fill="#333" font-size="7">• Domyślnie włączony</text>
+  <text x="358" y="84" fill="#333" font-size="7">• Input + Output filter</text>
+  <text x="358" y="96" fill="#333" font-size="7">• Annotations w JSON</text>
+  <text x="358" y="108" fill="#333" font-size="7">• Content Safety API</text>
+  <text x="358" y="120" fill="#333" font-size="7">• Regulatory compliance</text>
+  <text x="358" y="132" fill="#333" font-size="7">• Custom thresholds</text>
+</svg>

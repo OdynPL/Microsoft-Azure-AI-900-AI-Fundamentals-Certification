@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Back-Translation – tłumaczenie w obie strony</text>
+  <!-- Original PL -->
+  <rect x="25" y="40" width="130" height="30" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="90" y="59" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">PL: "Kot siedzi na macie"</text>
+  <text x="90" y="35" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Oryginał</text>
+  <!-- Arrow PL → EN -->
+  <line x1="158" y1="55" x2="178" y2="55" stroke="#28A745" stroke-width="2" marker-end="url(#arrG)"/>
+  <text x="168" y="48" text-anchor="middle" fill="#28A745" font-size="7">tłumacz</text>
+  <!-- EN translation -->
+  <rect x="182" y="40" width="130" height="30" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="247" y="59" text-anchor="middle" fill="#28A745" font-size="9" font-weight="bold">EN: "The cat sits on mat"</text>
+  <text x="247" y="35" text-anchor="middle" fill="#555" font-size="8">Język pośredni</text>
+  <!-- Arrow EN → PL -->
+  <line x1="312" y1="70" x2="312" y2="95" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrR)"/>
+  <text x="330" y="85" text-anchor="start" fill="#E74C3C" font-size="7">tłumacz z powrotem</text>
+  <!-- Back-translated PL -->
+  <rect x="182" y="100" width="165" height="30" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="6"/>
+  <text x="264" y="119" text-anchor="middle" fill="#8B6A00" font-size="9" font-weight="bold">PL: "Kot siedzi na macie" (wariant)</text>
+  <text x="264" y="145" text-anchor="middle" fill="#8B6A00" font-size="8">Nowy parafrazowany przykład</text>
+  <!-- Variations -->
+  <rect x="25" y="100" width="140" height="55" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="4"/>
+  <text x="95" y="115" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Możliwe warianty:</text>
+  <text x="35" y="128" fill="#333" font-size="7">"Kot <tspan fill="#E74C3C">usiadł</tspan> na <tspan fill="#E74C3C">macie</tspan>"</text>
+  <text x="35" y="140" fill="#333" font-size="7">"<tspan fill="#E74C3C">Kotek</tspan> siedzi na <tspan fill="#E74C3C">podłodze</tspan>"</text>
+  <text x="35" y="152" fill="#333" font-size="7">"Kot <tspan fill="#E74C3C">leży</tspan> na macie"</text>
+  <!-- Info box -->
+  <rect x="370" y="35" width="100" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="420" y="52" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Cechy</text>
+  <text x="378" y="66" fill="#333" font-size="7">• Parafrazowanie</text>
+  <text x="378" y="78" fill="#333" font-size="7">• Zachowuje sens</text>
+  <text x="378" y="90" fill="#333" font-size="7">• Różne struktury</text>
+  <text x="378" y="102" fill="#333" font-size="7">• NLP augmentacja</text>
+  <text x="378" y="114" fill="#333" font-size="7">• Wiele języków</text>
+  <text x="378" y="126" fill="#333" font-size="7">• Azure Translator</text>
+  <text x="378" y="138" fill="#333" font-size="7">• Łatwa do wdrożenia</text>
+  <text x="240" y="172" text-anchor="middle" fill="#666" font-size="8" font-style="italic">PL → EN → PL: różnice w tłumaczeniu tworzą naturalne parafrazowanie</text>
+  <defs>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

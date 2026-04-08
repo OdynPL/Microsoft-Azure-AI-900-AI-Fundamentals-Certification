@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Categorical Cross-Entropy – wiele klas</text>
+  <!-- True label (one-hot) -->
+  <text x="60" y="38" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">True (one-hot)</text>
+  <rect x="20" y="43" width="80" height="18" fill="#EEE" stroke="#999" stroke-width="1" rx="2"/>
+  <text x="60" y="55" text-anchor="middle" fill="#333" font-size="8">Kot: 1</text>
+  <rect x="20" y="63" width="80" height="18" fill="#EEE" stroke="#999" stroke-width="1" rx="2"/>
+  <text x="60" y="76" text-anchor="middle" fill="#999" font-size="8">Pies: 0</text>
+  <rect x="20" y="83" width="80" height="18" fill="#EEE" stroke="#999" stroke-width="1" rx="2"/>
+  <text x="60" y="96" text-anchor="middle" fill="#999" font-size="8">Ptak: 0</text>
+  <!-- Predicted (softmax) -->
+  <text x="185" y="38" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Predicted (softmax)</text>
+  <rect x="145" y="43" width="80" height="18" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="2"/>
+  <text x="185" y="55" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Kot: 0.85</text>
+  <rect x="145" y="63" width="80" height="18" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="2"/>
+  <text x="185" y="76" text-anchor="middle" fill="#8B6A00" font-size="8">Pies: 0.10</text>
+  <rect x="145" y="83" width="80" height="18" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="2"/>
+  <text x="185" y="96" text-anchor="middle" fill="#E74C3C" font-size="8">Ptak: 0.05</text>
+  <!-- Arrow -->
+  <line x1="105" y1="70" x2="142" y2="70" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="123" y="65" text-anchor="middle" fill="#555" font-size="7">softmax</text>
+  <!-- Calculation -->
+  <rect x="20" y="110" width="255" height="30" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="4"/>
+  <text x="147" y="128" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">L = −log(0.85) = 0.163</text>
+  <text x="147" y="155" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Tylko prawdziwa klasa (y=1) wpływa na loss: −log(p_true)</text>
+  <!-- Info box -->
+  <rect x="290" y="30" width="180" height="130" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="380" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy CCE</text>
+  <text x="300" y="64" fill="#333" font-size="8">• Wiele klas (3+)</text>
+  <text x="300" y="77" fill="#333" font-size="8">• Softmax na wyjściu</text>
+  <text x="300" y="90" fill="#333" font-size="8">• One-hot encoded labels</text>
+  <text x="300" y="103" fill="#333" font-size="8">• Jeden label na sample</text>
+  <text x="300" y="116" fill="#333" font-size="8">• L = −Σ yᵢ·log(pᵢ)</text>
+  <text x="300" y="129" fill="#333" font-size="8">• Im wyższe p_true → niższy L</text>
+  <text x="300" y="142" fill="#333" font-size="8">• Sparse CCE: indeksy zamiast 1-hot</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+  </defs>
+</svg>

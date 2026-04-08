@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Binary Cross-Entropy – 2 klasy</text>
+  <!-- Two classes diagram -->
+  <text x="140" y="38" text-anchor="middle" fill="#555" font-size="9" font-weight="bold">Klasyfikacja binarna</text>
+  <!-- Class 0 -->
+  <circle cx="60" cy="80" r="20" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <text x="60" y="84" text-anchor="middle" fill="#E74C3C" font-size="10" font-weight="bold">0</text>
+  <text x="60" y="110" text-anchor="middle" fill="#E74C3C" font-size="8">Nie-spam</text>
+  <!-- Class 1 -->
+  <circle cx="220" cy="80" r="20" fill="#D5F5E3" stroke="#28A745" stroke-width="2"/>
+  <text x="220" y="84" text-anchor="middle" fill="#28A745" font-size="10" font-weight="bold">1</text>
+  <text x="220" y="110" text-anchor="middle" fill="#28A745" font-size="8">Spam</text>
+  <!-- Sigmoid in middle -->
+  <rect x="110" y="60" width="60" height="30" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="6"/>
+  <text x="140" y="78" text-anchor="middle" fill="#8B6A00" font-size="8" font-weight="bold">Sigmoid</text>
+  <text x="140" y="100" text-anchor="middle" fill="#555" font-size="8">p = σ(z)</text>
+  <!-- Arrows -->
+  <line x1="82" y1="80" x2="108" y2="75" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="172" y1="75" x2="198" y2="80" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Threshold -->
+  <line x1="140" y1="45" x2="140" y2="55" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="140" y="43" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Próg = 0.5</text>
+  <!-- Formula -->
+  <text x="140" y="135" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">BCE = −[y·log(p) + (1−y)·log(1−p)]</text>
+  <text x="140" y="150" text-anchor="middle" fill="#666" font-size="7">Jedno wyjście (p): p &gt; 0.5 → klasa 1, else → klasa 0</text>
+  <!-- Info box -->
+  <rect x="290" y="30" width="180" height="125" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="380" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy BCE</text>
+  <text x="300" y="64" fill="#333" font-size="8">• Dokładnie 2 klasy</text>
+  <text x="300" y="77" fill="#333" font-size="8">• 1 neuron wyjściowy + sigmoid</text>
+  <text x="300" y="90" fill="#333" font-size="8">• Spam/nie-spam, tak/nie</text>
+  <text x="300" y="103" fill="#333" font-size="8">• Logistic Regression loss</text>
+  <text x="300" y="116" fill="#333" font-size="8">• Threshold: zwykle 0.5</text>
+  <text x="300" y="129" fill="#333" font-size="8">• Metryki: AUC, F1, Accuracy</text>
+  <text x="300" y="142" fill="#333" font-size="8">• Przypadek szczeg. Cross-Entropy</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#999"/></marker>
+  </defs>
+</svg>

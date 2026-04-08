@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Cross-Entropy (Log Loss)</text>
+  <!-- Axes -->
+  <line x1="40" y1="25" x2="40" y2="145" stroke="#333" stroke-width="1.5"/>
+  <line x1="40" y1="145" x2="265" y2="145" stroke="#333" stroke-width="1.5"/>
+  <text x="265" y="158" fill="#333" font-size="8">p (predicted)</text>
+  <text x="48" y="28" fill="#333" font-size="8">Loss</text>
+  <!-- -log(p) curve for true class -->
+  <polyline points="45,25 55,48 65,62 80,78 100,95 120,108 140,117 165,126 190,132 220,138 250,142" fill="none" stroke="#0078D4" stroke-width="3" stroke-linecap="round"/>
+  <!-- Labels for curve -->
+  <text x="80" y="40" fill="#0078D4" font-size="8" font-weight="bold">−log(p)</text>
+  <text x="80" y="50" fill="#555" font-size="7">gdy y = 1</text>
+  <!-- Key points -->
+  <circle cx="45" cy="25" r="3" fill="#E74C3C"/>
+  <text x="55" y="32" fill="#E74C3C" font-size="7">p→0: Loss→∞</text>
+  <circle cx="250" cy="142" r="3" fill="#28A745"/>
+  <text x="220" y="138" fill="#28A745" font-size="7">p=1: Loss=0</text>
+  <!-- p axis labels -->
+  <text x="45" y="158" fill="#999" font-size="7">0</text>
+  <text x="148" y="158" fill="#999" font-size="7">0.5</text>
+  <text x="250" y="158" fill="#999" font-size="7">1.0</text>
+  <!-- Formula -->
+  <text x="155" y="172" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">L = −Σ y·log(p) + (1−y)·log(1−p)</text>
+  <!-- Info box -->
+  <rect x="290" y="30" width="180" height="125" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="380" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Cross-Entropy</text>
+  <text x="300" y="64" fill="#333" font-size="8">• Klasyfikacja: najczęstsza loss</text>
+  <text x="300" y="77" fill="#333" font-size="8">• Mierzy odl. rozkładów prob.</text>
+  <text x="300" y="90" fill="#333" font-size="8">• Im gorsza predykcja → wyższy L</text>
+  <text x="300" y="103" fill="#333" font-size="8">• Używana z Sigmoid / Softmax</text>
+  <text x="300" y="116" fill="#333" font-size="8">• Entopia Krzyżowa (pol.)</text>
+  <text x="300" y="129" fill="#333" font-size="8">• Gradient: (p − y)</text>
+  <text x="300" y="142" fill="#333" font-size="8">• Szybsza zbieżność niż MSE</text>
+</svg>

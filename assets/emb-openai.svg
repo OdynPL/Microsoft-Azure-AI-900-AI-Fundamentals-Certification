@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">OpenAI text-embedding – wektory do RAG</text>
+  <!-- Document input -->
+  <rect x="15" y="40" width="90" height="50" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="60" y="58" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Tekst / Dokument</text>
+  <text x="60" y="72" text-anchor="middle" fill="#555" font-size="6">"Azure AI zapewnia</text>
+  <text x="60" y="82" text-anchor="middle" fill="#555" font-size="6">usługi kognitywne..."</text>
+  <!-- Arrow to model -->
+  <line x1="108" y1="65" x2="128" y2="65" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Model -->
+  <rect x="132" y="45" width="80" height="40" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="6"/>
+  <text x="172" y="62" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">text-embedding</text>
+  <text x="172" y="74" text-anchor="middle" fill="#8B6A00" font-size="6">-3-small / -large</text>
+  <!-- Arrow to vector -->
+  <line x1="215" y1="65" x2="235" y2="65" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Vector output -->
+  <rect x="240" y="45" width="85" height="40" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="282" y="62" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">[0.012, -0.034,</text>
+  <text x="282" y="74" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">0.087, ..., 0.001]</text>
+  <text x="282" y="94" text-anchor="middle" fill="#28A745" font-size="7">1536d / 3072d</text>
+  <!-- Arrow to vector store -->
+  <line x1="282" y1="85" x2="282" y2="108" stroke="#28A745" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <!-- Vector Store -->
+  <rect x="230" y="112" width="105" height="30" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="282" y="130" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Azure AI Search</text>
+  <text x="282" y="155" text-anchor="middle" fill="#555" font-size="7">Vector Store → RAG retrieval</text>
+  <!-- Query flow -->
+  <rect x="15" y="112" width="90" height="30" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="4"/>
+  <text x="60" y="130" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Query → embed</text>
+  <line x1="108" y1="127" x2="227" y2="127" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrR)"/>
+  <text x="165" y="122" text-anchor="middle" fill="#E74C3C" font-size="6">cosine similarity</text>
+  <!-- Info box -->
+  <rect x="350" y="30" width="120" height="130" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="410" y="48" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Cechy</text>
+  <text x="358" y="64" fill="#333" font-size="7">• Azure OpenAI API</text>
+  <text x="358" y="77" fill="#333" font-size="7">• text-embedding-3</text>
+  <text x="358" y="90" fill="#333" font-size="7">• text-embedding-ada</text>
+  <text x="358" y="103" fill="#333" font-size="7">• RAG i search</text>
+  <text x="358" y="116" fill="#333" font-size="7">• Cosine similarity</text>
+  <text x="358" y="129" fill="#333" font-size="7">• 8K tokenów input</text>
+  <text x="358" y="142" fill="#333" font-size="7">• Batch embedding</text>
+  <text x="358" y="155" fill="#333" font-size="7">• Integrated Vectoriz.</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+    <marker id="arrR" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E74C3C"/></marker>
+  </defs>
+</svg>

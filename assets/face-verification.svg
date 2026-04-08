@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Face Verification – porównanie 1:1</text>
+  <!-- Face A -->
+  <rect x="30" y="40" width="75" height="75" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <ellipse cx="67" cy="70" rx="18" ry="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1"/>
+  <circle cx="60" cy="65" r="2.5" fill="#333"/>
+  <circle cx="74" cy="65" r="2.5" fill="#333"/>
+  <path d="M60,80 Q67,86 74,80" fill="none" stroke="#333" stroke-width="1.2"/>
+  <text x="67" y="125" text-anchor="middle" fill="#555" font-size="8">Zdjęcie A</text>
+  <!-- Face B -->
+  <rect x="205" y="40" width="75" height="75" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <ellipse cx="242" cy="70" rx="18" ry="22" fill="#FFF3CD" stroke="#E6A800" stroke-width="1"/>
+  <circle cx="235" cy="65" r="2.5" fill="#333"/>
+  <circle cx="249" cy="65" r="2.5" fill="#333"/>
+  <path d="M235,80 Q242,86 249,80" fill="none" stroke="#333" stroke-width="1.2"/>
+  <text x="242" y="125" text-anchor="middle" fill="#555" font-size="8">Zdjęcie B</text>
+  <!-- VS / comparison -->
+  <rect x="125" y="55" width="55" height="40" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="8"/>
+  <text x="152" y="72" text-anchor="middle" fill="#8B6A00" font-size="9" font-weight="bold">1 : 1</text>
+  <text x="152" y="85" text-anchor="middle" fill="#8B6A00" font-size="7">Verify</text>
+  <line x1="108" y1="75" x2="122" y2="75" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="183" y1="75" x2="202" y2="75" stroke="#555" stroke-width="1.5"/>
+  <!-- Result -->
+  <rect x="120" y="110" width="70" height="30" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="6"/>
+  <text x="155" y="128" text-anchor="middle" fill="#28A745" font-size="9" font-weight="bold">MATCH ✓</text>
+  <text x="155" y="152" text-anchor="middle" fill="#555" font-size="8">confidence: 0.96</text>
+  <!-- Info box -->
+  <rect x="310" y="35" width="160" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Face Verification</text>
+  <text x="318" y="68" fill="#333" font-size="8">• Porównanie 1:1</text>
+  <text x="318" y="82" fill="#333" font-size="8">• „Czy to ta sama osoba?"</text>
+  <text x="318" y="96" fill="#333" font-size="8">• Confidence score 0–1</text>
+  <text x="318" y="110" fill="#333" font-size="8">• Logowanie, KYC</text>
+  <text x="318" y="124" fill="#333" font-size="8">• Limited Access Policy</text>
+  <text x="318" y="138" fill="#333" font-size="8">• Azure AI Face API</text>
+  <text x="240" y="172" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Dwa zdjęcia → confidence score → Match / No Match</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Content Filter: Hate – mowa nienawiści</text>
+  <!-- Shield -->
+  <path d="M60,40 L95,40 L95,85 Q95,110 77,120 Q60,110 60,85Z" fill="#FDECEA" stroke="#E74C3C" stroke-width="2"/>
+  <text x="77" y="72" text-anchor="middle" fill="#E74C3C" font-size="12" font-weight="bold">Hate</text>
+  <text x="77" y="88" text-anchor="middle" fill="#E74C3C" font-size="7">Filter</text>
+  <!-- Input text blocked -->
+  <rect x="120" y="45" width="155" height="25" fill="#EEE" stroke="#999" stroke-width="1" rx="3"/>
+  <text x="197" y="61" text-anchor="middle" fill="#999" font-size="8" text-decoration="line-through">"[treść dyskryminująca...]"</text>
+  <line x1="270" y1="57" x2="285" y2="57" stroke="#E74C3C" stroke-width="2"/>
+  <text x="295" y="61" fill="#E74C3C" font-size="10" font-weight="bold">BLOCKED</text>
+  <!-- Severity levels -->
+  <text x="120" y="88" fill="#555" font-size="8" font-weight="bold">Severity levels:</text>
+  <rect x="120" y="94" width="50" height="16" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="3"/>
+  <text x="145" y="105" text-anchor="middle" fill="#28A745" font-size="7" font-weight="bold">Safe</text>
+  <rect x="175" y="94" width="50" height="16" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="3"/>
+  <text x="200" y="105" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Low</text>
+  <rect x="230" y="94" width="55" height="16" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="3"/>
+  <text x="257" y="105" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">Medium</text>
+  <rect x="290" y="94" width="50" height="16" fill="#E74C3C" stroke="#C0392B" stroke-width="1" rx="3"/>
+  <text x="315" y="105" text-anchor="middle" fill="#FFF" font-size="7" font-weight="bold">High</text>
+  <!-- Info box -->
+  <rect x="120" y="118" width="220" height="50" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="230" y="134" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Hate content filter wykrywa:</text>
+  <text x="130" y="148" fill="#333" font-size="7">Dyskryminację grup · Mowę nienawiści · Slursy · Stereotypy · Dehumanizację</text>
+  <text x="130" y="160" fill="#333" font-size="7">Konfigurowalny próg: Safe / Low / Medium / High</text>
+  <!-- Side info -->
+  <rect x="360" y="40" width="110" height="95" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="415" y="56" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Azure OpenAI</text>
+  <text x="368" y="70" fill="#333" font-size="7">• Domyślnie włączony</text>
+  <text x="368" y="82" fill="#333" font-size="7">• Input + Output</text>
+  <text x="368" y="94" fill="#333" font-size="7">• Konfigurowalny próg</text>
+  <text x="368" y="106" fill="#333" font-size="7">• Content Safety API</text>
+  <text x="368" y="118" fill="#333" font-size="7">• Annotation w resp.</text>
+  <text x="368" y="130" fill="#333" font-size="7">• Required for GPT</text>
+</svg>

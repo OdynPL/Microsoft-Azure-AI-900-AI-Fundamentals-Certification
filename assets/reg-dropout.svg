@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Dropout – losowe wyłączanie neuronów</text>
+  <!-- Before dropout: full network -->
+  <text x="80" y="38" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Bez Dropout</text>
+  <!-- Input layer -->
+  <circle cx="30" cy="60" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="30" cy="85" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="30" cy="110" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Hidden layer 1 -->
+  <circle cx="80" cy="50" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="80" cy="75" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="80" cy="100" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="80" cy="125" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Output -->
+  <circle cx="130" cy="85" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <!-- Connections (all active) -->
+  <line x1="38" y1="60" x2="72" y2="50" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="60" x2="72" y2="75" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="85" x2="72" y2="75" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="85" x2="72" y2="100" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="110" x2="72" y2="100" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="38" y1="110" x2="72" y2="125" stroke="#0078D4" stroke-width="0.5" opacity="0.3"/>
+  <line x1="88" y1="50" x2="122" y2="85" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="88" y1="75" x2="122" y2="85" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="88" y1="100" x2="122" y2="85" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <line x1="88" y1="125" x2="122" y2="85" stroke="#28A745" stroke-width="0.5" opacity="0.3"/>
+  <!-- After dropout: some neurons off -->
+  <text x="260" y="38" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Z Dropout (p=0.5)</text>
+  <!-- Input layer -->
+  <circle cx="210" cy="60" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="210" cy="85" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="210" cy="110" r="8" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Hidden – active -->
+  <circle cx="260" cy="50" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Hidden – DROPPED -->
+  <circle cx="260" cy="75" r="8" fill="#FFF" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="254" y1="69" x2="266" y2="81" stroke="#E74C3C" stroke-width="2"/>
+  <line x1="266" y1="69" x2="254" y2="81" stroke="#E74C3C" stroke-width="2"/>
+  <!-- Hidden – active -->
+  <circle cx="260" cy="100" r="8" fill="#C0DCFA" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Hidden – DROPPED -->
+  <circle cx="260" cy="125" r="8" fill="#FFF" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="254" y1="119" x2="266" y2="131" stroke="#E74C3C" stroke-width="2"/>
+  <line x1="266" y1="119" x2="254" y2="131" stroke="#E74C3C" stroke-width="2"/>
+  <!-- Output -->
+  <circle cx="310" cy="85" r="8" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5"/>
+  <!-- Active connections only -->
+  <line x1="218" y1="60" x2="252" y2="50" stroke="#0078D4" stroke-width="0.8"/>
+  <line x1="218" y1="85" x2="252" y2="100" stroke="#0078D4" stroke-width="0.8"/>
+  <line x1="218" y1="110" x2="252" y2="100" stroke="#0078D4" stroke-width="0.8"/>
+  <line x1="268" y1="50" x2="302" y2="85" stroke="#28A745" stroke-width="0.8"/>
+  <line x1="268" y1="100" x2="302" y2="85" stroke="#28A745" stroke-width="0.8"/>
+  <!-- Info box -->
+  <rect x="340" y="30" width="130" height="115" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="405" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Dropout</text>
+  <text x="348" y="64" fill="#333" font-size="8">• p = prob. wyłączenia</text>
+  <text x="348" y="77" fill="#333" font-size="8">• Tylko w treningu</text>
+  <text x="348" y="90" fill="#333" font-size="8">• Ensemble-like efekt</text>
+  <text x="348" y="103" fill="#333" font-size="8">• Zapobiega overfitting</text>
+  <text x="348" y="116" fill="#333" font-size="8">• Losowe co epokę</text>
+  <text x="348" y="129" fill="#333" font-size="8">• Standard w DL</text>
+  <text x="348" y="142" fill="#333" font-size="8">• Test: wszystkie aktywne</text>
+  <!-- Legend -->
+  <text x="240" y="155" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Losowe wyłączanie neuronów zmusza sieć do uczenia się redundantnych reprezentacji</text>
+</svg>

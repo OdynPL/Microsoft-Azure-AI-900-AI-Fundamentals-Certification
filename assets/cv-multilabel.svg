@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Multi-label Classification – wiele tagów</text>
+  <!-- Input image -->
+  <rect x="20" y="45" width="55" height="55" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="47" y="68" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Obraz</text>
+  <text x="47" y="80" text-anchor="middle" fill="#555" font-size="6">plaża z ludźmi</text>
+  <!-- Arrow -->
+  <line x1="78" y1="72" x2="98" y2="72" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Model -->
+  <rect x="102" y="52" width="55" height="40" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="6"/>
+  <text x="129" y="68" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Model</text>
+  <text x="129" y="80" text-anchor="middle" fill="#8B6A00" font-size="6">Sigmoid×N</text>
+  <!-- Multiple active tags -->
+  <line x1="160" y1="60" x2="185" y2="42" stroke="#28A745" stroke-width="1.5"/>
+  <line x1="160" y1="68" x2="185" y2="68" stroke="#28A745" stroke-width="1.5"/>
+  <line x1="160" y1="76" x2="185" y2="94" stroke="#28A745" stroke-width="1.5"/>
+  <line x1="160" y1="82" x2="185" y2="117" stroke="#999" stroke-width="1"/>
+  <!-- Tags - multiple active -->
+  <rect x="188" y="30" width="85" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="4"/>
+  <text x="230" y="44" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Plaża 0.95</text>
+  <text x="278" y="44" fill="#28A745" font-size="10">✓</text>
+  <rect x="188" y="56" width="85" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="4"/>
+  <text x="230" y="70" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Ludzie 0.88</text>
+  <text x="278" y="70" fill="#28A745" font-size="10">✓</text>
+  <rect x="188" y="82" width="85" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="4"/>
+  <text x="230" y="96" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Zachód 0.72</text>
+  <text x="278" y="96" fill="#28A745" font-size="10">✓</text>
+  <rect x="188" y="108" width="85" height="22" fill="#EEE" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="230" y="122" text-anchor="middle" fill="#999" font-size="8">Góry 0.15</text>
+  <text x="278" y="122" fill="#E74C3C" font-size="10">✗</text>
+  <!-- Multiple labels -->
+  <text x="230" y="145" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">→ 3 tagi: Plaża + Ludzie + Zachód</text>
+  <!-- Info box -->
+  <rect x="310" y="30" width="160" height="115" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy</text>
+  <text x="318" y="64" fill="#333" font-size="8">• Wiele tagów / sample</text>
+  <text x="318" y="77" fill="#333" font-size="8">• Sigmoid per tag (niezależne)</text>
+  <text x="318" y="90" fill="#333" font-size="8">• Binary CE per tag</text>
+  <text x="318" y="103" fill="#333" font-size="8">• Próg per tag (np. 0.5)</text>
+  <text x="318" y="116" fill="#333" font-size="8">• Custom Vision: multi-label</text>
+  <text x="318" y="129" fill="#333" font-size="8">• Tagowanie zdjęć, filmów</text>
+  <text x="318" y="142" fill="#333" font-size="8">• Metryki: Hamming Loss</text>
+  <text x="240" y="168" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Jedno zdjęcie → dowolna liczba tagów (0, 1 lub wiele)</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+  </defs>
+</svg>

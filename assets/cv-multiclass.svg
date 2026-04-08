@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Multi-class Classification – wiele kategorii</text>
+  <!-- Input image -->
+  <rect x="20" y="45" width="55" height="55" fill="#E8F4FD" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="47" y="72" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Obraz?</text>
+  <!-- Arrow -->
+  <line x1="78" y1="72" x2="98" y2="72" stroke="#555" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Softmax model -->
+  <rect x="102" y="52" width="55" height="40" fill="#FFF3CD" stroke="#E6A800" stroke-width="1.5" rx="6"/>
+  <text x="129" y="68" text-anchor="middle" fill="#8B6A00" font-size="7" font-weight="bold">Model</text>
+  <text x="129" y="80" text-anchor="middle" fill="#8B6A00" font-size="6">Softmax</text>
+  <!-- Multiple outputs -->
+  <line x1="160" y1="62" x2="185" y2="42" stroke="#28A745" stroke-width="1.5"/>
+  <line x1="160" y1="68" x2="185" y2="65" stroke="#999" stroke-width="1"/>
+  <line x1="160" y1="74" x2="185" y2="88" stroke="#999" stroke-width="1"/>
+  <line x1="160" y1="80" x2="185" y2="111" stroke="#999" stroke-width="1"/>
+  <!-- Classes -->
+  <rect x="188" y="30" width="70" height="22" fill="#D5F5E3" stroke="#28A745" stroke-width="2" rx="4"/>
+  <text x="223" y="44" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Kot 85%</text>
+  <rect x="188" y="55" width="70" height="22" fill="#EEE" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="223" y="69" text-anchor="middle" fill="#999" font-size="8">Pies 10%</text>
+  <rect x="188" y="80" width="70" height="22" fill="#EEE" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="223" y="94" text-anchor="middle" fill="#999" font-size="8">Ptak 3%</text>
+  <rect x="188" y="105" width="70" height="22" fill="#EEE" stroke="#999" stroke-width="1" rx="4"/>
+  <text x="223" y="119" text-anchor="middle" fill="#999" font-size="8">Ryba 2%</text>
+  <!-- Checkmark on winner -->
+  <text x="265" y="45" fill="#28A745" font-size="12" font-weight="bold">✓</text>
+  <!-- ONE label -->
+  <text x="223" y="140" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">→ 1 label: Kot</text>
+  <!-- Info box -->
+  <rect x="300" y="30" width="170" height="115" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="385" y="48" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy</text>
+  <text x="310" y="64" fill="#333" font-size="8">• 3+ klas, 1 label / sample</text>
+  <text x="310" y="77" fill="#333" font-size="8">• Softmax na wyjściu</text>
+  <text x="310" y="90" fill="#333" font-size="8">• Categorical Cross-Entropy</text>
+  <text x="310" y="103" fill="#333" font-size="8">• Najwyższe p → predykcja</text>
+  <text x="310" y="116" fill="#333" font-size="8">• One-hot encoding labels</text>
+  <text x="310" y="129" fill="#333" font-size="8">• Np. ImageNet: 1000 klas</text>
+  <text x="310" y="142" fill="#333" font-size="8">• Custom Vision: multi-class</text>
+  <text x="240" y="165" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Jedno zdjęcie → dokładnie jeden label z wielu możliwych klas</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#555"/></marker>
+  </defs>
+</svg>

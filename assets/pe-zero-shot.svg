@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Zero-shot – bez przykładów</text>
+  <!-- Prompt box -->
+  <rect x="20" y="35" width="270" height="75" fill="#F0F7FF" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="30" y="52" fill="#0078D4" font-size="8" font-weight="bold">PROMPT:</text>
+  <text x="30" y="68" fill="#333" font-size="9">"Sklasyfikuj sentyment poniższego tekstu</text>
+  <text x="30" y="82" fill="#333" font-size="9">jako pozytywny, negatywny lub neutralny:</text>
+  <text x="30" y="98" fill="#555" font-size="9" font-style="italic">'Ten produkt jest naprawdę świetny!'"</text>
+  <!-- No examples indicator -->
+  <rect x="200" y="38" width="80" height="18" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="4"/>
+  <text x="240" y="50" text-anchor="middle" fill="#E74C3C" font-size="7" font-weight="bold">0 przykładów</text>
+  <!-- Arrow -->
+  <line x1="155" y1="113" x2="155" y2="125" stroke="#0078D4" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Response -->
+  <rect x="75" y="130" width="160" height="28" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="155" y="148" text-anchor="middle" fill="#28A745" font-size="10" font-weight="bold">→ Pozytywny</text>
+  <!-- Info box -->
+  <rect x="310" y="35" width="160" height="110" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="390" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Cechy Zero-shot</text>
+  <text x="318" y="68" fill="#333" font-size="8">• Brak przykładów w promptie</text>
+  <text x="318" y="82" fill="#333" font-size="8">• Model radzi sobie sam</text>
+  <text x="318" y="96" fill="#333" font-size="8">• GPT-4: bardzo dobry</text>
+  <text x="318" y="110" fill="#333" font-size="8">• Mniejsze modele: gorsze</text>
+  <text x="318" y="124" fill="#333" font-size="8">• Szybkie prototypowanie</text>
+  <text x="318" y="138" fill="#333" font-size="8">• Najkrótszy prompt</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+  </defs>
+</svg>
