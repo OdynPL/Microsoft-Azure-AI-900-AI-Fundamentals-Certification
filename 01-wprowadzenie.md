@@ -23,6 +23,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 ## Najważniejsze pojęcia AI na egzaminie
 
 - **AI (Artificial Intelligence)** – sztuczna inteligencja, systemy naśladujące ludzkie zdolności poznawcze
+- **Narrow AI (Weak AI)** – wąska AI, systemy zaprojektowane do jednego, konkretnego zadania (np. klasyfikacja obrazów, chatbot)
+- **Strong AI (AGI)** – silna AI, hipotetyczna sztuczna inteligencja o ogólnych zdolnościach poznawczych porównywalnych do człowieka
 - **ML (Machine Learning)** – uczenie maszynowe, algorytmy uczące się na podstawie danych
 - **Deep Learning** – głębokie sieci neuronowe
 - **Supervised Learning** – uczenie nadzorowane (dane z etykietami)

@@ -5,6 +5,8 @@
 ![Glosariusz](assets/glosariusz.svg)
 
 - **AI (Artificial Intelligence)** – sztuczna inteligencja, systemy naśladujące ludzkie zdolności poznawcze
+- **Narrow AI (Weak AI)** – wąska AI, systemy wyspecjalizowane w jednym zadaniu (np. OCR, analiza sentymentu, rekomendacje)
+- **Strong AI (AGI)** – silna AI, hipotetyczna inteligencja ogólna zdolna rozumować i uczyć się jak człowiek w wielu domenach
 - **ML (Machine Learning)** – uczenie maszynowe, algorytmy uczące się na podstawie danych
 - **Deep Learning** – głębokie sieci neuronowe, zaawansowana forma ML
 - **Transformer** – nowoczesna architektura modeli AI (np. GPT, BERT)
