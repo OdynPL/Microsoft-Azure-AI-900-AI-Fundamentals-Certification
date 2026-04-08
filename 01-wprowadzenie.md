@@ -13,20 +13,35 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 | **Usługa** | **Opis** |
 |---|---|
 | **Azure AI Vision** | Analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy |
+| | Komunikacja: REST API, Python/C#/.NET SDK, Azure Portal <br> Limity: 20 TPS (transakcji/s) w warstwie Free, 10 TPS w S1 per region <br> Koszty: Free (20 wywołań/min), S1 od ~$1/1000 transakcji |
 | **Azure AI Face** | Rozpoznawanie i analiza twarzy (np. identyfikacja, weryfikacja, emocje) |
+| | Komunikacja: REST API, Python/C#/.NET SDK <br> Limity: 10 TPS (Free), PersonGroup do 10 000 osób (Large do 1M); identyfikacja wymaga **Limited Access** (wniosek do Microsoft) <br> Koszty: Free (30 000/mies.), S1 od ~$1/1000 transakcji |
 | **Azure AI Language** | Przetwarzanie języka naturalnego: analiza tekstu, ekstrakcja kluczowych fraz, NER, sentyment, CLU, Question Answering |
+| | Komunikacja: REST API, Python/C#/.NET SDK, Language Studio (portal no-code) <br> Limity: 5 000 znaków/dokument (sentyment, NER), 1 000 rekordów/żądanie batch <br> Koszty: Free (5 000 transakcji/mies.), S od ~$1–$2/1000 rekordów tekstowych |
 | **Azure AI Speech** | Rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie, Speaker Recognition |
+| | Komunikacja: REST API, Speech SDK (real-time streaming), Speech Studio (portal) <br> Limity: 20 współbieżnych żądań (STT), 200 żądań/min (TTS); audio do 60s (real-time), pliki do 2h (batch) <br> Koszty: Free (5h STT, 0.5M znaków TTS/mies.), S0 od ~$1/godz. STT, ~$16/1M znaków TTS |
 | **Azure AI Translator** | Tłumaczenia maszynowe tekstu (100+ języków), transliteracja, Custom Translator |
+| | Komunikacja: REST API, Python/C# SDK <br> Limity: 50 000 znaków/żądanie, 2M znaków/godz. (Free) <br> Koszty: Free (2M znaków/mies.), S1 od ~$10/1M znaków |
 | **Azure OpenAI** | Dostęp do zaawansowanych modeli generatywnych (GPT, DALL-E, Whisper) do generowania tekstu, obrazów, kodu |
+| | Komunikacja: REST API, Python/C#/JS SDK, Azure OpenAI Studio, Playground <br> Limity: TPM (Tokens Per Minute) i RPM (Requests Per Minute) per model/deployment per region; wymaga zatwierdzenia dostępu <br> Koszty: per token (input/output oddzielnie), np. GPT-4o ~$2.50/1M input, ~$10/1M output; DALL-E per obraz |
 | **Azure AI Foundry** | Katalog modeli AI, zarządzanie i wdrażanie modeli, Prompt Flow, integracja z innymi usługami |
+| | Komunikacja: Azure Portal (Foundry Portal), REST API, CLI, SDK <br> Limity: zależne od wdrożonego modelu i typu compute <br> Koszty: opłata za zużyty compute (VM), storage i wdrożone modele (Serverless API = per token, Managed Compute = per godz.) |
 | **Azure Machine Learning** | Platforma do trenowania, wdrażania i zarządzania modelami ML, AutoML, Designer, rejestr modeli, endpointy |
+| | Komunikacja: Azure ML Studio (portal), Python SDK (v2), CLI (v2), REST API, Designer (drag & drop) <br> Limity: zależne od compute quota per region per subscription; AutoML max 1000 iteracji <br> Koszty: opłata za compute (Compute Instance, Cluster, Managed Endpoint), storage; sam workspace jest darmowy |
 | **Azure AI Document Intelligence** | Ekstrakcja danych z formularzy, faktur, dokumentów (dawniej Form Recognizer) |
+| | Komunikacja: REST API, Python/C#/.NET SDK, Document Intelligence Studio (portal) <br> Limity: 15 stron/żądanie (Free), 2000 stron/żądanie (S0); pliki do 500 MB <br> Koszty: Free (500 stron/mies.), S0 od ~$1.50/1000 stron (prebuilt), ~$50/1000 stron (custom) |
 | **Azure AI Search** | Wyszukiwanie wektorowe + AI enrichment (indexer, index, skillset); kluczowa dla RAG |
+| | Komunikacja: REST API, Python/C#/.NET SDK, Azure Portal <br> Limity: Free (50 MB storage, 3 indeksy), Basic (2 GB, 15 indeksów); ilość partycji i replik zależy od tier <br> Koszty: Free tier, Basic od ~$75/mies., Standard od ~$250/mies.; AI enrichment dodatkowo per skillset |
 | **Azure AI Content Safety** | Filtrowanie szkodliwych treści: mowa nienawiści, przemoc, treści seksualne, self-harm |
+| | Komunikacja: REST API, Python/C# SDK; wbudowane w Azure OpenAI jako Content Filters <br> Limity: 1000 znaków/żądanie (tekst), 4 MB (obraz); 10 TPS (Free) <br> Koszty: Free (5 000 transakcji/mies.), S1 od ~$1/1000 transakcji |
 | **Azure AI Custom Vision** | Trenowanie własnych modeli klasyfikacji/detekcji obrazów bez kodu |
+| | Komunikacja: REST API, Python/C# SDK, Custom Vision Portal (no-code) <br> Limity: 2 projekty (Free), 100 projektów (S0); 5 000 obrazów/projekt (Free), 100 000 (S0) <br> Koszty: Free (2 projekty, 10 000 predykcji/mies.), S0 od ~$2/1000 predykcji, ~$10/godz. treningu |
 | **Azure Bot Service** | Budowa chatbotów wielokanałowych (Web Chat, Teams, Facebook, Slack) |
+| | Komunikacja: Bot Framework SDK (C#, JS, Python), REST API, Azure Portal, Composer <br> Limity: wiele kanałów jednocześnie; limity związane z podłączonymi usługami AI <br> Koszty: kanał Web Chat/Direct Line – darmowy (Standard); Premium kanały płatne per wiadomość |
 | **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI (dawniej Power Virtual Agents) |
+| | Komunikacja: portal Copilot Studio (no-code), Power Platform, Teams; integracja z Azure OpenAI i AI Services <br> Limity: zależne od licencji Power Platform; limity sesji/mies. <br> Koszty: licencja per tenant (~$200/mies.) lub per sesja; wliczone w licencje Microsoft 365 (ograniczone) |
 | **Azure AI Immersive Reader** | Pomoc w czytaniu dla osób z dysleksją; tłumaczenie, czytanie na głos, wyróżnianie słów |
+| | Komunikacja: JavaScript SDK, REST API; osadzany w aplikacjach webowych <br> Limity: działa w przeglądarce (client-side rendering); wymaga Azure AD token <br> Koszty: Free (3M znaków/mies.), S0 od ~$1/1M znaków |
 
 ### Wycofane usługi (retired – mogą pojawić się jako dystraktory na egzaminie)
 
