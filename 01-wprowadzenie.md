@@ -13,12 +13,30 @@ Platforma **Microsoft Azure** oferuje szeroki zestaw gotowych usług AI, które 
 | **Usługa** | **Opis** |
 |---|---|
 | **Azure AI Vision** | Analiza obrazów i wideo, klasyfikacja, detekcja obiektów, OCR, rozpoznawanie twarzy |
-| **Azure AI Face** | Rozpoznawanie i analiza twarzy (np. identyfikacja, emocje) |
-| **Azure AI Language** | Przetwarzanie języka naturalnego: analiza tekstu, ekstrakcja kluczowych fraz, rozpoznawanie encji, analiza sentymentu, tłumaczenia |
-| **Azure AI Speech** | Rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie |
-| **Azure OpenAI** | Dostęp do zaawansowanych modeli generatywnych (np. GPT, DALL-E) do generowania tekstu, obrazów, kodu |
-| **Azure AI Foundry** | Katalog modeli AI, zarządzanie i wdrażanie modeli, integracja z innymi usługami |
-| **Azure Machine Learning** | Platforma do trenowania, wdrażania i zarządzania własnymi modelami ML, automatyzacja procesów ML (AutoML), rejestr modeli, endpointy |
+| **Azure AI Face** | Rozpoznawanie i analiza twarzy (np. identyfikacja, weryfikacja, emocje) |
+| **Azure AI Language** | Przetwarzanie języka naturalnego: analiza tekstu, ekstrakcja kluczowych fraz, NER, sentyment, CLU, Question Answering |
+| **Azure AI Speech** | Rozpoznawanie i synteza mowy, zamiana tekstu na mowę i odwrotnie, Speaker Recognition |
+| **Azure AI Translator** | Tłumaczenia maszynowe tekstu (100+ języków), transliteracja, Custom Translator |
+| **Azure OpenAI** | Dostęp do zaawansowanych modeli generatywnych (GPT, DALL-E, Whisper) do generowania tekstu, obrazów, kodu |
+| **Azure AI Foundry** | Katalog modeli AI, zarządzanie i wdrażanie modeli, Prompt Flow, integracja z innymi usługami |
+| **Azure Machine Learning** | Platforma do trenowania, wdrażania i zarządzania modelami ML, AutoML, Designer, rejestr modeli, endpointy |
+| **Azure AI Document Intelligence** | Ekstrakcja danych z formularzy, faktur, dokumentów (dawniej Form Recognizer) |
+| **Azure AI Search** | Wyszukiwanie wektorowe + AI enrichment (indexer, index, skillset); kluczowa dla RAG |
+| **Azure AI Content Safety** | Filtrowanie szkodliwych treści: mowa nienawiści, przemoc, treści seksualne, self-harm |
+| **Azure AI Custom Vision** | Trenowanie własnych modeli klasyfikacji/detekcji obrazów bez kodu |
+| **Azure Bot Service** | Budowa chatbotów wielokanałowych (Web Chat, Teams, Facebook, Slack) |
+| **Copilot Studio** | Platforma no-code do budowy chatbotów i agentów AI (dawniej Power Virtual Agents) |
+| **Azure AI Immersive Reader** | Pomoc w czytaniu dla osób z dysleksją; tłumaczenie, czytanie na głos, wyróżnianie słów |
+
+### Wycofane usługi (retired – mogą pojawić się jako dystraktory na egzaminie)
+
+| **Usługa** | **Status** |
+|---|---|
+| **LUIS** | Wycofany → zastąpiony przez **CLU** (Conversational Language Understanding) w AI Language |
+| **QnA Maker** | Wycofany → zastąpiony przez **Custom Question Answering** w AI Language |
+| **Azure AI Personalizer** | Wycofany (wrzesień 2023) |
+| **Azure AI Metrics Advisor** | Wycofany → funkcjonalność przeniesiona do Azure Monitor |
+| **Azure AI Anomaly Detector** | Wycofany jako osobna usługa (2023) |
 
 Każda z tych usług posiada gotowe API, które można łatwo zintegrować z aplikacjami biznesowymi, stronami internetowymi czy chatbotami.
 
