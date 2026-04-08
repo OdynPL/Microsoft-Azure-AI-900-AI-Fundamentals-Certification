@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Instance Segmentation – instancje obiektów</text>
+  <!-- Semantic side -->
+  <text x="85" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Semantic Segmentation</text>
+  <rect x="15" y="40" width="140" height="75" fill="#F5F5F5" stroke="#CCC" stroke-width="1" rx="3"/>
+  <!-- Two dogs same color -->
+  <ellipse cx="55" cy="75" rx="22" ry="18" fill="#28A745" opacity="0.5"/>
+  <text x="55" y="78" text-anchor="middle" fill="#1B7A30" font-size="7" font-weight="bold">pies</text>
+  <ellipse cx="115" cy="80" rx="20" ry="16" fill="#28A745" opacity="0.5"/>
+  <text x="115" y="83" text-anchor="middle" fill="#1B7A30" font-size="7" font-weight="bold">pies</text>
+  <!-- Background -->
+  <text x="85" y="50" text-anchor="middle" fill="#999" font-size="6">tło (background)</text>
+  <text x="85" y="108" text-anchor="middle" fill="#999" font-size="6">ten sam kolor = ta sama klasa</text>
+  <!-- Arrow -->
+  <text x="170" y="80" fill="#0078D4" font-size="14" font-weight="bold">→</text>
+  <!-- Instance side -->
+  <text x="280" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Instance Segmentation</text>
+  <rect x="195" y="40" width="140" height="75" fill="#F5F5F5" stroke="#CCC" stroke-width="1" rx="3"/>
+  <!-- Two dogs different colors -->
+  <ellipse cx="235" cy="75" rx="22" ry="18" fill="#E74C3C" opacity="0.5"/>
+  <text x="235" y="72" text-anchor="middle" fill="#C0392B" font-size="7" font-weight="bold">pies 1</text>
+  <text x="235" y="82" text-anchor="middle" fill="#C0392B" font-size="6">(ID: A)</text>
+  <ellipse cx="300" cy="80" rx="20" ry="16" fill="#0078D4" opacity="0.4"/>
+  <text x="300" y="77" text-anchor="middle" fill="#005A9E" font-size="7" font-weight="bold">pies 2</text>
+  <text x="300" y="87" text-anchor="middle" fill="#005A9E" font-size="6">(ID: B)</text>
+  <text x="265" y="50" text-anchor="middle" fill="#999" font-size="6">tło (background)</text>
+  <text x="265" y="108" text-anchor="middle" fill="#28A745" font-size="6" font-weight="bold">różny kolor = różna instancja</text>
+  <!-- Info box -->
+  <rect x="350" y="34" width="120" height="88" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="410" y="50" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Różnice</text>
+  <text x="357" y="64" fill="#333" font-size="7">Semantic:</text>
+  <text x="357" y="74" fill="#555" font-size="6">klasa per piksel</text>
+  <text x="357" y="86" fill="#333" font-size="7">Instance:</text>
+  <text x="357" y="96" fill="#555" font-size="6">klasa + ID per piksel</text>
+  <text x="357" y="108" fill="#333" font-size="7">Panoptic:</text>
+  <text x="357" y="118" fill="#555" font-size="6">semantic + instance</text>
+  <!-- Comparison table -->
+  <rect x="15" y="125" width="455" height="40" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="130" y="140" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Classification</text>
+  <text x="130" y="152" text-anchor="middle" fill="#555" font-size="6">→ 1 etykieta na obraz</text>
+  <text x="250" y="140" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Detection</text>
+  <text x="250" y="152" text-anchor="middle" fill="#555" font-size="6">→ bounding boxy</text>
+  <text x="370" y="140" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Segmentation</text>
+  <text x="370" y="152" text-anchor="middle" fill="#555" font-size="6">→ maska per piksel</text>
+  <!-- Separators -->
+  <line x1="190" y1="130" x2="190" y2="160" stroke="#DDD" stroke-width="0.5"/>
+  <line x1="310" y1="130" x2="310" y2="160" stroke="#DDD" stroke-width="0.5"/>
+</svg>

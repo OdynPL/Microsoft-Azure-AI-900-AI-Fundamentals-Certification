@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Video Analysis – analiza wideo</text>
+  <!-- Video frames -->
+  <text x="95" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Klatki wideo (frames)</text>
+  <!-- Frame 1 -->
+  <rect x="15" y="40" width="50" height="35" fill="#D6EAF8" stroke="#999" stroke-width="1" rx="2"/>
+  <circle cx="30" cy="55" r="5" fill="#0078D4"/>
+  <text x="40" y="70" text-anchor="middle" fill="#999" font-size="5">t=0s</text>
+  <!-- Frame 2 -->
+  <rect x="70" y="40" width="50" height="35" fill="#D6EAF8" stroke="#999" stroke-width="1" rx="2"/>
+  <circle cx="90" cy="55" r="5" fill="#0078D4"/>
+  <line x1="33" y1="55" x2="88" y2="55" stroke="#E6A800" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrY)"/>
+  <text x="95" y="70" text-anchor="middle" fill="#999" font-size="5">t=1s</text>
+  <!-- Frame 3 -->
+  <rect x="125" y="40" width="50" height="35" fill="#D6EAF8" stroke="#999" stroke-width="1" rx="2"/>
+  <circle cx="150" cy="52" r="5" fill="#0078D4"/>
+  <line x1="93" y1="55" x2="148" y2="52" stroke="#E6A800" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrY)"/>
+  <text x="150" y="70" text-anchor="middle" fill="#999" font-size="5">t=2s</text>
+  <text x="95" y="84" text-anchor="middle" fill="#E6A800" font-size="7" font-weight="bold">Object Tracking (śledzenie)</text>
+  <!-- Scene detection timeline -->
+  <text x="95" y="98" text-anchor="middle" fill="#555" font-size="7" font-weight="bold">Scene / Shot Detection</text>
+  <rect x="15" y="103" width="55" height="15" fill="#D5F5E3" stroke="#28A745" stroke-width="1" rx="3"/>
+  <text x="42" y="113" text-anchor="middle" fill="#28A745" font-size="6">Scena 1</text>
+  <rect x="73" y="103" width="45" height="15" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="3"/>
+  <text x="95" y="113" text-anchor="middle" fill="#8B6A00" font-size="6">Scena 2</text>
+  <rect x="121" y="103" width="55" height="15" fill="#FDECEA" stroke="#E74C3C" stroke-width="1" rx="3"/>
+  <text x="148" y="113" text-anchor="middle" fill="#E74C3C" font-size="6">Scena 3</text>
+  <!-- Info box -->
+  <rect x="195" y="35" width="275" height="92" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="332" y="52" text-anchor="middle" fill="#0078D4" font-size="9" font-weight="bold">Video Analysis – możliwości</text>
+  <text x="205" y="66" fill="#333" font-size="7">• Object Tracking – śledzenie obiektów między klatkami</text>
+  <text x="205" y="78" fill="#333" font-size="7">• Scene/Shot Detection – wykrywanie zmian scen</text>
+  <text x="205" y="90" fill="#333" font-size="7">• Video Summarization – streszczenie wideo</text>
+  <text x="205" y="102" fill="#333" font-size="7">• Action Recognition – rozpoznawanie czynności (bieg, skok)</text>
+  <text x="205" y="114" fill="#333" font-size="7">• Keyframe Extraction – wybór kluczowych klatek</text>
+  <text x="205" y="124" fill="#555" font-size="6">Azure: Video Indexer, Spatial Analysis (real-time)</text>
+  <!-- Bottom comparison -->
+  <rect x="15" y="130" width="455" height="38" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="242" y="144" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Azure Video Indexer – kluczowe funkcje (egzamin AI-900)</text>
+  <text x="25" y="158" fill="#333" font-size="7">Transkrypcja mowy | Rozpoznawanie twarzy | OCR w wideo | Analiza sentymentu | Translacja | Moderacja treści</text>
+  <text x="25" y="168" fill="#555" font-size="6">Automatyczna ekstrakcja metadanych z plików wideo – nie wymaga ML expertise</text>
+  <defs>
+    <marker id="arrY" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#E6A800"/></marker>
+  </defs>
+</svg>

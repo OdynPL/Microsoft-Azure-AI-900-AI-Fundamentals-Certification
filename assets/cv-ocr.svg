@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">OCR – Optical Character Recognition</text>
+  <!-- Input: document image -->
+  <rect x="15" y="30" width="100" height="80" fill="#FFF" stroke="#999" stroke-width="1.5" rx="3"/>
+  <text x="65" y="43" text-anchor="middle" fill="#999" font-size="6">Dokument / obraz</text>
+  <rect x="25" y="48" width="80" height="5" fill="#DDD" rx="1"/>
+  <rect x="25" y="56" width="70" height="5" fill="#DDD" rx="1"/>
+  <rect x="25" y="64" width="75" height="5" fill="#DDD" rx="1"/>
+  <rect x="25" y="72" width="60" height="5" fill="#DDD" rx="1"/>
+  <rect x="25" y="80" width="80" height="5" fill="#DDD" rx="1"/>
+  <rect x="25" y="88" width="50" height="5" fill="#DDD" rx="1"/>
+  <text x="65" y="102" text-anchor="middle" fill="#999" font-size="6">IMG / PDF / TIFF</text>
+  <!-- Arrow 1 -->
+  <line x1="120" y1="68" x2="140" y2="68" stroke="#0078D4" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- OCR Engine -->
+  <rect x="144" y="35" width="80" height="68" fill="#0078D4" stroke="#005A9E" stroke-width="1.5" rx="8"/>
+  <text x="184" y="56" text-anchor="middle" fill="#FFF" font-size="9" font-weight="bold">OCR</text>
+  <text x="184" y="68" text-anchor="middle" fill="#D6EAF8" font-size="7">Azure AI</text>
+  <text x="184" y="80" text-anchor="middle" fill="#D6EAF8" font-size="7">Vision</text>
+  <text x="184" y="93" text-anchor="middle" fill="#D6EAF8" font-size="6">Read API</text>
+  <!-- Arrow 2 -->
+  <line x1="228" y1="68" x2="248" y2="68" stroke="#0078D4" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Output: structured text -->
+  <rect x="252" y="30" width="110" height="83" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="307" y="45" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Wynik OCR</text>
+  <text x="260" y="58" fill="#333" font-size="7">Strona 1, Linia 1:</text>
+  <text x="260" y="69" fill="#333" font-size="7" font-style="italic">"Faktura nr 2024/01"</text>
+  <text x="260" y="82" fill="#333" font-size="7">Strona 1, Linia 2:</text>
+  <text x="260" y="93" fill="#333" font-size="7" font-style="italic">"Kwota: 1 250,00 PLN"</text>
+  <text x="260" y="106" fill="#28A745" font-size="6">+ bounding box per słowo</text>
+  <!-- Info box -->
+  <rect x="15" y="118" width="450" height="50" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="240" y="134" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Read API vs OCR API – egzamin AI-900</text>
+  <text x="25" y="148" fill="#333" font-size="7">Read API → duże, wielostronicowe PDF/TIFF (async) | OCR API → proste, jednostronicowe obrazy (sync)</text>
+  <text x="25" y="160" fill="#333" font-size="7">Document Intelligence (Form Recognizer) → klucz-wartość, tabele, formularze | Modele: Invoice, Receipt, ID</text>
+  <!-- Side box -->
+  <rect x="375" y="30" width="95" height="83" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="422" y="46" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Obsługiwane:</text>
+  <text x="382" y="58" fill="#333" font-size="6">• JPEG, PNG, BMP</text>
+  <text x="382" y="68" fill="#333" font-size="6">• PDF (wielostronicowy)</text>
+  <text x="382" y="78" fill="#333" font-size="6">• TIFF</text>
+  <text x="382" y="88" fill="#333" font-size="6">• Drukowany + pismo</text>
+  <text x="382" y="98" fill="#333" font-size="6">• 164 języków</text>
+  <text x="382" y="108" fill="#333" font-size="6">• Max 50MB</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+  </defs>
+</svg>

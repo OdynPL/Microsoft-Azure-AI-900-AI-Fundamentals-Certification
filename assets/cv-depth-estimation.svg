@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Depth Estimation – szacowanie głębokości</text>
+  <!-- Original 2D image -->
+  <text x="85" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Obraz 2D</text>
+  <rect x="20" y="40" width="130" height="85" fill="#87CEEB" stroke="#CCC" stroke-width="1" rx="3"/>
+  <!-- Tree far -->
+  <rect x="30" y="52" width="8" height="30" fill="#8B6914"/>
+  <ellipse cx="34" cy="48" rx="12" ry="10" fill="#28A745"/>
+  <!-- Person near -->
+  <circle cx="100" cy="70" r="8" fill="#F5B041"/>
+  <rect x="95" y="78" width="10" height="25" fill="#5DADE2" rx="2"/>
+  <!-- Ground -->
+  <rect x="20" y="100" width="130" height="25" fill="#8B9467" rx="0"/>
+  <!-- Arrow -->
+  <text x="165" y="82" fill="#0078D4" font-size="16">→</text>
+  <!-- Depth map -->
+  <text x="265" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Mapa głębokości</text>
+  <rect x="200" y="40" width="130" height="85" stroke="#CCC" stroke-width="1" rx="3" fill="#000"/>
+  <defs>
+    <linearGradient id="depthSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00008B"/>
+      <stop offset="100%" stop-color="#4169E1"/>
+    </linearGradient>
+    <linearGradient id="depthGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4169E1"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky depth (far = blue/cool) -->
+  <rect x="200" y="40" width="130" height="60" fill="url(#depthSky)" rx="3"/>
+  <!-- Ground depth (near = warm/red) -->
+  <rect x="200" y="100" width="130" height="25" fill="url(#depthGround)"/>
+  <!-- Tree silhouette (medium distance) -->
+  <rect x="210" y="52" width="8" height="30" fill="#4169E1" opacity="0.7"/>
+  <ellipse cx="214" cy="48" rx="12" ry="10" fill="#2E4095" opacity="0.7"/>
+  <!-- Person silhouette (near = warm) -->
+  <circle cx="280" cy="70" r="8" fill="#E74C3C" opacity="0.7"/>
+  <rect x="275" y="78" width="10" height="25" fill="#FF6347" opacity="0.7" rx="2"/>
+  <!-- Color scale -->
+  <rect x="340" y="40" width="15" height="85" rx="2" fill="url(#depthScale)"/>
+  <defs>
+    <linearGradient id="depthScale" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00008B"/>
+      <stop offset="50%" stop-color="#4169E1"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+  </defs>
+  <text x="360" y="48" fill="#333" font-size="6">Daleko</text>
+  <text x="360" y="82" fill="#333" font-size="6">Średnio</text>
+  <text x="360" y="122" fill="#333" font-size="6">Blisko</text>
+  <!-- Info box -->
+  <rect x="15" y="132" width="453" height="38" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="241" y="148" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Depth Estimation – zastosowania</text>
+  <text x="25" y="162" fill="#333" font-size="7">Autonomiczne pojazdy · AR/VR · Robotyka · 3D reconstruction | Azure AI Vision 4.0 obsługuje depth estimation</text>
+  <!-- Side info -->
+  <rect x="380" y="38" width="90" height="87" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="425" y="52" text-anchor="middle" fill="#0078D4" font-size="7" font-weight="bold">Metody</text>
+  <text x="387" y="64" fill="#333" font-size="6">• Monocular (1 kam.)</text>
+  <text x="387" y="76" fill="#333" font-size="6">• Stereo (2 kamery)</text>
+  <text x="387" y="88" fill="#333" font-size="6">• LiDAR (laserowe)</text>
+  <text x="387" y="100" fill="#333" font-size="6">• Deep Learning</text>
+  <text x="387" y="112" fill="#555" font-size="6">Azure: monocular</text>
+  <text x="387" y="122" fill="#555" font-size="6">depth z 1 obrazu</text>
+</svg>

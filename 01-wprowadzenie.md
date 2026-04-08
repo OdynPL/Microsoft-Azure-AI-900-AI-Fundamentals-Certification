@@ -337,9 +337,22 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | | 3. **Multi-label Classification** – wiele tagów na obraz (np. „plaża" + „zachód słońca" + „ludzie") |
 | | ![Multi-label Classification](assets/cv-multilabel.svg) |
 | **Object Detection** | Detekcja obiektów – klasa + prawdopodobieństwo + bounding box |
+| | ![Object Detection](assets/cv-object-detection.svg) |
 | **Bounding Box** | Prostokąt otaczający wykryty obiekt na obrazie (x, y, szerokość, wysokość) |
 | **OCR (Optical Character Recognition)** | Rozpoznawanie tekstu na obrazach |
+| | ![OCR](assets/cv-ocr.svg) |
 | **Semantic Segmentation** | Klasyfikacja każdego piksela obrazu do kategorii (np. droga, budynek, niebo) |
+| | ![Semantic Segmentation](assets/cv-semantic-segmentation.svg) |
+| **Instance Segmentation** | Segmentacja z rozróżnianiem instancji – każdy obiekt ma unikalny ID (pies1 ≠ pies2) |
+| | ![Instance Segmentation](assets/cv-instance-segmentation.svg) |
+| **Image Tagging / Captioning** | Automatyczne generowanie tagów i opisów obrazu w języku naturalnym (Azure Vision) |
+| | ![Tagging / Captioning](assets/cv-tagging-captioning.svg) |
+| **Depth Estimation** | Szacowanie głębokości sceny z obrazu 2D – mapa odległości (Azure Vision 4.0) |
+| | ![Depth Estimation](assets/cv-depth-estimation.svg) |
+| **Image Embeddings** | Wektorowa reprezentacja obrazu do wyszukiwania podobnych (Azure Vision 4.0 – vectorize endpoint) |
+| | ![Image Embeddings](assets/cv-image-embeddings.svg) |
+| **Video Analysis** | Analiza wideo: śledzenie obiektów, detekcja scen, ekstrakcja metadanych (Azure Video Indexer) |
+| | ![Video Analysis](assets/cv-video-analysis.svg) |
 | **Face Recognition** | Rozpoznawanie twarzy |
 | | 1. **Face Detection** – wykrywanie twarzy na obrazie + atrybuty (wiek, okulary, emocje) |
 | | ![Face Detection](assets/face-detection.svg) |
@@ -356,6 +369,7 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Limited Access Policy** | Niektóre funkcje AI (identyfikacja twarzy) wymagają formalnej zgody Microsoft |
 | **Read API** | API Azure Vision do odczytu tekstu z dużych, wielostronicowych PDF (vs OCR API dla prostych obrazów) |
 | **Spatial Analysis** | Śledzenie ruchu osób, liczenie w strefach, mierzenie dystansów w wideo real-time – Azure Vision |
+| | ![Spatial Analysis](assets/cv-spatial-analysis.svg) |
 
 ### **NLP (Natural Language Processing)**
 

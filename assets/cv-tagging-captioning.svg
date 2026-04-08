@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Image Tagging &amp; Captioning – tagi i opisy</text>
+  <!-- Input image -->
+  <rect x="15" y="30" width="110" height="85" fill="#D6EAF8" stroke="#999" stroke-width="1" rx="4"/>
+  <!-- Beach scene -->
+  <rect x="15" y="80" width="110" height="35" fill="#F5CBA7" rx="0 0 4 4"/>
+  <circle cx="100" cy="48" r="14" fill="#F9E79F"/>
+  <!-- Dog silhouette -->
+  <ellipse cx="55" cy="85" rx="18" ry="10" fill="#8B6914"/>
+  <circle cx="40" cy="78" r="6" fill="#8B6914"/>
+  <text x="70" y="108" text-anchor="middle" fill="#999" font-size="6">Obraz wejściowy</text>
+  <!-- Arrow to Tagging -->
+  <line x1="130" y1="55" x2="148" y2="42" stroke="#0078D4" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Arrow to Captioning -->
+  <line x1="130" y1="75" x2="148" y2="88" stroke="#28A745" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <!-- Tags output -->
+  <rect x="152" y="28" width="155" height="48" fill="#F0F7FF" stroke="#0078D4" stroke-width="1.5" rx="6"/>
+  <text x="229" y="42" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Tags (tagi)</text>
+  <rect x="160" y="48" width="35" height="14" fill="#D6EAF8" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="177" y="58" text-anchor="middle" fill="#0078D4" font-size="6">plaża 97%</text>
+  <rect x="199" y="48" width="28" height="14" fill="#D6EAF8" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="213" y="58" text-anchor="middle" fill="#0078D4" font-size="6">pies 93%</text>
+  <rect x="231" y="48" width="32" height="14" fill="#D6EAF8" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="247" y="58" text-anchor="middle" fill="#0078D4" font-size="6">piasek 89%</text>
+  <rect x="267" y="48" width="34" height="14" fill="#D6EAF8" stroke="#0078D4" stroke-width="0.5" rx="3"/>
+  <text x="284" y="58" text-anchor="middle" fill="#0078D4" font-size="6">słońce 85%</text>
+  <text x="160" y="72" fill="#0078D4" font-size="6">outdoor 82% | nature 78%</text>
+  <!-- Caption output -->
+  <rect x="152" y="80" width="155" height="38" fill="#D5F5E3" stroke="#28A745" stroke-width="1.5" rx="6"/>
+  <text x="229" y="93" text-anchor="middle" fill="#28A745" font-size="8" font-weight="bold">Caption (opis)</text>
+  <text x="160" y="108" fill="#333" font-size="7" font-style="italic">"Pies na piaszczystej plaży</text>
+  <text x="163" y="116" fill="#333" font-size="7" font-style="italic"> w słoneczny dzień" (0.92)</text>
+  <!-- Dense Captions -->
+  <rect x="320" y="28" width="148" height="90" fill="#FFF3CD" stroke="#E6A800" stroke-width="1" rx="6"/>
+  <text x="394" y="42" text-anchor="middle" fill="#8B6A00" font-size="8" font-weight="bold">Dense Captions (4.0)</text>
+  <text x="328" y="56" fill="#333" font-size="7">Opis per region obrazu:</text>
+  <rect x="328" y="62" width="130" height="12" fill="#FFF" stroke="#E6A800" stroke-width="0.5" rx="2"/>
+  <text x="393" y="71" text-anchor="middle" fill="#555" font-size="6">[x:10,y:60] "brązowy pies na piasku"</text>
+  <rect x="328" y="78" width="130" height="12" fill="#FFF" stroke="#E6A800" stroke-width="0.5" rx="2"/>
+  <text x="393" y="87" text-anchor="middle" fill="#555" font-size="6">[x:80,y:20] "słońce na błękitnym niebie"</text>
+  <rect x="328" y="94" width="130" height="12" fill="#FFF" stroke="#E6A800" stroke-width="0.5" rx="2"/>
+  <text x="393" y="103" text-anchor="middle" fill="#555" font-size="6">[x:0,y:70] "piaszczysta plaża"</text>
+  <!-- Info box -->
+  <rect x="15" y="125" width="453" height="42" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="241" y="140" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Azure AI Vision – Tagging &amp; Captioning</text>
+  <text x="25" y="154" fill="#333" font-size="7">Tags → lista etykiet z confidence | Caption → opis w języku naturalnym | Dense Captions (v4.0) → opisy per region z bounding box</text>
+  <text x="25" y="164" fill="#555" font-size="7">Egzamin: „opisz zdjęcie" = Caption / Description | „jakie obiekty" = Tags | „gdzie jest obiekt" = Object Detection</text>
+  <defs>
+    <marker id="arr" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#0078D4"/></marker>
+    <marker id="arrG" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L6,3 L0,6Z" fill="#28A745"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" font-family="Segoe UI, sans-serif">
+  <rect width="480" height="180" fill="#FAFCFF" rx="8"/>
+  <text x="240" y="18" text-anchor="middle" fill="#0078D4" font-size="13" font-weight="bold">Semantic Segmentation – klasyfikacja pikseli</text>
+  <!-- Original image -->
+  <text x="85" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Obraz oryginalny</text>
+  <rect x="20" y="38" width="130" height="90" fill="#87CEEB" stroke="#CCC" stroke-width="1" rx="3"/>
+  <!-- Mountain -->
+  <polygon points="20,128 55,60 90,100 120,55 150,128" fill="#8B9467"/>
+  <!-- Road -->
+  <rect x="20" y="108" width="130" height="20" fill="#777" rx="0"/>
+  <!-- Small car -->
+  <rect x="55" y="112" width="25" height="12" fill="#E74C3C" rx="2"/>
+  <!-- Arrow -->
+  <text x="165" y="88" fill="#0078D4" font-size="16">→</text>
+  <!-- Segmented image -->
+  <text x="265" y="34" text-anchor="middle" fill="#555" font-size="8" font-weight="bold">Maska segmentacji</text>
+  <rect x="200" y="38" width="130" height="90" fill="#87CEEB" stroke="#CCC" stroke-width="1" rx="3"/>
+  <!-- Segmented mountain (different green) -->
+  <polygon points="200,128 235,60 270,100 300,55 330,128" fill="#28A745" opacity="0.6"/>
+  <!-- Segmented road -->
+  <rect x="200" y="108" width="130" height="20" fill="#555" opacity="0.6"/>
+  <!-- Segmented car -->
+  <rect x="235" y="112" width="25" height="12" fill="#E74C3C" opacity="0.6" rx="2"/>
+  <!-- Legend -->
+  <rect x="200" y="132" width="10" height="8" fill="#87CEEB" stroke="#999" stroke-width="0.5"/>
+  <text x="214" y="139" fill="#333" font-size="6">Niebo</text>
+  <rect x="240" y="132" width="10" height="8" fill="#28A745" opacity="0.6" stroke="#999" stroke-width="0.5"/>
+  <text x="254" y="139" fill="#333" font-size="6">Teren</text>
+  <rect x="280" y="132" width="10" height="8" fill="#555" opacity="0.6" stroke="#999" stroke-width="0.5"/>
+  <text x="294" y="139" fill="#333" font-size="6">Droga</text>
+  <rect x="312" y="132" width="10" height="8" fill="#E74C3C" opacity="0.6" stroke="#999" stroke-width="0.5"/>
+  <text x="326" y="139" fill="#333" font-size="6">Pojazd</text>
+  <!-- Info box -->
+  <rect x="345" y="38" width="125" height="105" fill="#F0F7FF" stroke="#0078D4" stroke-width="1" rx="6"/>
+  <text x="407" y="54" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="bold">Semantic vs Instance</text>
+  <text x="352" y="68" fill="#333" font-size="7">Semantic: kolor</text>
+  <text x="352" y="79" fill="#333" font-size="7">per klasa (droga,</text>
+  <text x="352" y="90" fill="#333" font-size="7">budynek, niebo)</text>
+  <line x1="352" y1="95" x2="463" y2="95" stroke="#DDD" stroke-width="0.5"/>
+  <text x="352" y="106" fill="#333" font-size="7">Instance: kolor per</text>
+  <text x="352" y="117" fill="#333" font-size="7">obiekt (pies1 ≠ pies2)</text>
+  <line x1="352" y1="122" x2="463" y2="122" stroke="#DDD" stroke-width="0.5"/>
+  <text x="352" y="133" fill="#555" font-size="6">Każdy piksel → klasa</text>
+  <text x="352" y="142" fill="#555" font-size="6">Nie bounding box!</text>
+  <!-- Bottom note -->
+  <text x="240" y="162" text-anchor="middle" fill="#666" font-size="8" font-style="italic">Zastosowania: autonomiczne samochody, analiza medyczna, drony, mapy</text>
+</svg>
