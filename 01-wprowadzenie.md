@@ -165,7 +165,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Backpropagation** | Mechanizm propagacji błędu wstecz w sieci neuronowej, do obliczania gradientów i aktualizacji wag |
 | **Regularization** | Techniki zapobiegające overfittingowi |
 | | 1. **L1 (Lasso)** – dodaje sumę wart. bezwzględnych wag do loss; zeruje nieistotne cechy (feature selection) <br> 2. **L2 (Ridge)** – dodaje sumę kwadratów wag do loss; zmniejsza wagi, ale nie zeruje <br> 3. **Elastic Net** – kombinacja L1 + L2 <br> 4. **Dropout** – losowe wyłączanie neuronów podczas treningu; zapobiega współzależności <br> 5. **Early Stopping** – zatrzymanie treningu, gdy metryka walidacyjna przestaje się poprawiać |
-| **Overfitting / Underfitting** | Przeuczenie (zbyt dobre dopasowanie do treningu) / niedouczenie (zbyt proste wzorce) |
+| **Overfitting (przeuczenie)** | Model zbyt dobrze dopasowany do danych treningowych; świetne wyniki na treningu, słabe na nowych danych |
+| **Underfitting (niedouczenie)** | Model zbyt prosty, nie wychwytuje wzorców; słabe wyniki zarówno na treningu, jak i na nowych danych |
 | **Transfer Learning** | Wykorzystanie modelu wytrenowanego na jednym zadaniu do przyspieszenia nauki na innym |
 | **Cross-Validation (K-fold)** | Wielokrotny podział danych na k zbiorów; każdy pełni rolę testu raz – bardziej stabilna ocena modelu |
 | **Inference Pipeline** | Pipeline wnioskowania utworzony z training pipeline; wymagany przed wdrożeniem modelu do produkcji |
