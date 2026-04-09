@@ -652,6 +652,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Feature Store** | Repozytorium cech ML do ponownego wykorzystania w projektach. |
 | **Prompt Flow** | Narzędzie do orkiestracji pipeline'ów AI i RAG w Foundry. |
 | **Model Catalog** | Baza modeli AI w Foundry do przeglądania i wdrażania. |
+| | 1. **Centralized AI models repository** (jedno miejsce na wszystkie modele AI; np. Foundry Model Catalog) <br> 2. **Pre-trained models** (gotowe, wytrenowane modele; np. GPT-4, CLIP, Whisper) <br> 3. **Third-party models** (modele partnerów i open source; np. Llama, Mistral, Falcon) <br> 4. **Custom models** (modele trenowane na własnych danych; np. fine-tuned GPT, własny model Vision) <br> |
 | **Azure AI Video Indexer** | Usługa do analizy wideo: transkrypcja, OCR, rozpoznawanie twarzy. |
 | **Microsoft Copilot** | Asystent AI w produktach Microsoft, bazujący na GPT. |
 | **Regions & Availability** | Dostępność usług AI zależy od regionu Azure. |
