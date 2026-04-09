@@ -642,6 +642,8 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Knowledge Mining Pipeline** | Ingest (dane) → Enrich (AI) → Explore (wyszukiwanie/analiza). |
 | **Vector Search** | Wyszukiwanie na podstawie podobieństwa embeddingów (semantycznie). |
 | **AI Agents** | Autonomiczne aplikacje AI z LLM, instrukcjami i narzędziami. |
+| | 1. **Prompt Agents** (bez kodu, tylko instrukcje i narzędzia) <br> 2. **Workflow Agents** (orkiestracja procesów, YAML) <br> 3. **Hosted Agents** (pełna kontrola, kod) <br> |
+| **LLM (Large Language Model)** | Duży model językowy, np. GPT-4, trenowany na ogromnych zbiorach tekstu do generowania i rozumienia języka naturalnego. |
 | **RBAC** | Kontrola dostępu do zasobów Azure na podstawie ról. |
 | | 1. **AI Services User** (wywoływanie modeli) <br> 2. **AI Services Contributor** (wdrażanie modeli) <br> 3. **AI Services Owner** (pełna administracja AI) <br> 4. **Foundry Project Contributor/Reader** (projekty/agenci w Foundry) <br> 5. **Content Safety Administrator** (filtry treści GenAI) <br> |
 | **Data Assets** | Rejestracja, wersjonowanie i udostępnianie danych w Azure ML. |
