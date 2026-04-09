@@ -13,6 +13,7 @@
 - **Computer Vision** – analiza i interpretacja obrazów/wideo przez AI
 - **NLP (Natural Language Processing)** – przetwarzanie i analiza języka naturalnego (tekst, mowa)
 - **OCR (Optical Character Recognition)** – rozpoznawanie tekstu na obrazach, digitalizacja dokumentów
+- **Sentiment (Sentyment)** – ogólny wydźwięk emocjonalny tekstu, wypowiedzi lub opinii; może być pozytywny, negatywny lub neutralny
 - **Sentiment Analysis** – analiza emocji w tekście (np. pozytywna/negatywna recenzja)
 - **Entity Recognition** – rozpoznawanie nazw własnych w tekście (np. osób, miejsc)
 - **Generative AI** – generatywna AI, modele tworzące nowe treści (tekst, obrazy, kod)

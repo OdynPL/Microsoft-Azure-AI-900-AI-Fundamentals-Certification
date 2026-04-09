@@ -185,7 +185,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Narrow AI (Weak AI)** | AI do jednego zadania, np. rozpoznawania obrazów lub chatbotów. |
 | **Strong AI (AGI)** | AI o ogólnych zdolnościach poznawczych jak człowiek (hipotetyczna). |
 | **ML (Machine Learning)** | Algorytmy uczące się na podstawie danych do przewidywania lub klasyfikacji. |
-| **Deep Learning** | ML z wielowarstwowymi sieciami neuronowymi, automatycznie uczącymi się cech z dużych danych. |
+| **Deep Learning** | ML z wielowarstwowymi sieciami neuronowymi, automatycznie uczące się cech z dużych danych. |
 | **Neural Network (sieć neuronowa)** | Model z warstw neuronów przetwarzających dane, inspirowany mózgiem. |
 | | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych |
 | | ![CNN](assets/nn-cnn.svg) |
@@ -452,6 +452,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Entity Linking** | Łączenie wykrytych encji z bazą wiedzy (np. Wikipedia). |
 | **PII Detection** | Automatyczne wykrywanie i maskowanie danych osobowych w tekście. |
 | **Sentiment Analysis** | Określanie, czy tekst jest pozytywny, negatywny czy neutralny. |
+| **Sentiment** | Ogólny wydźwięk emocjonalny tekstu, wypowiedzi lub opinii; może być pozytywny, negatywny lub neutralny. |
 | **Key Phrase Extraction** | Automatyczne wyodrębnianie kluczowych fraz z tekstu. |
 | **Summarization** | Automatyczne skracanie i streszczanie długich tekstów. |
 | **Language Detection** | Automatyczne rozpoznawanie języka tekstu przez AI. |
@@ -562,7 +563,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 |---|---|---|
 | **GPT-4o / GPT-4** | Text generation | Chat, generowanie tekstu, kod, rozumowanie, analiza obrazów (multimodal) |
 | **GPT-3.5 Turbo** | Text generation | Szybszy i tańszy chat/tekst; mniej zaawansowany niż GPT-4 |
-| **DALL-E 3** | Image generation | Generowanie obrazów z opisów tekstowych (text-to-image) |
+| **DALL-E 3** | Image generation | Generowanie obrazów z opisu tekstowego (text-to-image) |
 | **Whisper** | Speech-to-text | Transkrypcja audio na tekst |
 | **text-embedding-3-large** | Embeddings | Wektorowa reprezentacja tekstu do RAG i wyszukiwania semantycznego |
 | **Phi-3 / Phi-4** | SLM (Small LM) | Mniejsze modele Microsoftu; tańsze, szybsze, dobre do edge i fine-tuningu |
@@ -705,8 +706,8 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **MCP (Model Context Protocol)** | Standard integracji narzędzi z agentami AI. |
 | **Agent Lifecycle** | Cykl życia agenta: tworzenie, test, śledzenie, ocena, publikacja, monitoring. |
 | **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search. |
-| **Guardrails** | Mechanizmy bezpieczeństwa agentów: filtry treści, ochrona przed atakami, walidacja. |
-| | 1. **Content Filters** – blokowanie szkodliwych treści (hate, violence, sexual, self-harm) na wejściu i wyjściu <br> 2. **Prompt Injection Defense** – wykrywanie prób manipulacji instrukcjami modelu (jailbreak, XPIA) <br> 3. **Output Validation** – weryfikacja formatu, długości i poprawności odpowiedzi przed zwróceniem <br> 4. **Grounding Detection** – sprawdzanie czy odpowiedź jest oparta na źródłach (nie halucynacja) <br> 5. **PII Redaction** – automatyczne maskowanie danych osobowych w odpowiedziach <br> 6. **Rate Limiting** – ograniczenie liczby żądań (TPM/RPM) zapobiegające nadużyciom <br> 7. **Blocklists** – niestandardowe listy zabronionych słów/fraz definiowane przez organizację |
+| **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
+| | 1. **Content Filters** – blokowanie szkodliwych treści (hate, violence, sexual, self-harm) na wejściu i wyjściu <br> 2. **Prompt Injection Defense** – wykrywanie prób manipulacji instrukcjami modelu (jailbreak, XPIA) <br> 3. **Output Validation** – weryfikacja formatu, długości i poprawności odpowiedzi przed zwróceniem <br> 4. **Grounding Detection** – sprawdzanie czy odpowiedź jest oparta na dostarczonych źródłach <br> 5. **PII Redaction** – automatyczne maskowanie danych osobowych w odpowiedziach <br> 6. **Rate Limiting** – ograniczanie liczby żądań (TPM/RPM) zapobiegające nadużyciom <br> 7. **Blocklists** – niestandardowe listy zabronionych słów/fraz definiowane przez organizację |
 
 ### **Metryki ewaluacji GenAI i agentów**
 
