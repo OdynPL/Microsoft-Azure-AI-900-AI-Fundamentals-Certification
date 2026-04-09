@@ -297,6 +297,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Label (etykieta)** | Poprawna odpowiedź przypisana do przykładu w uczeniu nadzorowanym. |
 | **Feature Engineering** | Przygotowanie i wybór cech |
 | **Data Labeling** | Etykietowanie danych |
+| **Data Grounding** | Powiązanie generowanych odpowiedzi AI z wiarygodnymi, aktualnymi danymi źródłowymi. |
 | **Training Set** | Dane używane do nauki modelu (największa część zbioru). |
 | **Validation Set** | Dane do oceny modelu podczas treningu i doboru parametrów. |
 | **Test Set** | Dane do końcowej, niezależnej oceny skuteczności modelu. |
