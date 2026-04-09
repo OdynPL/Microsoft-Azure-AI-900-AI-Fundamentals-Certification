@@ -189,6 +189,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Neural Network (sieć neuronowa)** | Model z warstw neuronów przetwarzających dane, inspirowany mózgiem. |
 | | 1. **CNN (Convolutional Neural Network)** – analiza obrazów, rozpoznawanie wzorów wizualnych |
 | | ![CNN](assets/nn-cnn.svg) |
+| **Kernel (filtr)** | Mała macierz przesuwana po obrazie w CNN, wyłapująca wzorce (np. krawędzie). |
 | | 2. **RNN (Recurrent Neural Network)** – dane sekwencyjne, tekst, szeregi czasowe |
 | | ![RNN](assets/nn-rnn.svg) |
 | | 3. **LSTM (Long Short-Term Memory)** – ulepszona RNN, lepsza pamięć długoterminowa |
