@@ -88,8 +88,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Explainability w praktyce** | Praktyczne zastosowanie SHAP, LIME, Responsible AI Dashboard do wyjaśniania decyzji modeli. |
 | **Fine-tuning** | Dodatkowe trenowanie foundation modelu (np. GPT, DALL-E) na własnych danych, dostosowanie do specyficznych zadań. |
 | **Data Privacy & Security** | Ochrona danych, data residency, privacy by design, compliance (np. RODO, HIPAA), mechanizmy anonimizacji i pseudonimizacji. |
-| **AI Solution Lifecycle** | Pełny cykl życia rozwiązania AI:  <ul><li>analiza biznesowa</li><li>development</li><li>testy</li><li>deployment</li><li>monitoring</li><li>retraining</li></ul> |
-|  • analiza biznesowa → development → testy → deployment → monitoring → retraining |  |
+| **AI Solution Lifecycle** | Pełny cykl życia rozwiązania AI. |
+|  | <ol><li>analiza biznesowa</li><li>development</li><li>testy</li><li>deployment</li><li>monitoring</li><li>retraining</li></ol> |
 | **Responsible AI Impact Assessment** | Praktyczna ocena wpływu wdrożenia AI, checklisty, dokumentacja, wymagania Microsoft. |
 | **AI Governance** | Polityki, role, odpowiedzialności, procesy zarządzania AI w organizacji. |
 | **Pricing & Cost Optimization** | Optymalizacja kosztów usług AI, wybór warstw cenowych, billing modeli, monitorowanie zużycia. |
@@ -100,7 +100,8 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Model Catalog (Foundry)** | Centralna baza gotowych modeli (GPT, Phi, Llama, Mistral) do wdrażania i testowania. |
 | **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search (vector store). |
 | **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
-| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA).<br><ol><li><b>Content Filters</b> – blokują szkodliwe lub niepożądane treści w promptach i odpowiedziach</li><li><b>Prompt Validation</b> – sprawdza format, długość i zgodność promptu z polityką</li><li><b>Blocklists</b> – listy zakazanych słów i fraz</li><li><b>Grounding Detection</b> – sprawdza, czy odpowiedź jest oparta na dozwolonych źródłach</li><li><b>Jailbreak Detection</b> – wykrywa próby obejścia ograniczeń modelu</li><li><b>Rate Limiting</b> – ogranicza liczbę żądań, by utrudnić ataki automatyczne</li></ol> |
+| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA). |
+|  | <ol><li><b>Content Filters</b> – blokują szkodliwe lub niepożądane treści w promptach i odpowiedziach</li><li><b>Prompt Validation</b> – sprawdza format, długość i zgodność promptu z polityką</li><li><b>Blocklists</b> – listy zakazanych słów i fraz</li><li><b>Grounding Detection</b> – sprawdza, czy odpowiedź jest oparta na dozwolonych źródłach</li><li><b>Jailbreak Detection</b> – wykrywa próby obejścia ograniczeń modelu</li><li><b>Rate Limiting</b> – ogranicza liczbę żądań, by utrudnić ataki automatyczne</li></ol> |
 | **Output Validation** | Automatyczna weryfikacja formatu, długości i poprawności odpowiedzi agenta. |
 | **Grounding Detection** | Sprawdzanie, czy odpowiedź agenta jest oparta na dostarczonych źródłach. |
 | **PII Redaction** | Automatyczne maskowanie danych osobowych w odpowiedziach agentów. |
@@ -796,7 +797,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Agent Lifecycle** | Cykl życia agenta: tworzenie, test, śledzenie, ocena, publikacja, monitoring. |
 | **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search. |
 | **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
-| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA).<br><ol><li><b>Content Filters</b> – blokują szkodliwe lub niepożądane treści w promptach i odpowiedziach</li><li><b>Prompt Validation</b> – sprawdza format, długość i zgodność promptu z polityką</li><li><b>Blocklists</b> – listy zakazanych słów i fraz</li><li><b>Grounding Detection</b> – sprawdza, czy odpowiedź jest oparta na dozwolonych źródłach</li><li><b>Jailbreak Detection</b> – wykrywa próby obejścia ograniczeń modelu</li><li><b>Rate Limiting</b> – ogranicza liczbę żądań, by utrudnić ataki automatyczne</li></ol> |
+| **Prompt Injection Defense** | Mechanizmy wykrywające i blokujące próby manipulacji promptem (jailbreak, XPIA). |
 | **Output Validation** | Automatyczna weryfikacja formatu, długości i poprawności odpowiedzi agenta. |
 | **Grounding Detection** | Sprawdzanie, czy odpowiedź agenta jest oparta na dostarczonych źródłach. |
 | **PII Redaction** | Automatyczne maskowanie danych osobowych w odpowiedziach agentów. |
