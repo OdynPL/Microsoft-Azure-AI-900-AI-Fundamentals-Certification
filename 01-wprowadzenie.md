@@ -80,13 +80,16 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 
 | **Pojęcie** | **Opis** |
 |---|---|
-| **Prompt Flow / Prompt Orchestration** | Projektowanie, testowanie i wersjonowanie promptów dla modeli generatywnych; automatyzacja testów, A/B testy promptów, zarządzanie wersjami. |
+| **Agent** | Autonomiczny komponent AI realizujący zadania na podstawie instrukcji, narzędzi i wiedzy. |
+| **Rodzaje Agentów** | 1. **Prompt Agent** – działa na bazie promptów i narzędzi, bez kodu <br>2. **Workflow Agent** – orkiestruje procesy i integracje, definiowany w YAML <br>3. **Hosted Agent** – pełna kontrola nad logiką, kodem i integracjami, wdrażany w Foundry lub własnej infrastrukturze |
+| **Prompt Flow** | Narzędzie do projektowania, testowania i orkiestracji pipeline'ów GenAI i agentów; umożliwia automatyzację testów, wersjonowanie promptów, A/B testy oraz integrację z zewnętrznymi źródłami danych. |
+| **Prompt Orchestration** | Zarządzanie przepływem promptów, automatyczne wybieranie i łączenie promptów oraz narzędzi w celu realizacji złożonych zadań przez agenta. |
 | **Model Monitoring** | Śledzenie skuteczności modeli po wdrożeniu, detekcja driftu danych/modelu, automatyczne alerty, retraining. |
 | **Explainability w praktyce** | Praktyczne zastosowanie SHAP, LIME, Responsible AI Dashboard do wyjaśniania decyzji modeli. |
 | **Fine-tuning** | Dodatkowe trenowanie foundation modelu (np. GPT, DALL-E) na własnych danych, dostosowanie do specyficznych zadań. |
 | **Data Privacy & Security** | Ochrona danych, data residency, privacy by design, compliance (np. RODO, HIPAA), mechanizmy anonimizacji i pseudonimizacji. |
-| **AI Agents & Orchestration** | Budowa agentów AI (Prompt, Workflow, Hosted), integracja z narzędziami zewnętrznymi, orkiestracja procesów AI. |
-| **AI Solution Lifecycle** | Pełny cykl życia rozwiązania AI: analiza biznesowa → development → testy → deployment → monitoring → retraining. |
+| **AI Solution Lifecycle** | Pełny cykl życia rozwiązania AI. |
+|  • analiza biznesowa → development → testy → deployment → monitoring → retraining |  |
 | **Responsible AI Impact Assessment** | Praktyczna ocena wpływu wdrożenia AI, checklisty, dokumentacja, wymagania Microsoft. |
 | **AI Governance** | Polityki, role, odpowiedzialności, procesy zarządzania AI w organizacji. |
 | **Pricing & Cost Optimization** | Optymalizacja kosztów usług AI, wybór warstw cenowych, billing modeli, monitorowanie zużycia. |
@@ -94,7 +97,6 @@ Każda z tych usług posiada gotowe API, które można łatwo zintegrować z apl
 | **Copilot Studio** | Platforma no-code/low-code do budowy agentów AI i chatbotów, integracja z Azure OpenAI i AI Services. |
 | **Hosted Agents** | Agenci AI z pełną kontrolą nad kodem i integracjami, wdrażani na własnej infrastrukturze lub w Foundry. |
 | **Microsoft Foundry** | Nowa platforma do budowy, wdrażania i zarządzania aplikacjami AI (GenAI, RAG, agenci). |
-| **Prompt Flow** | Narzędzie do projektowania, testowania i orkiestracji pipeline'ów GenAI i agentów. |
 | **Model Catalog (Foundry)** | Centralna baza gotowych modeli (GPT, Phi, Llama, Mistral) do wdrażania i testowania. |
 | **Foundry IQ** | Baza wiedzy dla agentów, zintegrowana z Azure AI Search (vector store). |
 | **Guardrails (Foundry)** | Zestaw zabezpieczeń: filtry treści, ochrona przed prompt injection, walidacja outputu, grounding detection. |
