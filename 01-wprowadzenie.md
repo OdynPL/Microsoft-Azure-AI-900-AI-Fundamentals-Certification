@@ -532,6 +532,7 @@ Większość usług Azure AI Services zwraca w odpowiedzi API **confidence score
 | **Lematyzacja (Lemmatization)** | Sprowadzanie słów do ich podstawowej formy. |
 | **Stemming** | Obcinanie końcówek słów do rdzenia dla uproszczenia analizy. |
 | **Embeddingi (Embeddings)** | Zamiana tekstu na wektory liczbowe do analizy przez modele. |
+| **Mechanizmy uwagi (Attention Mechanisms)** | Pozwalają modelom AI skupić się na najważniejszych fragmentach danych (np. słowach w zdaniu), przypisując im wagi zależnie od kontekstu. Kluczowe w tłumaczeniu i streszczaniu tekstu. |
 | | 1. **Word2Vec** – klasyczny; każde słowo = jeden wektor (nie rozróżnia kontekstu) |
 | | ![Word2Vec](assets/emb-word2vec.svg) |
 | | 2. **GloVe** – Global Vectors; wektory na bazie statystyk współwystępowania słów |
