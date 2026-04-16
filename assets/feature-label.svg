@@ -1,0 +1,26 @@
+<svg viewBox="0 0 420 68" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <marker id="a" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5" fill="none" stroke="#b3b3b3" stroke-width="1"/>
+    </marker>
+  </defs>
+  <!-- Features -->
+  <rect x="0" y="16" width="90" height="32" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="45" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#1976d2">Feature 1</text>
+  <rect x="100" y="16" width="90" height="32" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="145" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#1976d2">Feature 2</text>
+  <rect x="200" y="16" width="90" height="32" rx="3" fill="#f3f3f3" stroke="#e8e8e8"/>
+  <text x="245" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#1976d2">Feature 3</text>
+  <!-- Arrow to label -->
+  <line x1="292" y1="32" x2="318" y2="32" stroke="#b3b3b3" marker-end="url(#a)"/>
+  <!-- Label -->
+  <rect x="320" y="16" width="90" height="32" rx="3" fill="#fff3e0" stroke="#f57c00" stroke-width="0.75"/>
+  <text x="365" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#f57c00">Label</text>
+  <!-- Opisy pod spodem -->
+  <text x="45" y="58" text-anchor="middle" font-size="7.5" fill="#1976d2">cecha</text>
+  <text x="145" y="58" text-anchor="middle" font-size="7.5" fill="#1976d2">cecha</text>
+  <text x="245" y="58" text-anchor="middle" font-size="7.5" fill="#1976d2">cecha</text>
+  <text x="365" y="58" text-anchor="middle" font-size="7.5" fill="#f57c00">etykieta</text>
+  <!-- Podpis -->
+  <text x="210" y="66" text-anchor="middle" font-size="7.5" fill="#8a8a8a">input (features) → output (label)</text>
+</svg>
